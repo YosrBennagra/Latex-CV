@@ -1,0 +1,142 @@
+
+\newif\ifaccentcolor
+\accentcolorfalse 
+
+% -------- Document Base Packages --------
+\usepackage[utf8]{inputenc} % Character encoding
+\usepackage[T1]{fontenc}    % Better hyphenation & copyable text
+\usepackage{lmodern}        % Clean, standard font family
+% Uncomment next two lines to switch to a sans-serif look (HR-safe)
+%\renewcommand{\familydefault}{\sfdefault}
+%\providecommand{\engine@font}{sans}
+
+\usepackage[margin=0.7in]{geometry} % Compact but breathable
+\usepackage{setspace} % For fine line spacing control if needed
+\usepackage{enumitem} % Tighter itemize environments
+\usepackage{hyperref} % Clickable links (safe for ATS)
+\hypersetup{
+  colorlinks=true,
+  urlcolor=black,
+  linkcolor=black,
+  pdfauthor={Your Name},
+  pdfproducer={},
+  pdftitle={Curriculum Vitae},
+  pdfsubject={Professional CV},
+  pdfkeywords={CV, Resume}
+}
+\usepackage{xcolor}
+\ifaccentcolor
+  \definecolor{Accent}{HTML}{003366}
+\else
+  \definecolor{Accent}{gray}{0}
+\fi
+
+% Avoid extra spacing after periods (American style acceptable)
+\frenchspacing
+
+% -------- Spacing Tweaks --------
+% Slightly reduce space before/after sections while keeping readability.
+\setlength{\parskip}{2pt}
+\setlength{\parindent}{0pt}
+
+% Consistent list formatting for bullets
+\setlist[itemize]{
+  leftmargin=10pt,
+  itemsep=2pt,
+  topsep=2pt,
+  parsep=0pt,
+  partopsep=0pt
+}
+
+% -------- Helper Macros (public, ATS-safe) --------
+% Use public macro names (no @) to avoid needing \makeatletter.
+\newcommand{\cvname}[1]{\def\CVName{#1}}
+\newcommand{\cvrole}[1]{\def\CVRole{#1}}
+\newcommand{\cvcontact}[1]{\def\CVContact{#1}}
+% Granular contact fields
+\newcommand{\cvphone}[1]{\def\CVPhone{#1}}
+\newcommand{\cvemail}[1]{\def\CVEmail{#1}}
+\newcommand{\cvaddress}[1]{\def\CVAddress{#1}}
+\newcommand{\cvgithub}[1]{\def\CVGithub{#1}}
+\newcommand{\cvsummary}[1]{\def\CVSummary{#1}}
+
+% Provide defaults
+\cvname{Your Name}
+\cvrole{Professional Title / Target Role}
+\cvcontact{City, ST | (555) 555-5555 | professional.email@example.com | LinkedIn: linkedin.com/in/username | GitHub: github.com/username}
+\cvphone{+000 0000000}
+\cvemail{your.email@example.com}
+\cvaddress{City, Country}
+\cvgithub{https://github.com/username}
+\cvsummary{Impact-focused professional with X+ years of experience ... (2-3 concise, keyword-rich sentences highlighting scope, strengths, domains, and outcomes.)}
+
+% Section heading macro (simple for ATS parsing)
+\newcommand{\cvsection}[1]{%
+  \vspace{6pt}\par\textbf{\Large #1}\par\vspace{4pt}\hrule height 0.5pt \vspace{6pt}
+}
+
+% Header macro to render name (uppercase bold) on left and role on right same baseline
+% Uses simple hbox with stretchable space for ATS-safe linear text ordering.
+\newcommand{\makecvheader}{%
+  \begingroup
+  \par\vspace*{4pt}
+  {\Large\textbf{\MakeUppercase{\CVName}}\hfill\normalsize \CVRole}\par
+  \vspace{4pt}
+  \endgroup
+}
+
+% Contact information row (two columns simulated with hfill). Bold labels as per screenshot.
+\newcommand{\makecontactinfo}{%
+  {\small
+    	\textbf{Phone:}~\CVPhone \hfill \textbf{Address:}~\CVAddress\\[-2pt]
+    	\textbf{Email:}~\CVEmail \hfill \textbf{Github:}~\href{\CVGithub}{\CVGithub}%
+  }\par\vspace{8pt}
+}
+
+% Styled internship environment matching desired layout
+% Usage: \begin{internship}{Title}{Company}{Location}{Dates}{Company description}
+%           \item Task bullet ...
+%       \end{internship}
+\newenvironment{internship}[5]{%
+  \par\textbf{#1}\\[-2pt]
+  #2\\[-2pt]
+  {\footnotesize\textit{#4}}\\[-2pt]
+  {\footnotesize\emph{#5}}\\[-2pt]
+  {\footnotesize\textit{Tasks}}\\[-4pt]
+  \begin{itemize}[leftmargin=12pt,itemsep=2pt,topsep=2pt]
+}{\end{itemize}\vspace{6pt}}
+
+% Entry macro: Title | Company | Location | Dates
+% Usage: \cventry{TITLE}{COMPANY}{LOCATION}{DATES}{CONTENT}
+\newcommand{\cventry}[5]{%
+  \textbf{#1} \hfill #4\\
+  \textit{#2, #3}\\[-4pt]
+  #5\vspace{6pt}
+}
+
+% Compact bullet alias (alternative inline bullet list if ever needed)
+\newcommand{\cvbullet}[1]{\item #1}
+
+% Keywords environment (comma-separated plain text for ATS)
+\newenvironment{cvkeywords}{%
+  \vspace{4pt}\noindent\begin{minipage}{\textwidth}\textbf{Keywords: }\begingroup\raggedright\small
+}{\par\endgroup\end{minipage}\vspace{4pt}}
+
+% Date range helper (ensures consistent style)
+\newcommand{\daterange}[2]{#1 -- #2}
+
+% (Removed custom \endash macro to avoid redefinition warnings; use -- directly for en-dash)
+
+% Safety: ensure no widow lines at page start if possible
+\clubpenalty=10000
+\widowpenalty=10000
+
+% Page style: no headers/footers except page number if >1 page
+\pagestyle{plain}
+
+% Single page bias: tighten a bit if near overflow (user can adjust)
+% Uncomment to shrink vertical space a little more:
+% \setlength{\parskip}{1pt}
+% \setlist[itemize]{itemsep=1pt, topsep=1pt}
+
+% End preamble macros
