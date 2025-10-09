@@ -5,25 +5,31 @@
 % -------- Document Base Packages --------
 \usepackage[utf8]{inputenc} % Character encoding
 \usepackage[T1]{fontenc}    % Better hyphenation & copyable text
-\usepackage{lmodern}        % Clean, standard font family
-% Uncomment next two lines to switch to a sans-serif look (HR-safe)
-%\renewcommand{\familydefault}{\sfdefault}
-%\providecommand{\engine@font}{sans}
-
+\usepackage{helvet}         % Helvetica font family
+\usepackage{microtype}      % Better kerning/justification without odd spacing
+\usepackage[english]{babel} % Language metadata and hyphenation patterns
+\renewcommand{\familydefault}{\sfdefault} % Use sans-serif as default
 \usepackage[margin=0.7in]{geometry} % Compact but breathable
 \usepackage{setspace} % For fine line spacing control if needed
 \usepackage{enumitem} % Tighter itemize environments
 \usepackage{hyperref} % Clickable links (safe for ATS)
+\usepackage{url}
+\urlstyle{same} % Keep URLs in the same font for readability/ATS
 \hypersetup{
   colorlinks=true,
   urlcolor=black,
   linkcolor=black,
+  pdflang={en},
   pdfauthor={Your Name},
   pdfproducer={},
   pdftitle={Curriculum Vitae},
   pdfsubject={Professional CV},
   pdfkeywords={CV, Resume}
 }
+
+% Ensure Unicode text is copyable in the generated PDF (ATS-friendly)
+% Only if the file exists in the TeX installation
+\IfFileExists{glyphtounicode.tex}{\input{glyphtounicode}\pdfgentounicode=1}{}
 \usepackage{xcolor}
 \ifaccentcolor
   \definecolor{Accent}{HTML}{003366}
@@ -36,14 +42,14 @@
 
 % -------- Spacing Tweaks --------
 % Slightly reduce space before/after sections while keeping readability.
-\setlength{\parskip}{2pt}
+\setlength{\parskip}{1pt}
 \setlength{\parindent}{0pt}
 
 % Consistent list formatting for bullets
 \setlist[itemize]{
   leftmargin=10pt,
-  itemsep=2pt,
-  topsep=2pt,
+  itemsep=1.5pt,
+  topsep=1pt,
   parsep=0pt,
   partopsep=0pt
 }
@@ -72,25 +78,25 @@
 
 % Section heading macro (simple for ATS parsing)
 \newcommand{\cvsection}[1]{%
-  \vspace{6pt}\par\textbf{\Large #1}\par\vspace{4pt}\hrule height 0.5pt \vspace{6pt}
+  \vspace{6pt}\par\textbf{\Large #1}\par\vspace{2pt}\hrule height 0.5pt \vspace{4pt}
 }
 
 % Header macro to render name (uppercase bold) on left and role on right same baseline
 % Uses simple hbox with stretchable space for ATS-safe linear text ordering.
 \newcommand{\makecvheader}{%
   \begingroup
-  \par\vspace*{4pt}
-  {\Large\textbf{\MakeUppercase{\CVName}}\hfill\normalsize \CVRole}\par
-  \vspace{4pt}
+  \par\vspace*{2pt}
+  {\Large\textbf{\MakeUppercase{\CVName}}\hfill\Large\textbf{\MakeUppercase{\CVRole}}}\par
+  \vspace{2pt}
   \endgroup
 }
 
 % Contact information row (two columns simulated with hfill). Bold labels as per screenshot.
 \newcommand{\makecontactinfo}{%
   {\small
-    	\textbf{Phone:}~\CVPhone \hfill \textbf{Address:}~\CVAddress\\[-2pt]
-    	\textbf{Email:}~\CVEmail \hfill \textbf{Github:}~\href{\CVGithub}{\CVGithub}%
-  }\par\vspace{8pt}
+    \textbf{Phone:}~\CVPhone \hfill \textbf{Address:}~\CVAddress\\[-2pt]
+    \textbf{Email:}~\href{mailto:\CVEmail}{\CVEmail} \hfill \textbf{GitHub:}~\href{\CVGithub}{\CVGithub}%
+  }\par\vspace{4pt}
 }
 
 % Styled internship environment matching desired layout
@@ -98,11 +104,11 @@
 %           \item Task bullet ...
 %       \end{internship}
 \newenvironment{internship}[5]{%
-  \par\textbf{#1}\\[-2pt]
+  \par{\large\textbf{#1}}\\[-2pt]
   #2\\[-2pt]
-  {\footnotesize\textit{#4}}\\[-2pt]
-  {\footnotesize\textcolor{gray}{#5}}\\[-2pt]
-  \begin{itemize}[leftmargin=12pt,itemsep=2pt,topsep=2pt]
+  {\footnotesize\textit{#4}}%
+  \ifx&#5&\else\\[-2pt]{\footnotesize\textcolor{gray}{#5}}\fi\\[1pt]
+  \begin{itemize}[leftmargin=12pt,itemsep=1.5pt,topsep=1pt]
 }{\end{itemize}\vspace{6pt}}
 
 % Entry macro: Title | Company | Location | Dates
@@ -129,9 +135,11 @@
 % Safety: ensure no widow lines at page start if possible
 \clubpenalty=10000
 \widowpenalty=10000
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
 
-% Page style: no headers/footers except page number if >1 page
-\pagestyle{plain}
+% Page style: no headers/footers and no page numbers
+\pagestyle{empty}
 
 % Single page bias: tighten a bit if near overflow (user can adjust)
 % Uncomment to shrink vertical space a little more:
@@ -139,3 +147,17 @@
 % \setlist[itemize]{itemsep=1pt, topsep=1pt}
 
 % End preamble macros
+
+% Summary macro (renders the CV summary text if provided)
+\newcommand{\makecvsummary}{{\small \CVSummary}\par}
+
+% Defer metadata that uses user-provided macros until after they are defined
+% so the PDF properties match the actual name/role/keywords.
+\AtBeginDocument{%
+  \hypersetup{
+    pdfauthor={\CVName},
+    pdftitle={\CVName\space — \CVRole},
+    pdfsubject={Resume / CV},
+    pdfkeywords={Software, Full-Stack, React, NestJS, Spring Boot, JavaScript, TypeScript, Python, MongoDB, SQL, DevOps, CI/CD, Docker, Jenkins, RAG}
+  }
+}
