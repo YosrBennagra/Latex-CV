@@ -5,10 +5,9 @@
 % -------- Document Base Packages --------
 \usepackage[utf8]{inputenc} % Character encoding
 \usepackage[T1]{fontenc}    % Better hyphenation & copyable text
-\usepackage{helvet}         % Helvetica font family
+\usepackage{lmodern}        % Latin Modern - clean, professional font
 \usepackage{microtype}      % Better kerning/justification without odd spacing
 \usepackage[english]{babel} % Language metadata and hyphenation patterns
-\renewcommand{\familydefault}{\sfdefault} % Use sans-serif as default
 \usepackage[margin=0.7in]{geometry} % Compact but breathable
 \usepackage{setspace} % For fine line spacing control if needed
 \usepackage{enumitem} % Tighter itemize environments
@@ -42,14 +41,14 @@
 
 % -------- Spacing Tweaks --------
 % Slightly reduce space before/after sections while keeping readability.
-\setlength{\parskip}{1pt}
+\setlength{\parskip}{0.5pt}
 \setlength{\parindent}{0pt}
 
 % Consistent list formatting for bullets
 \setlist[itemize]{
-  leftmargin=10pt,
-  itemsep=1.5pt,
-  topsep=1pt,
+  leftmargin=8pt,
+  itemsep=1pt,
+  topsep=0.5pt,
   parsep=0pt,
   partopsep=0pt
 }
@@ -78,16 +77,16 @@
 
 % Section heading macro (simple for ATS parsing)
 \newcommand{\cvsection}[1]{%
-  \vspace{6pt}\par\textbf{\Large #1}\par\vspace{2pt}\hrule height 0.5pt \vspace{4pt}
+  \vspace{4pt}\par\textbf{\Large #1}\par\vspace{1pt}\hrule height 0.5pt \vspace{3pt}
 }
 
 % Header macro to render name (uppercase bold) on left and role on right same baseline
 % Uses simple hbox with stretchable space for ATS-safe linear text ordering.
 \newcommand{\makecvheader}{%
   \begingroup
-  \par\vspace*{2pt}
+  \par\vspace*{1pt}
   {\Large\textbf{\MakeUppercase{\CVName}}\hfill\Large\textbf{\MakeUppercase{\CVRole}}}\par
-  \vspace{2pt}
+  \vspace{1pt}
   \endgroup
 }
 
@@ -96,7 +95,7 @@
   {\small
     \textbf{Phone:}~\CVPhone \hfill \textbf{Address:}~\CVAddress\\[-2pt]
     \textbf{Email:}~\href{mailto:\CVEmail}{\CVEmail} \hfill \textbf{GitHub:}~\href{\CVGithub}{\CVGithub}%
-  }\par\vspace{4pt}
+  }\par\vspace{3pt}
 }
 
 % Styled internship environment matching desired layout
@@ -104,12 +103,12 @@
 %           \item Task bullet ...
 %       \end{internship}
 \newenvironment{internship}[5]{%
-  \par{\large\textbf{#1}}\\[-2pt]
-  #2\\[-2pt]
-  {\footnotesize\textit{#4}}%
-  \ifx&#5&\else\\[-2pt]{\footnotesize\textcolor{gray}{#5}}\fi\\[1pt]
-  \begin{itemize}[leftmargin=12pt,itemsep=1.5pt,topsep=1pt]
-}{\end{itemize}\vspace{6pt}}
+  \par{\large\textbf{#1}}\\[-3pt]
+  #2\\[-3pt]
+  {\footnotesize\textit{#4}}\\[-7pt]
+  \ifx&#5&\else{\footnotesize\textcolor{gray}{#5}}\\[-7pt]\fi
+  \begin{itemize}[leftmargin=8pt,itemsep=1pt,topsep=0.5pt]
+}{\end{itemize}\vspace{3pt}}
 
 % Entry macro: Title | Company | Location | Dates
 % Usage: \cventry{TITLE}{COMPANY}{LOCATION}{DATES}{CONTENT}
