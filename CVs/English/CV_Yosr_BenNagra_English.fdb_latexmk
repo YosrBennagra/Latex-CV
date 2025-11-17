@@ -1,5 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1760644817.80232 "main.tex" "main.pdf" "main" 1760644818.31628 0
+["pdflatex"] 1763130787.13817 "e:/LatexCv/CVs/English/CV_Yosr_BenNagra_English.tex" "CV_Yosr_BenNagra_English.pdf" "CV_Yosr_BenNagra_English" 1763130787.94592 0
+  "../../preamble.tex" 1762793017 5581 3c01a88f0a79c8c6cdb0f979370237e2 ""
   "C:/Users/ALPHA/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1760048930 82507 a9eef8696c92627b87e9975edea03b2a ""
   "C:/Users/ALPHA/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1750981658 24225046 5a341531b3d998856571ed7910cc6044 ""
   "C:/Users/ALPHA/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc" 1256929440 2375 baa924870cfb487815765f9094cf3728 ""
@@ -11,11 +12,13 @@
   "C:/Users/ALPHA/AppData/Local/Programs/MiKTeX/fonts/tfm/public/lm/ec-lmr10.tfm" 1256929440 12056 7e13df7fe4cbce21b072ba7c4f4deb6e ""
   "C:/Users/ALPHA/AppData/Local/Programs/MiKTeX/fonts/tfm/public/lm/ec-lmr12.tfm" 1256929440 12092 7b1546e2d096cfd5dcbd4049b0b1ec2e ""
   "C:/Users/ALPHA/AppData/Local/Programs/MiKTeX/fonts/tfm/public/lm/ec-lmr9.tfm" 1256929440 12084 b7f5e4c003de6f57f07c7e9fee73a37c ""
+  "C:/Users/ALPHA/AppData/Local/Programs/MiKTeX/fonts/tfm/public/lm/ec-lmri10.tfm" 1256929440 17148 9556e1b5f936b77a796f68d2d559ba99 ""
   "C:/Users/ALPHA/AppData/Local/Programs/MiKTeX/fonts/tfm/public/lm/ec-lmri9.tfm" 1256929440 17148 ca1ae65757b004f470b8cd636199f6fc ""
   "C:/Users/ALPHA/AppData/Local/Programs/MiKTeX/fonts/tfm/public/lm/ts1-lmr10.tfm" 1256929440 1556 b86d923e6b2f9aab2e313098a95cb0b8 ""
   "C:/Users/ALPHA/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb" 1256929440 121021 836464b5fe0c782d94085eb083550ccc ""
   "C:/Users/ALPHA/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb" 1256929440 116908 9a7a12d1e4df280ea0ab4aad83cdef88 ""
   "C:/Users/ALPHA/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb" 1256929440 119235 05e5c8d6d60439433e50047898c2c0e0 ""
+  "C:/Users/ALPHA/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb" 1256929440 112593 fda2373ba4420af33949610de4c28fe8 ""
   "C:/Users/ALPHA/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri9.pfb" 1256929440 109598 c83a0202c1f22acb1242fa66ec5da7de ""
   "C:/Users/ALPHA/AppData/Local/Programs/MiKTeX/tex/context/base/mkii/supp-pdf.mkii" 1580390158 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "C:/Users/ALPHA/AppData/Local/Programs/MiKTeX/tex/generic/atbegshi/atbegshi.sty" 1575571100 24708 5584a51a7101caf7e6bbf1fc27d8f7b1 ""
@@ -77,13 +80,13 @@
   "C:/Users/ALPHA/AppData/Local/Programs/MiKTeX/tex/latex/setspace/setspace.sty" 1670403145 22490 8cac309b79a4c53a4ffce4b1b07aead0 ""
   "C:/Users/ALPHA/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/ALPHA/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1700127522 55487 80a65caedd3722f4c20a14a69e785d8f ""
-  "main.aux" 1760644818 242 c68fb025f69d8fb0b6ad1a62a2068294 "pdflatex"
-  "main.out" 1760644818 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "main.tex" 1760644815 3831 86bd9021a04b92b53a37abf0cd7767a9 ""
-  "preamble.tex" 1760643967 5834 ab3613f32ce4ac2f7b0931902ad0a2c2 ""
+  "CV_Yosr_BenNagra_English.aux" 1763130787 242 c68fb025f69d8fb0b6ad1a62a2068294 "pdflatex"
+  "CV_Yosr_BenNagra_English.out" 1763130787 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "CV_Yosr_BenNagra_English.tex" 1763130786 4877 ee807cc3c878bf84dc45f4432bb01f1c ""
+  "e:/LatexCv/CVs/English/CV_Yosr_BenNagra_English.tex" 1763130786 4877 ee807cc3c878bf84dc45f4432bb01f1c ""
   (generated)
-  "main.aux"
-  "main.log"
-  "main.out"
-  "main.pdf"
+  "CV_Yosr_BenNagra_English.aux"
+  "CV_Yosr_BenNagra_English.log"
+  "CV_Yosr_BenNagra_English.out"
+  "CV_Yosr_BenNagra_English.pdf"
   (rewritten before read)

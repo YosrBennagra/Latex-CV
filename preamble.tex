@@ -8,7 +8,7 @@
 \usepackage{lmodern}        % Latin Modern - clean, professional font
 \usepackage{microtype}      % Better kerning/justification without odd spacing
 \usepackage[english]{babel} % Language metadata and hyphenation patterns
-\usepackage[margin=0.7in]{geometry} % Compact but breathable
+\usepackage[margin=0.5in, top=0.45in, bottom=0.45in]{geometry} % Tight margins for 1 page
 \usepackage{setspace} % For fine line spacing control if needed
 \usepackage{enumitem} % Tighter itemize environments
 \usepackage{hyperref} % Clickable links (safe for ATS)
@@ -40,15 +40,15 @@
 \frenchspacing
 
 % -------- Spacing Tweaks --------
-% Slightly reduce space before/after sections while keeping readability.
-\setlength{\parskip}{0.5pt}
+% Tight spacing for single page
+\setlength{\parskip}{0pt}
 \setlength{\parindent}{0pt}
 
-% Consistent list formatting for bullets
+% Consistent list formatting for bullets - very compact
 \setlist[itemize]{
   leftmargin=8pt,
-  itemsep=1pt,
-  topsep=0.5pt,
+  itemsep=0pt,
+  topsep=0pt,
   parsep=0pt,
   partopsep=0pt
 }
@@ -77,38 +77,35 @@
 
 % Section heading macro (simple for ATS parsing)
 \newcommand{\cvsection}[1]{%
-  \vspace{4pt}\par\textbf{\Large #1}\par\vspace{1pt}\hrule height 0.5pt \vspace{3pt}
+  \vspace{3pt}\par\textbf{\large #1}\par\vspace{1.5pt}\hrule height 0.6pt \vspace{2pt}
 }
 
-% Header macro to render name (uppercase bold) on left and role on right same baseline
-% Uses simple hbox with stretchable space for ATS-safe linear text ordering.
+% Header macro - name and role on same line, contact below
 \newcommand{\makecvheader}{%
   \begingroup
-  \par\vspace*{1pt}
-  {\Large\textbf{\MakeUppercase{\CVName}}\hfill\Large\textbf{\MakeUppercase{\CVRole}}}\par
+  \par\vspace*{0pt}
+  {\Large\textbf{\MakeUppercase{\CVName}}\hfill\Large\textbf{\CVRole}}\par
   \vspace{1pt}
   \endgroup
 }
 
-% Contact information row (two columns simulated with hfill). Bold labels as per screenshot.
+% Contact information - compact single line
 \newcommand{\makecontactinfo}{%
   {\small
-    \textbf{Phone:}~\CVPhone \hfill \textbf{Address:}~\CVAddress\\[-2pt]
-    \textbf{Email:}~\href{mailto:\CVEmail}{\CVEmail} \hfill \textbf{GitHub:}~\href{\CVGithub}{\CVGithub}%
-  }\par\vspace{3pt}
+    \CVPhone~\textbar~\href{mailto:\CVEmail}{\CVEmail}~\textbar~\CVAddress~\textbar~\href{\CVGithub}{\CVGithub}%
+  }\par\vspace{2pt}
 }
 
-% Styled internship environment matching desired layout
+% Internship environment - tight spacing for 1 page
 % Usage: \begin{internship}{Title}{Company}{Location}{Dates}{Company description}
 %           \item Task bullet ...
 %       \end{internship}
 \newenvironment{internship}[5]{%
-  \par{\large\textbf{#1}}\\[-3pt]
-  #2\\[-3pt]
-  {\footnotesize\textit{#4}}\\[-7pt]
-  \ifx&#5&\else{\footnotesize\textcolor{gray}{#5}}\\[-7pt]\fi
-  \begin{itemize}[leftmargin=8pt,itemsep=1pt,topsep=0.5pt]
-}{\end{itemize}\vspace{3pt}}
+  \par\textbf{#1}\hfill{\footnotesize\textit{#4}}\\[-2pt]
+  #2\\[-5pt]
+  \ifx&#5&\else{\footnotesize\textcolor{gray}{#5}}\\[-6pt]\fi
+  \begin{itemize}[leftmargin=8pt,itemsep=0pt,topsep=0pt]
+}{\end{itemize}\vspace{2.5pt}}
 
 % Entry macro: Title | Company | Location | Dates
 % Usage: \cventry{TITLE}{COMPANY}{LOCATION}{DATES}{CONTENT}
