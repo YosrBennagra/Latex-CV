@@ -8,9 +8,11 @@ When adapting my CV to a new job position, follow these exact rules.
 
 ### Role / Job Title
 - Update it to match the new job post.
+- Keep the overall profile rooted in software/full-stack development; do not rebrand the CV as a different profession (e.g., pure QA) unless explicitly requested.
 
 ### Professional Summary
 - Rewrite it completely to fit the new position and required skills.
+- Emphasize relevant aspects without discarding the core full-stack narrative.
 
 ### Skills Section
 - **Add** new skills mentioned in the job post if they are not already in the CV.
