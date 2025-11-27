@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1764105728.14579 "e:/LatexCv/CVs/French/CV_Yosr_BenNagra_French.tex" "CV_Yosr_BenNagra_French.pdf" "CV_Yosr_BenNagra_French" 1764105728.67216 0
-  "../../preamble.tex" 1764098536 5707 a08708521e38af072bfd18ce64dbf4c3 ""
+["pdflatex"] 1764029048.26106 "e:/LatexCv/CVs/French/CV_Yosr_BenNagra_French_General.tex" "CV_Yosr_BenNagra_French_General.pdf" "CV_Yosr_BenNagra_French_General" 1764029048.76083 0
+  "../../preamble.tex" 1762793017 5581 3c01a88f0a79c8c6cdb0f979370237e2 ""
   "C:/Users/ALPHA/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1760048930 82507 a9eef8696c92627b87e9975edea03b2a ""
   "C:/Users/ALPHA/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1750981658 24225046 5a341531b3d998856571ed7910cc6044 ""
   "C:/Users/ALPHA/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc" 1256929440 2375 baa924870cfb487815765f9094cf3728 ""
@@ -80,13 +80,13 @@
   "C:/Users/ALPHA/AppData/Local/Programs/MiKTeX/tex/latex/setspace/setspace.sty" 1670403145 22490 8cac309b79a4c53a4ffce4b1b07aead0 ""
   "C:/Users/ALPHA/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/ALPHA/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1700127522 55487 80a65caedd3722f4c20a14a69e785d8f ""
-  "CV_Yosr_BenNagra_French.aux" 1764105728 242 c68fb025f69d8fb0b6ad1a62a2068294 "pdflatex"
-  "CV_Yosr_BenNagra_French.out" 1764105728 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "CV_Yosr_BenNagra_French.tex" 1764105692 5543 5197c2b7c543bd43627abf48f12a841b ""
-  "e:/LatexCv/CVs/French/CV_Yosr_BenNagra_French.tex" 1764105692 5543 5197c2b7c543bd43627abf48f12a841b ""
+  "CV_Yosr_BenNagra_French_General.aux" 1764029048 242 c68fb025f69d8fb0b6ad1a62a2068294 "pdflatex"
+  "CV_Yosr_BenNagra_French_General.out" 1764029048 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "CV_Yosr_BenNagra_French_General.tex" 1764029002 4913 df1a970f169f00e84bf5ff154af21213 ""
+  "e:/LatexCv/CVs/French/CV_Yosr_BenNagra_French_General.tex" 1764029002 4913 df1a970f169f00e84bf5ff154af21213 ""
   (generated)
-  "CV_Yosr_BenNagra_French.aux"
-  "CV_Yosr_BenNagra_French.log"
-  "CV_Yosr_BenNagra_French.out"
-  "CV_Yosr_BenNagra_French.pdf"
+  "CV_Yosr_BenNagra_French_General.aux"
+  "CV_Yosr_BenNagra_French_General.log"
+  "CV_Yosr_BenNagra_French_General.out"
+  "CV_Yosr_BenNagra_French_General.pdf"
   (rewritten before read)

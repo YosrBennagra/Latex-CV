@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.6.27)  25 NOV 2025 21:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.6.27)  25 NOV 2025 20:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**e:/LatexCv/CVs/English/CV_Yosr_BenNagra_English.tex
-(e:/LatexCv/CVs/English/CV_Yosr_BenNagra_English.tex
+**e:/LatexCv/CVs/English/CV_Yosr_BenNagra_English_General.tex
+(e:/LatexCv/CVs/English/CV_Yosr_BenNagra_English_General.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
 (C:\Users\ALPHA\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
@@ -274,41 +274,41 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1371.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1372.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1373.
 ))
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 17.
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 16.
  (C:\Users\ALPHA\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) (C:\Users\ALPHA\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count282
 \l__pdf_internal_box=\box53
-) (CV_Yosr_BenNagra_English.aux)
-\openout1 = `CV_Yosr_BenNagra_English.aux'.
+) (CV_Yosr_BenNagra_English_General.aux)
+\openout1 = `CV_Yosr_BenNagra_English_General.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Info: Redefining \microtypecontext on input line 17.
-Package microtype Info: Applying patch `item' on input line 17.
-Package microtype Info: Applying patch `toc' on input line 17.
-Package microtype Info: Applying patch `eqnum' on input line 17.
-Package microtype Info: Applying patch `footnote' on input line 17.
-Package microtype Info: Applying patch `verbatim' on input line 17.
-LaTeX Info: Redefining \microtypesetup on input line 17.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Info: Redefining \microtypecontext on input line 16.
+Package microtype Info: Applying patch `item' on input line 16.
+Package microtype Info: Applying patch `toc' on input line 16.
+Package microtype Info: Applying patch `eqnum' on input line 16.
+Package microtype Info: Applying patch `footnote' on input line 16.
+Package microtype Info: Applying patch `verbatim' on input line 16.
+LaTeX Info: Redefining \microtypesetup on input line 16.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -356,10 +356,10 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring ON on input line 17.
-(CV_Yosr_BenNagra_English.out) (CV_Yosr_BenNagra_English.out)
+Package hyperref Info: Link coloring ON on input line 16.
+(CV_Yosr_BenNagra_English_General.out) (CV_Yosr_BenNagra_English_General.out)
 \@outlinefile=\write3
-\openout3 = `CV_Yosr_BenNagra_English.out'.
+\openout3 = `CV_Yosr_BenNagra_English_General.out'.
 
  (C:\Users\ALPHA\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -375,70 +375,60 @@ Package hyperref Info: Link coloring ON on input line 17.
 \makeMPintoPDFobject=\count288
 \everyMPtoPDFconversion=\toks25
 )
-Underfull \hbox (badness 4144) in paragraph at lines 35--38
-[]\T1/lmr/bx/n/10 (+20) Frontend: \T1/lmr/m/n/10 (+20) Re-act, An-gu-lar, Type-Script, JavaScript
- []
-
-
-Underfull \hbox (badness 2922) in paragraph at lines 41--44
-\T1/lmr/bx/n/10 (+20) Col-lab-o-ra-tion: \T1/lmr/m/n/10 (+20) Ag-ile/Scrum, Doc-u-men-ta-tion, Code
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 50--50
+Underfull \hbox (badness 10000) in paragraph at lines 49--49
 
  []
 
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 51.
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 50.
 (C:\Users\ALPHA\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-Underfull \hbox (badness 10000) in paragraph at lines 57--57
+Underfull \hbox (badness 10000) in paragraph at lines 56--56
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 63--63
+Underfull \hbox (badness 10000) in paragraph at lines 62--62
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 72--74
+Underfull \hbox (badness 10000) in paragraph at lines 71--73
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 80--82
+Underfull \hbox (badness 10000) in paragraph at lines 78--80
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 87--89
+Underfull \hbox (badness 10000) in paragraph at lines 85--87
 
  []
 
 [1
 
-{C:/Users/ALPHA/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/ALPHA/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{C:/Users/ALPHA/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}] (CV_Yosr_BenNagra_English.aux)
+{C:/Users/ALPHA/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/ALPHA/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{C:/Users/ALPHA/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}] (CV_Yosr_BenNagra_English_General.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
-Package rerunfilecheck Info: File `CV_Yosr_BenNagra_English.out' has not changed.
+Package rerunfilecheck Info: File `CV_Yosr_BenNagra_English_General.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 12658 strings out of 474486
- 206262 string characters out of 5743755
+ 12668 strings out of 474486
+ 206540 string characters out of 5743755
  1945542 words of memory out of 5000000
- 34760 multiletter control sequences out of 15000+600000
- 594263 words of font info for 73 fonts, out of 8000000 for 9000
+ 34758 multiletter control sequences out of 15000+600000
+ 594794 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 80i,5n,82p,1044b,453s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 80i,5n,82p,1052b,453s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/ALPHA/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/ALPHA/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/ALPHA/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/ALPHA/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/ALPHA/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri9.pfb>
-Output written on CV_Yosr_BenNagra_English.pdf (1 page, 139738 bytes).
+Output written on CV_Yosr_BenNagra_English_General.pdf (1 page, 140082 bytes).
 PDF statistics:
- 44 PDF objects out of 1000 (max. 8388607)
+ 43 PDF objects out of 1000 (max. 8388607)
  2 named destinations out of 1000 (max. 500000)
  22529 words of extra memory for PDF output out of 24883 (max. 10000000)
 
