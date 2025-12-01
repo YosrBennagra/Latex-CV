@@ -20,7 +20,7 @@ When adapting my CV to a new job position, follow these exact rules.
 
 ## 🚫 DO NOT CHANGE
 
-- **Work experience bullet points** — NEVER modify the experience descriptions, they are locked and must remain exactly as in the General CV
+- **Work experience bullet points** - NEVER modify the experience descriptions, they are locked and must remain exactly as in the General CV
 - Work experience (titles, companies, dates)
 - Education, certifications, or projects
 - Layout, formatting, or section order
@@ -35,8 +35,8 @@ Each time you make changes, make the CV slightly better organized, cleaner, and 
 When rewriting the summary:
 
 - **Maximum length: 340 characters** (approximately 3-4 sentences)
-- **CRITICAL: Only claim skills/experience that exist in the Experience and Projects sections** — Never fabricate or exaggerate capabilities
-- **Source of truth:** Experience bullet points and Projects are locked and factual — summary must derive from these only
+- **CRITICAL: Only claim skills/experience that exist in the Experience and Projects sections** - Never fabricate or exaggerate capabilities
+- **Source of truth:** Experience bullet points and Projects are locked and factual - summary must derive from these only
 - Match the job title and keywords from the description
 - Highlight relevant technical and soft skills that are proven in the CV
 - Keep it short, confident, and natural

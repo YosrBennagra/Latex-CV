@@ -5,7 +5,7 @@
 % -------- Document Base Packages --------
 \usepackage[utf8]{inputenc} % Character encoding
 \usepackage[T1]{fontenc}    % Better hyphenation & copyable text
-\usepackage{lmodern}        % Latin Modern - clean, professional font
+\usepackage{times}          % Times New Roman font
 \usepackage{microtype}      % Better kerning/justification without odd spacing
 \usepackage[english]{babel} % Language metadata and hyphenation patterns
 \usepackage[margin=0.5in, top=0.45in, bottom=0.45in]{geometry} % Tight margins for 1 page
@@ -79,23 +79,25 @@
 
 % Section heading macro (simple for ATS parsing)
 \newcommand{\cvsection}[1]{%
-  \vspace{3pt}\par\textbf{\large #1}\par\vspace{1.5pt}\hrule height 0.6pt \vspace{2pt}
+  \vspace{6pt}\par\textbf{\large #1}\par\vspace{2pt}\hrule height 0.6pt \vspace{4pt}
 }
 
-% Header macro - name and role on same line, contact below
+% Header macro - name centered, contact below
 \newcommand{\makecvheader}{%
   \begingroup
   \par\vspace*{0pt}
-  {\Large\textbf{\MakeUppercase{\CVName}}\hfill\Large\textbf{\CVRole}}\par
-  \vspace{1pt}
+  {\centering\Large\textbf{\MakeUppercase{\CVName}}\par}
+  \vspace{3pt}
   \endgroup
 }
 
-% Contact information - compact single line
+% Contact information - compact single line, centered
 \newcommand{\makecontactinfo}{%
-  {\small
-    \CVPhone~\textbar~\href{mailto:\CVEmail}{\CVEmail}~\textbar~\CVAddress~\textbar~\href{\CVGithub}{GitHub}~\textbar~\href{\CVWebsite}{Portfolio}%
-  }\par\vspace{2pt}
+  {\centering\small
+    \CVPhone~\textbar~\href{mailto:\CVEmail}{\CVEmail}~\textbar~\CVAddress%
+    \ifx\CVGithub\empty\else~\textbar~\href{\CVGithub}{GitHub}\fi%
+    \ifx\CVWebsite\empty\else~\textbar~\href{\CVWebsite}{Portfolio}\fi%
+    \par}\vspace{4pt}
 }
 
 % Internship environment - tight spacing for 1 page
@@ -104,10 +106,10 @@
 %       \end{internship}
 \newenvironment{internship}[5]{%
   \par\textbf{#1}\hfill{\footnotesize\textit{#4}}\\[-2pt]
-  #2\\[-5pt]
-  \ifx&#5&\else{\footnotesize\textcolor{gray}{#5}}\\[-6pt]\fi
-  \begin{itemize}[leftmargin=8pt,itemsep=0pt,topsep=0pt]
-}{\end{itemize}\vspace{2.5pt}}
+  #2\\[-4pt]
+  \ifx&#5&\else{\footnotesize\textcolor{gray}{#5}}\\[-5pt]\fi
+  \begin{itemize}[leftmargin=8pt,itemsep=1pt,topsep=2pt]
+}{\end{itemize}\vspace{4pt}}
 
 % Entry macro: Title | Company | Location | Dates
 % Usage: \cventry{TITLE}{COMPANY}{LOCATION}{DATES}{CONTENT}
@@ -154,7 +156,7 @@
 \AtBeginDocument{%
   \hypersetup{
     pdfauthor={\CVName},
-    pdftitle={\CVName\space — \CVRole},
+    pdftitle={\CVName\space - \CVRole},
     pdfsubject={Resume / CV},
     pdfkeywords={Software, Full-Stack, React, NestJS, Spring Boot, JavaScript, TypeScript, Python, MongoDB, SQL, DevOps, CI/CD, Docker, Jenkins, RAG}
   }

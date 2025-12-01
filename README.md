@@ -92,10 +92,10 @@ If truly necessary (e.g., >10 years experience):
 Led, Built, Automated, Optimized, Architected, Consolidated, Reduced, Increased, Standardized, Designed, Implemented, Developed, Delivered, Streamlined, Improved
 
 ## Custom Macros (Advanced)
-You may add role-specific convenience macros (e.g., `\newcommand{\tool}[1]{\texttt{#1}}`) but keep usage sparse—ATS parsers should still output plain text logically.
+You may add role-specific convenience macros (e.g., `\newcommand{\tool}[1]{\texttt{#1}}`) but keep usage sparse-ATS parsers should still output plain text logically.
 
 ## Export / Submission
-Always submit as a PDF generated from LaTeX (never a scanned image). Optionally verify extraction by copying all PDF text into a plain `.txt` file—ensure ordering is logical.
+Always submit as a PDF generated from LaTeX (never a scanned image). Optionally verify extraction by copying all PDF text into a plain `.txt` file-ensure ordering is logical.
 
 ## Troubleshooting
 | Issue | Fix |
