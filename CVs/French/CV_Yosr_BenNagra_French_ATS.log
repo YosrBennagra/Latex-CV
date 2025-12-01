@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.6.27)  1 DEC 2025 15:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.6.27)  1 DEC 2025 16:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -376,8 +376,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 64--66
  []
 
 
-Underfull \hbox (badness 2922) in paragraph at lines 81--84
-\T1/ptm/b/n/10 (+20) Qual-ité & Tests : \T1/ptm/m/n/10 (+20) TDD, BDD, Tests Uni-taires, Tests
+Underfull \hbox (badness 2961) in paragraph at lines 81--84
+\T1/ptm/b/n/10 (+20) Qual-ité & Tests : \T1/ptm/m/n/10 (+20) Tests Uni-taires, Tests d'Intégration,
  []
 
 [1
@@ -391,15 +391,15 @@ Package rerunfilecheck Info: File `CV_Yosr_BenNagra_French_ATS.out' has not chan
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 12655 strings out of 474486
- 204989 string characters out of 5743755
- 1942542 words of memory out of 5000000
+ 12656 strings out of 474486
+ 204992 string characters out of 5743755
+ 1943542 words of memory out of 5000000
  34711 multiletter control sequences out of 15000+600000
- 588615 words of font info for 107 fonts, out of 8000000 for 9000
+ 588678 words of font info for 108 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  80i,5n,82p,1046b,453s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/ALPHA/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/ALPHA/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/ALPHA/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on CV_Yosr_BenNagra_French_ATS.pdf (1 page, 60431 bytes).
+Output written on CV_Yosr_BenNagra_French_ATS.pdf (1 page, 59938 bytes).
 PDF statistics:
  30 PDF objects out of 1000 (max. 8388607)
  2 named destinations out of 1000 (max. 500000)
