@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.6.27)  2 DEC 2025 00:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.6.27)  2 DEC 2025 08:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**e:/LatexCv/CoverLetters/CoverLetter_Yosr_BenNagra_FullStack_MultiAgent.tex
-(e:/LatexCv/CoverLetters/CoverLetter_Yosr_BenNagra_FullStack_MultiAgent.tex
+**e:/LatexCv/CoverLetters/CoverLetter_Yosr_BenNagra_Decisions.tex
+(e:/LatexCv/CoverLetters/CoverLetter_Yosr_BenNagra_Decisions.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
 (C:\Users\ALPHA\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
@@ -204,8 +204,8 @@ File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count280
 \l__pdf_internal_box=\box52
-) (CoverLetter_Yosr_BenNagra_FullStack_MultiAgent.aux)
-\openout1 = `CoverLetter_Yosr_BenNagra_FullStack_MultiAgent.aux'.
+) (CoverLetter_Yosr_BenNagra_Decisions.aux)
+\openout1 = `CoverLetter_Yosr_BenNagra_Decisions.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
 LaTeX Font Info:    ... okay on input line 19.
@@ -283,35 +283,35 @@ File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
 \everyMPtoPDFconversion=\toks23
 )) (C:\Users\ALPHA\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx))
 Package hyperref Info: Link coloring ON on input line 19.
- (CoverLetter_Yosr_BenNagra_FullStack_MultiAgent.out) (CoverLetter_Yosr_BenNagra_FullStack_MultiAgent.out)
+ (CoverLetter_Yosr_BenNagra_Decisions.out) (CoverLetter_Yosr_BenNagra_Decisions.out)
 \@outlinefile=\write3
-\openout3 = `CoverLetter_Yosr_BenNagra_FullStack_MultiAgent.out'.
+\openout3 = `CoverLetter_Yosr_BenNagra_Decisions.out'.
 
 LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 53.
  (C:\Users\ALPHA\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 ) [1
 
-{C:/Users/ALPHA/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/ALPHA/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}] (CoverLetter_Yosr_BenNagra_FullStack_MultiAgent.aux)
+{C:/Users/ALPHA/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/ALPHA/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}] [2] (CoverLetter_Yosr_BenNagra_Decisions.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
-Package rerunfilecheck Info: File `CoverLetter_Yosr_BenNagra_FullStack_MultiAgent.out' has not changed.
+Package rerunfilecheck Info: File `CoverLetter_Yosr_BenNagra_Decisions.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 10260 strings out of 474486
- 165170 string characters out of 5743755
- 1935542 words of memory out of 5000000
- 32437 multiletter control sequences out of 15000+600000
- 564977 words of font info for 43 fonts, out of 8000000 for 9000
+ 10265 strings out of 474486
+ 165017 string characters out of 5743755
+ 1936542 words of memory out of 5000000
+ 32439 multiletter control sequences out of 15000+600000
+ 567825 words of font info for 45 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,5n,79p,584b,446s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/ALPHA/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/ALPHA/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb>
-Output written on CoverLetter_Yosr_BenNagra_FullStack_MultiAgent.pdf (1 page, 36613 bytes).
+ 75i,5n,79p,573b,559s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/ALPHA/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/ALPHA/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/ALPHA/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
+Output written on CoverLetter_Yosr_BenNagra_Decisions.pdf (2 pages, 56828 bytes).
 PDF statistics:
- 25 PDF objects out of 1000 (max. 8388607)
- 2 named destinations out of 1000 (max. 500000)
+ 36 PDF objects out of 1000 (max. 8388607)
+ 3 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

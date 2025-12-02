@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.6.27)  2 DEC 2025 08:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.6.27)  2 DEC 2025 08:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**e:/LatexCv/CVs/English/CV_Yosr_BenNagra_English_ATS.tex
-(e:/LatexCv/CVs/English/CV_Yosr_BenNagra_English_ATS.tex
+**e:/LatexCv/CVs/English/CV_Yosr_BenNagra_English_Tradeweb.tex
+(e:/LatexCv/CVs/English/CV_Yosr_BenNagra_English_Tradeweb.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
 (C:\Users\ALPHA\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
@@ -249,8 +249,8 @@ File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count282
 \l__pdf_internal_box=\box53
-) (CV_Yosr_BenNagra_English_ATS.aux)
-\openout1 = `CV_Yosr_BenNagra_English_ATS.aux'.
+) (CV_Yosr_BenNagra_English_Tradeweb.aux)
+\openout1 = `CV_Yosr_BenNagra_English_Tradeweb.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
 LaTeX Font Info:    ... okay on input line 15.
@@ -325,9 +325,9 @@ File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package hyperref Info: Link coloring ON on input line 15.
-(CV_Yosr_BenNagra_English_ATS.out) (CV_Yosr_BenNagra_English_ATS.out)
+(CV_Yosr_BenNagra_English_Tradeweb.out) (CV_Yosr_BenNagra_English_Tradeweb.out)
 \@outlinefile=\write3
-\openout3 = `CV_Yosr_BenNagra_English_ATS.out'.
+\openout3 = `CV_Yosr_BenNagra_English_Tradeweb.out'.
 
  (C:\Users\ALPHA\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -351,55 +351,50 @@ LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 24
 (C:\Users\ALPHA\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 30--30
+Underfull \hbox (badness 10000) in paragraph at lines 31--31
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 36--36
+Underfull \hbox (badness 10000) in paragraph at lines 39--39
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 50--52
+Underfull \hbox (badness 10000) in paragraph at lines 55--57
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 58--60
+Underfull \hbox (badness 10000) in paragraph at lines 62--64
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 65--67
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 82--85
-[]\T1/ptm/b/n/10 (+20) Mobile & Plat-forms: \T1/ptm/m/n/10 (+20) iOS/Android De-sign Pat-terns,
+Underfull \hbox (badness 10000) in paragraph at lines 73--76
+[]\T1/ptm/b/n/10 (+20) Programming: \T1/ptm/m/n/10 (+20) Java, Python, Perl, JavaScript, C++,
  []
 
 [1
 
-{C:/Users/ALPHA/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/ALPHA/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}] (CV_Yosr_BenNagra_English_ATS.aux)
+{C:/Users/ALPHA/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/ALPHA/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}] (CV_Yosr_BenNagra_English_Tradeweb.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
-Package rerunfilecheck Info: File `CV_Yosr_BenNagra_English_ATS.out' has not changed.
+Package rerunfilecheck Info: File `CV_Yosr_BenNagra_English_Tradeweb.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 12655 strings out of 474486
- 205012 string characters out of 5743755
+ 12641 strings out of 474486
+ 204992 string characters out of 5743755
  1943542 words of memory out of 5000000
  34711 multiletter control sequences out of 15000+600000
- 588612 words of font info for 107 fonts, out of 8000000 for 9000
+ 587969 words of font info for 97 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 80i,5n,82p,1048b,453s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 80i,5n,82p,1053b,453s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/ALPHA/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/ALPHA/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/ALPHA/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on CV_Yosr_BenNagra_English_ATS.pdf (1 page, 57665 bytes).
+Output written on CV_Yosr_BenNagra_English_Tradeweb.pdf (1 page, 57634 bytes).
 PDF statistics:
  30 PDF objects out of 1000 (max. 8388607)
  2 named destinations out of 1000 (max. 500000)
