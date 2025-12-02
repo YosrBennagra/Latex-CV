@@ -1,0 +1,21 @@
+{
+  "name": "cv-data-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP server providing canonical CV data to prevent AI hallucination",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.5.0",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

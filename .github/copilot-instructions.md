@@ -1,5 +1,30 @@
 # LaTeX CV Project - AI Agent Instructions
 
+## 🚨 CRITICAL: MCP SERVER VERIFICATION REQUIRED
+
+**BEFORE adapting any CV for a job:**
+
+1. **Query the cv-data MCP server** using these tools:
+   - `get_verified_skills` - See what skills are available
+   - `validate_skill` - Check if each job requirement exists
+   - `get_canonical_experience` - Get exact experience bullets
+   - `get_projects` - Get verified project descriptions
+
+2. **Validation Process:**
+   ```
+   For each skill in job description:
+   → Use validate_skill(skill_name)
+   → If verified: ✅ Can use in CV
+   → If NOT verified: ❌ FORBIDDEN - Do not add
+   → If uncertain: Ask user before proceeding
+   ```
+
+3. **Never Skip Verification:**
+   - DO NOT assume skills exist
+   - DO NOT add skills from forbidden_skills list
+   - DO NOT fabricate experience or projects
+   - ONLY use data returned by MCP server tools
+
 ## 🎯 PURPOSE
 
 When adapting my CV to a new job position, follow these exact rules.

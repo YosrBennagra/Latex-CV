@@ -2,6 +2,24 @@
 
 This template is designed for maximum Applicant Tracking System (ATS) compatibility and HR readability while remaining clean, dense, and professional.
 
+## 🚀 NEW: MCP Server Integration
+
+**Prevent AI hallucination** when adapting your CV! This project now includes an MCP (Model Context Protocol) server that contains your verified skills and experience.
+
+✅ **What it does:**
+- Validates skills before adding to CV
+- Prevents fabrication of experience
+- Ensures only verified technologies are used
+- Works with GitHub Copilot, Claude, and other AI tools
+
+📖 **Quick Start:**
+```powershell
+cd E:\LatexCv\mcp-server
+npm install
+```
+
+See [mcp-server/USAGE_GUIDE.md](mcp-server/USAGE_GUIDE.md) for complete setup and usage instructions.
+
 ## Features
 - Plain, linear structure (no multi-column layout, text boxes, or graphics)
 - Standard fonts (Latin Modern by default; optional sans-serif toggle)

@@ -1,0 +1,17 @@
+{
+  "github.copilot.chat.codeGeneration.instructions": [
+    {
+      "file": "mcp-server-integration.md",
+      "text": "CRITICAL: Before adapting CV for any job, you MUST verify all skills and experience using the cv-data MCP server. NEVER add skills, technologies, or experience not present in the verified inventory."
+    }
+  ],
+  "github.copilot.chat.mcp": {
+    "enabled": true,
+    "servers": {
+      "cv-data": {
+        "command": "node",
+        "args": ["E:\\LatexCv\\mcp-server\\index.js"]
+      }
+    }
+  }
+}
