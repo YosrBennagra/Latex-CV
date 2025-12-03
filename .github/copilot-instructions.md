@@ -84,6 +84,8 @@ When updating skills:
 - The role/title, summary, and skills are updated to fit the new job
 - The rest of the CV remains 100% unchanged
 - The CV looks cleaner, sharper, and more tailored to the position each time
+- **The CV compiles successfully to PDF**
+- **All auxiliary files (.aux, .log, .out, etc.) are cleaned up**
 
 ---
 
@@ -116,6 +118,27 @@ cd E:\LatexCv\CVs\English  # or French
 pdflatex CV_Yosr_BenNagra_English.tex
 ```
 Second pass ensures references: `pdflatex CV_Yosr_BenNagra_English.tex`
+
+### 🧹 Cleanup After Compilation (MANDATORY)
+**ALWAYS clean up auxiliary files after compiling:**
+```powershell
+Remove-Item *.aux, *.log, *.out, *.fdb_latexmk, *.fls, *.synctex.gz -Force
+```
+
+**CRITICAL**: After every CV or cover letter adaptation:
+1. Compile the document twice (for references)
+2. Verify the PDF was generated successfully
+3. Clean up auxiliary files (.aux, .log, .out, .fdb_latexmk, .fls, .synctex.gz)
+4. Only keep the .tex source and .pdf output
+
+**Complete workflow for cover letters:**
+```powershell
+cd E:\LatexCv\CoverLetters
+Remove-Item *.aux, *.log, *.out, *.fdb_latexmk, *.fls, *.synctex.gz -Force
+pdflatex CoverLetter_Yosr_BenNagra_{Company}.tex
+pdflatex CoverLetter_Yosr_BenNagra_{Company}.tex
+Remove-Item *.aux, *.log, *.out, *.fdb_latexmk, *.fls, *.synctex.gz -Force
+```
 
 ### Error Checking
 After edits, use VS Code's LaTeX diagnostics or compile to verify no errors
@@ -152,13 +175,33 @@ After edits, use VS Code's LaTeX diagnostics or compile to verify no errors
 ## File Organization Conventions
 
 ### Naming Pattern
-- `CV_Yosr_BenNagra_{Language}.tex` for job-specific versions
-- `CV_Yosr_BenNagra_{Language}_General.tex` for general versions
+- `CV_Yosr_BenNagra_{Language}_{Company}.tex` for job-specific versions (e.g., CV_Yosr_BenNagra_English_Signaturit.tex)
+- `CV_Yosr_BenNagra_{Language}_ATS.tex` for general ATS versions
 - Cover letters: `CoverLetter_Yosr_BenNagra_{Company}.tex`
 
-### Auxiliary File Cleanup
-Never commit: `.aux`, `.log`, `.fdb_latexmk`, `.fls`, `.out`, `.synctex.gz`
-Clean with: `Remove-Item *.aux, *.log, *.fdb_latexmk, *.fls, *.out, *.synctex.gz -Force`
+**IMPORTANT**: When adapting CV for a specific company:
+1. Copy the appropriate ATS CV (English or French)
+2. Rename to include company name: `CV_Yosr_BenNagra_{Language}_{Company}.tex`
+3. Make adaptations for that specific job
+4. Keep the ATS version as a general baseline
+
+### Auxiliary File Cleanup (MANDATORY)
+**ALWAYS clean up after compilation:**
+```powershell
+Remove-Item *.aux, *.log, *.fdb_latexmk, *.fls, *.out, *.synctex.gz -Force
+```
+
+**Files to NEVER commit:**
+- `.aux` - Auxiliary compilation data
+- `.log` - LaTeX compilation logs
+- `.fdb_latexmk` - Latexmk database
+- `.fls` - File list
+- `.out` - Hyperref output
+- `.synctex.gz` - SyncTeX data
+
+**Only commit:**
+- `.tex` source files
+- `.pdf` compiled output (optional)
 
 ## Common Adaptation Patterns
 
@@ -200,15 +243,6 @@ Emphasize: React.js, TypeScript, component-based architecture
 
 ## Language-Specific Notes
 
-### French CVs
-- Use masculine forms: "Développeur" not "Développeuse"
-- Section names: Résumé, Compétences, Formation, Expérience Professionnelle, Langues
-- Date format: "Fév 2025 -- Aoû 2025"
-
-### English CVs
-- Section names: Summary, Skills, Education, Experience, Languages
-- Date format: "Feb 2025 -- Aug 2025"
-
 ## What NOT to Do
 
 ❌ Don't change experience bullet points (titles, companies, dates, achievements)
@@ -216,3 +250,15 @@ Emphasize: React.js, TypeScript, component-based architecture
 ❌ Don't remove existing skills when adapting
 ❌ Don't change layout or formatting in preamble.tex without testing
 ❌ Don't use absolute paths in `\input{}` statements
+❌ Don't skip compilation after making changes
+❌ Don't leave auxiliary files (.aux, .log, .out, etc.) uncommitted
+❌ Don't forget to clean cover letter auxiliary files in CoverLetters/ folder
+## What NOT to Do
+
+❌ Don't change experience bullet points (titles, companies, dates, achievements)
+❌ Don't add technologies to experience that weren't actually used
+❌ Don't remove existing skills when adapting
+❌ Don't change layout or formatting in preamble.tex without testing
+❌ Don't use absolute paths in `\input{}` statements
+❌ Don't skip compilation after making changes
+❌ Don't leave auxiliary files (.aux, .log, .out, etc.) uncommitted

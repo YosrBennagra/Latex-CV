@@ -66,7 +66,7 @@ server.setRequestHandler(ListToolsRequestSchema, async () => {
       },
       {
         name: 'get_education',
-        description: 'Get verified education credentials.',
+        description: 'Get verified education credentials and certifications.',
         inputSchema: {
           type: 'object',
           properties: {},
@@ -298,7 +298,14 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
       content: [
         {
           type: 'text',
-          text: JSON.stringify(cvData.education, null, 2),
+          text: JSON.stringify(
+            {
+              education: cvData.education,
+              certifications: cvData.certifications || [],
+            },
+            null,
+            2
+          ),
         },
       ],
     };
