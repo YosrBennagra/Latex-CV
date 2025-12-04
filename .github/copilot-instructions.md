@@ -129,15 +129,56 @@ Remove-Item *.aux, *.log, *.out, *.fdb_latexmk, *.fls, *.synctex.gz -Force
 1. Compile the document twice (for references)
 2. Verify the PDF was generated successfully
 3. Clean up auxiliary files (.aux, .log, .out, .fdb_latexmk, .fls, .synctex.gz)
-4. Only keep the .tex source and .pdf output
+4. **Copy both CV and cover letter PDFs to Applications/{Company} folder**
+5. Only keep the .tex source and .pdf output in original locations
 
-**Complete workflow for cover letters:**
+### 📁 Application Folder Organization (MANDATORY)
+
+**For EVERY job application, create organized folder with both documents:**
+
 ```powershell
+# 1. Create application folder
+$companyFolder = "Applications/{CompanyName}_{PositionTitle}"
+New-Item -ItemType Directory -Force -Path "E:\LatexCv\$companyFolder"
+
+# 2. Compile CV
+cd E:\LatexCv\CVs\{Language}
+pdflatex CV_Yosr_BenNagra_{Language}_{Company}.tex
+pdflatex CV_Yosr_BenNagra_{Language}_{Company}.tex
+
+# 3. Compile Cover Letter
+cd E:\LatexCv\CoverLetters
+pdflatex CoverLetter_Yosr_BenNagra_{Company}.tex
+pdflatex CoverLetter_Yosr_BenNagra_{Company}.tex
+
+# 4. Copy PDFs to application folder
+Copy-Item "E:\LatexCv\CVs\{Language}\CV_Yosr_BenNagra_{Language}_{Company}.pdf" "E:\LatexCv\$companyFolder\"
+Copy-Item "E:\LatexCv\CoverLetters\CoverLetter_Yosr_BenNagra_{Company}.pdf" "E:\LatexCv\$companyFolder\"
+
+# 5. Clean up auxiliary files
+cd E:\LatexCv\CVs\{Language}
+Remove-Item *.aux, *.log, *.out, *.fdb_latexmk, *.fls, *.synctex.gz -Force
 cd E:\LatexCv\CoverLetters
 Remove-Item *.aux, *.log, *.out, *.fdb_latexmk, *.fls, *.synctex.gz -Force
-pdflatex CoverLetter_Yosr_BenNagra_{Company}.tex
-pdflatex CoverLetter_Yosr_BenNagra_{Company}.tex
-Remove-Item *.aux, *.log, *.out, *.fdb_latexmk, *.fls, *.synctex.gz -Force
+```
+
+**Language Detection:**
+- If job description is in **French** → Use `CVs/French/` and create French CV
+- If job description is in **English** → Use `CVs/English/` and create English CV
+- Folder naming: Use English for folder names regardless of language (e.g., `Applications/Signaturit_Fullstack_Engineer`)
+
+**Example folder structure:**
+```
+Applications/
+├── Signaturit_Fullstack_Engineer/
+│   ├── CV_Yosr_BenNagra_English_Signaturit.pdf
+│   └── CoverLetter_Yosr_BenNagra_Signaturit.pdf
+├── RINA_Python_Backend/
+│   ├── CV_Yosr_BenNagra_English_RINA.pdf
+│   └── CoverLetter_Yosr_BenNagra_RINA.pdf
+└── Thinkingbox_Junior_Frontend_Developer/
+    ├── CV_Yosr_BenNagra_English_Thinkingbox.pdf
+    └── CoverLetter_Yosr_BenNagra_Thinkingbox.pdf
 ```
 
 ### Error Checking
@@ -252,7 +293,7 @@ Emphasize: React.js, TypeScript, component-based architecture
 ❌ Don't use absolute paths in `\input{}` statements
 ❌ Don't skip compilation after making changes
 ❌ Don't leave auxiliary files (.aux, .log, .out, etc.) uncommitted
-❌ Don't forget to clean cover letter auxiliary files in CoverLetters/ folder
+
 ## What NOT to Do
 
 ❌ Don't change experience bullet points (titles, companies, dates, achievements)
@@ -262,3 +303,4 @@ Emphasize: React.js, TypeScript, component-based architecture
 ❌ Don't use absolute paths in `\input{}` statements
 ❌ Don't skip compilation after making changes
 ❌ Don't leave auxiliary files (.aux, .log, .out, etc.) uncommitted
+❌ **Don't use em dash (—) character** - causes encoding issues; use regular hyphens (-), or restructure sentences

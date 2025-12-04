@@ -173,6 +173,7 @@ export const cvData = {
       'Responsive Design',
       'UI/UX Design',
       'Redux',
+      'SEO',
     ],
     backend: [
       'Node.js',
@@ -206,6 +207,7 @@ export const cvData = {
       'Unity',
       'Qt',
       'n8n',
+      'Vite',
       'Code Reviews',
       'Clean Code',
       'Linux',
