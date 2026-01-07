@@ -1,0 +1,24 @@
+# LaTeX build artifacts
+build/
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.lof
+*.log
+*.lot
+*.out
+*.run.xml
+*.synctex.gz
+*.toc
+*.xdv
+
+# Editor artifacts
+*.swp
+*.swo
+*.tmp
+
+# Node
+mcp-server/node_modules/

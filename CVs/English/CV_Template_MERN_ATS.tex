@@ -1,0 +1,97 @@
+\documentclass[11pt,a4paper]{article}
+\input{../../preamble}
+
+\newif\ifshowkeywords
+\showkeywordstrue
+
+\cvname{Jordan Lee}
+\cvrole{Full Stack MERN Developer}
+\cvcontact{Austin, TX}
+\cvphone{+1 555 010 2345}
+\cvemail{jordan.lee@example.com}
+\cvaddress{Austin, TX}
+\cvgithub{https://github.com/jordanlee}
+\cvwebsite{https://jordanlee.dev}
+\cvsummary{Full stack MERN developer building reliable React applications and scalable Node.js APIs. Experienced with MongoDB data modeling, performance tuning, and secure auth flows. Collaborative, product-minded, and focused on clean code, testing, and measurable outcomes.}
+
+\begin{document}
+% ================= HEADER =================
+\makecvheader
+\makecontactinfo
+
+% ================= PROFESSIONAL EXPERIENCE =================
+\cvsection{Experience}
+
+\begin{internship}{Full Stack Developer}{Northwind Health}{Austin, TX}{May 2022 -- Nov 2024}{}
+  \item Built patient-facing portal with React and Node.js, reducing support tickets by 28 percent
+  \item Implemented role-based access control and JWT auth across services
+  \item Optimized MongoDB queries and indexes, cutting average API latency from 420ms to 160ms
+  \item[] \textit{\footnotesize Keywords: React, Node.js, Express, MongoDB, TypeScript, REST APIs, JWT}
+\end{internship}
+
+\begin{internship}{Full Stack Developer}{Atlas Retail}{Remote}{Jan 2021 -- Apr 2022}{}
+  \item Delivered real-time inventory dashboard with WebSockets and React, improving stock visibility for 6 teams
+  \item Designed reusable UI components and form validation patterns used across 4 product areas
+  \item Integrated Stripe payments and webhook processing with idempotent job handling
+  \item[] \textit{\footnotesize Keywords: React, Redux, Node.js, Express, WebSockets, Stripe}
+\end{internship}
+
+\begin{internship}{Software Engineer}{Pinecone Labs}{Austin, TX}{Jun 2019 -- Dec 2020}{}
+  \item Shipped internal admin tools for user management and reporting used by 100+ staff
+  \item Migrated monolithic API endpoints to modular Express services with shared middleware
+  \item Added CI checks and unit tests, raising coverage from 35 to 70 percent
+  \item[] \textit{\footnotesize Keywords: JavaScript, Express, MongoDB, Jest, GitHub Actions}
+\end{internship}
+
+% ================= EDUCATION =================
+\cvsection{Education}
+\textbf{B.S. in Computer Science} \hfill \textit{Sep 2015 - May 2019}\\[-2pt]
+University of Texas at Austin
+
+% ================= PROJECTS =================
+\cvsection{Projects}
+
+\textbf{TeamPulse - Project Tracking Platform} \hfill \textit{2024}\\[-2pt]
+Personal Project\\[-5pt]
+\begin{itemize}[leftmargin=8pt,itemsep=1pt,topsep=2pt]
+  \item Built a Jira-style board with drag-and-drop, activity history, and audit logs
+  \item Implemented real-time updates via Socket.IO and optimistic UI patterns
+  \item[] \textit{\footnotesize Keywords: React, Node.js, Express, MongoDB, Socket.IO}
+\end{itemize}\vspace{3pt}
+
+\textbf{ShipRight - E-commerce Storefront} \hfill \textit{2023}\\[-2pt]
+Freelance Project\\[-5pt]
+\begin{itemize}[leftmargin=8pt,itemsep=1pt,topsep=2pt]
+  \item Delivered responsive storefront with product search, filters, and checkout flow
+  \item Integrated inventory sync and order webhooks for fulfillment updates
+  \item[] \textit{\footnotesize Keywords: React, Redux, Node.js, Stripe, REST APIs}
+\end{itemize}\vspace{3pt}
+
+% ================= CORE SKILLS =================
+\cvsection{Skills}
+{\small
+\begin{minipage}[t]{0.48\textwidth}
+  \textbf{Frontend:} React, Redux, TypeScript, JavaScript, HTML5, CSS3\\[1.5pt]
+  \textbf{Backend:} Node.js, Express, REST APIs, WebSockets\\[1.5pt]
+  \textbf{Databases:} MongoDB, Mongoose, PostgreSQL\\[1.5pt]
+  \textbf{Cloud \& Hosting:} AWS (EC2, S3), Vercel, Render
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.48\textwidth}
+  \textbf{Testing \& Quality:} Jest, React Testing Library, Postman\\[1.5pt]
+  \textbf{DevOps:} Docker, GitHub Actions, CI/CD\\[1.5pt]
+  \textbf{Auth \& Security:} JWT, OAuth2, OWASP basics\\[1.5pt]
+  \textbf{Practices:} Agile/Scrum, Code Reviews, Documentation
+\end{minipage}
+}
+
+% ================= CERTIFICATIONS =================
+\cvsection{Certifications}
+AWS Certified Cloud Practitioner \hfill \textit{2023}
+
+% ================= LANGUAGES =================
+\cvsection{Languages}
+English (Native) \textbar{} Spanish (Professional)
+
+% ================== END DOCUMENT ==================
+\end{document}
