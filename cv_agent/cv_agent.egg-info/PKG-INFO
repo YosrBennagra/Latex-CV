@@ -1,0 +1,150 @@
+Metadata-Version: 2.4
+Name: cv-agent
+Version: 2.0.0
+Summary: AI-powered CV optimization agent with zero-hallucination policy
+Author: Yosr Ben Nagra
+License: MIT
+Keywords: cv,resume,ats,optimization,latex,ai,mcp
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Text Processing :: Markup :: LaTeX
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: pydantic>=2.0.0
+Provides-Extra: dev
+Requires-Dist: pytest>=7.0.0; extra == "dev"
+Requires-Dist: pytest-cov>=4.0.0; extra == "dev"
+Requires-Dist: black>=23.0.0; extra == "dev"
+Requires-Dist: ruff>=0.1.0; extra == "dev"
+Requires-Dist: mypy>=1.0.0; extra == "dev"
+
+# CV Optimization Agent v2.0
+
+An AI-powered agent that optimizes LaTeX CVs based on job descriptions.
+
+## 🏗️ Architecture
+
+```
+cv-agent/
+├── domain/           # Core data models & verified inventory
+│   ├── models.py     # JobData, CVData, ValidationResult
+│   └── inventory.py  # Verified skills, experiences, projects
+│
+├── parsing/          # Input parsing
+│   ├── job_parser.py # Job description parser
+│   └── cv_parser.py  # LaTeX CV parser
+│
+├── scoring/          # Analysis & scoring
+│   ├── ats_scorer.py # ATS compatibility scorer
+│   └── relevance.py  # Relevance analyzer
+│
+├── optimization/     # Content optimization
+│   ├── optimizer.py  # Main optimizer
+│   └── bullets.py    # Bullet engineering
+│
+├── enforcement/      # Rules enforcement
+│   ├── page_enforcer.py  # One-page limit
+│   └── ats_enforcer.py   # ATS compliance
+│
+├── validation/       # Quality checks
+│   ├── validator.py      # CV validator
+│   └── hallucination.py  # Hallucination detector
+│
+├── rendering/        # Output generation
+│   └── renderer.py   # LaTeX renderer
+│
+├── mcp/              # MCP integration
+│   └── server.py     # MCP tool server
+│
+├── cli/              # Command-line interface
+│   └── main.py       # CLI commands
+│
+└── core/             # Orchestration
+    └── orchestrator.py  # Main agent
+```
+
+## ✨ Features
+
+- **Zero-Hallucination Policy**: Never adds fabricated skills or experiences
+- **ATS-Optimized**: Ensures compatibility with Applicant Tracking Systems
+- **One-Page Enforcement**: Intelligent content trimming
+- **HR-Approved Tone**: Professional language validation
+- **MCP Integration**: Works with AI assistants via Model Context Protocol
+
+## 🚀 Quick Start
+
+```python
+from cv_agent import CVOptimizationAgent
+from pathlib import Path
+
+agent = CVOptimizationAgent()
+result = agent.optimize(
+    job_description="Senior React Developer needed...",
+    output_path=Path("CVs/English/CV_Optimized.tex"),
+    company_name="TechCorp"
+)
+
+print(f"ATS Score: {result.ats_score}/100")
+print(f"Relevance: {result.relevance_score}%")
+print(f"Pages: {result.page_count}")
+```
+
+## 🔧 CLI Usage
+
+```bash
+# Optimize CV for a job
+cv-agent optimize --job "job_description.txt" --output cv_optimized.tex
+
+# Score existing CV
+cv-agent score --cv my_cv.tex --job "job_description.txt"
+
+# Validate CV
+cv-agent validate --cv my_cv.tex
+
+# List verified skills
+cv-agent skills --list
+```
+
+## 📋 Verified Skills
+
+Only skills in the verified inventory can be used:
+
+```python
+from cv_agent import VERIFIED_SKILLS, is_skill_verified
+
+print(VERIFIED_SKILLS)  # All verified skills
+print(is_skill_verified("React"))  # True
+print(is_skill_verified("Rust"))   # False
+```
+
+## 🛡️ Zero-Hallucination Guarantee
+
+The agent uses a **verified inventory** approach:
+
+1. **Skills**: Only skills from `domain/inventory.py` can be added
+2. **Experiences**: Bullet points are LOCKED and never modified
+3. **Detection**: Hallucination detector flags suspicious additions
+
+## 📦 Installation
+
+```bash
+cd cv-agent
+pip install -e .
+
+# With dev dependencies
+pip install -e ".[dev]"
+```
+
+## 🧪 Testing
+
+```bash
+pytest tests/ -v
+```
+
+## 📄 License
+
+MIT

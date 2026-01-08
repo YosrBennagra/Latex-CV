@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+cv_agent.egg-info/PKG-INFO
+cv_agent.egg-info/SOURCES.txt
+cv_agent.egg-info/dependency_links.txt
+cv_agent.egg-info/entry_points.txt
+cv_agent.egg-info/requires.txt
+cv_agent.egg-info/top_level.txt
+tests/test_domain.py
+tests/test_enforcement.py
+tests/test_parsing.py
+tests/test_scoring.py
+tests/test_validation.py
