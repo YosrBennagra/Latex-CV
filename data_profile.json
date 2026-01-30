@@ -1,0 +1,159 @@
+{
+  "name": "Yosr Ben Nagra",
+  "phone": "+216 53916040",
+  "gender": "male",
+  "focus": "React",
+  "skills": {
+    "frontend": [
+      "React",
+      "TypeScript",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "Tailwind CSS"
+    ],
+    "backend": [
+      "Flask",
+      "NestJS"
+    ],
+    "devops": [
+      "Docker",
+      "Jenkins",
+      "SonarQube",
+      "Prometheus",
+      "Grafana"
+    ]
+  },
+  "role": "React Focused Developer",
+  "email": "",
+  "location": "Tunis, Tunisia",
+  "github": "https://github.com/YosrBennagra",
+  "website": "https://portfolio-yosr.vercel.app/en",
+  "linkedin": "https://www.linkedin.com/in/yosr-ben-nagra/",
+  "projects": [
+    {
+      "title_en": "Final Year Internship (PFE) - AI Medical Diagnosis App",
+      "title_fr": "Stage de fin d etude (PFE) - Application de diagnostic medical par IA",
+      "summary_en": "Built a body map interface to select a body part and symptoms, then predict likely disease using AI.",
+      "summary_fr": "Cree une interface body map pour selectionner une partie du corps et les symptomes, puis predire la maladie via IA.",
+      "dates_en": "02/2025 - 08/2025",
+      "dates_fr": "02/2025 - 08/2025",
+      "role_en": "Full-stack Developer (Internship - PFE)",
+      "role_fr": "Developpeur full-stack (Stage PFE)",
+      "company_en": "Itserv, Tunis, Tunisia",
+      "company_fr": "Itserv, Tunis, Tunisie",
+      "tech": [
+        "Hugging Face",
+        "Transformers",
+        "TensorFlow",
+        "React",
+        "Flask",
+        "PostgreSQL",
+        "MongoDB",
+        "Jenkins",
+        "Prometheus",
+        "Grafana",
+        "SonarQube",
+        "Unit Tests"
+      ]
+    },
+    {
+      "title_en": "Academic Project - Collaborative Documents App (Notion-like)",
+      "title_fr": "Projet academique - Application de collaboration sur documents (type Notion)",
+      "summary_en": "Developed in a team a full-stack collaborative document editor (Notion-like) using React and NestJS; implemented real-time collaboration via WebSockets and a complete CI/CD pipeline.",
+      "summary_fr": "Developpe en groupe une application full-stack de collaboration sur documents (type Notion) avec React et NestJS; implementation de la collaboration temps reel via WebSockets et d un pipeline CI/CD complet.",
+      "role_en": "Full-stack Developer (Academic project)",
+      "role_fr": "Developpeur full-stack (projet academique)",
+      "institution_en": "ESPRIT: Ecole Superieure Privee d'Ingenierie et de Technologies (esprit.tn), Tunis, Tunisia",
+      "institution_fr": "ESPRIT: Ecole Superieure Privee d'Ingenierie et de Technologies (esprit.tn), Tunis, Tunisie",
+      "tech": [
+        "React",
+        "NestJS",
+        "WebSockets",
+        "Real-time Collaboration",
+        "CI/CD"
+      ]
+    },
+    {
+      "title_en": "Internship - Educational Platform with Timetable Tool",
+      "title_fr": "Stage - Plateforme educative avec outil d'emploi du temps",
+      "summary_en": "Web application for assignment submission, lesson sharing, and automated timetable creation. Improved scheduling efficiency by 40% using intelligent scheduling algorithms.",
+      "summary_fr": "Application web pour la remise de devoirs, le partage de cours et la creation automatique d emplois du temps. Amelioration de l efficacite de planification de 40% grace a des algorithmes intelligents.",
+      "dates_en": "2024",
+      "dates_fr": "2024",
+      "role_en": "Full-stack Developer (Internship)",
+      "role_fr": "Developpeur full-stack (Stage)",
+      "company_en": "Ironbyte",
+      "company_fr": "Ironbyte",
+      "tech": [
+        "NestJS",
+        "React",
+        "MongoDB",
+        "TypeScript",
+        "JavaScript",
+        "WebSockets",
+        "CI/CD"
+      ]
+    },
+    {
+      "title_en": "Internship - Internal Communication App",
+      "title_fr": "Stage - Application de communication interne",
+      "summary_en": "Internal communication suite built during the Ooredoo internship. Architected Spring Boot services with DAO/DTO layers, secure REST endpoints, and Angular + PrimeNG front end delivering real-time chat, advanced filtering/search, and admin tooling with comprehensive unit/integration tests.",
+      "summary_fr": "Suite de communication interne realisee durant le stage chez Ooredoo. Architecture de services Spring Boot avec couches DAO/DTO, endpoints REST securises, et front Angular + PrimeNG offrant chat en temps reel, filtrage/recherche avancee et outils admin avec tests unitaires/integration complets.",
+      "dates_en": "2023",
+      "dates_fr": "2023",
+      "role_en": "Full-stack Developer (Internship)",
+      "role_fr": "Developpeur full-stack (Stage)",
+      "company_en": "Ooredoo",
+      "company_fr": "Ooredoo",
+      "tech": [
+        "Spring Boot",
+        "Angular",
+        "Java",
+        "TypeScript",
+        "WebSockets",
+        "Testing"
+      ]
+    }
+  ],
+  "certificates": [
+    {
+      "title": "CS107: C++ Programming",
+      "issuer": "Saylor Academy",
+      "year": 2022
+    },
+    {
+      "title": "Sustainability, Work Ethics & Gender Equity",
+      "issuer": "Honoris Online Academy",
+      "year": 2024
+    },
+    {
+      "title": "Hashgraph Developer Program",
+      "issuer": "Hadera",
+      "year": 2025
+    },
+    {
+      "title": "Building RAG Apps Using MongoDB",
+      "issuer": "MongoDB",
+      "year": 2025
+    }
+  ],
+  "education": [
+    {
+      "institution_en": "ESPRIT: Ecole Superieure Privee d'Ingenierie et de Technologies",
+      "institution_fr": "ESPRIT: Ecole Superieure Privee d'Ingenierie et de Technologies",
+      "location": "Tunis, Tunisia",
+      "dates": "2020 - 2025",
+      "degree_en": "Engineering / Computer Science studies",
+      "degree_fr": "Etudes d ingenierie / informatique"
+    },
+    {
+      "institution_en": "Lycee Soukra",
+      "institution_fr": "Lycee Soukra",
+      "location": "Tunis, Tunisia",
+      "dates": "2019",
+      "degree_en": "Baccalaureate in Computer Science",
+      "degree_fr": "Baccalaureat en sciences de l informatique"
+    }
+  ]
+}
