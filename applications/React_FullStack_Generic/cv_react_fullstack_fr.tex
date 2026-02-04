@@ -1,0 +1,184 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+\usepackage[a4paper,margin=0.5in,top=0.4in,bottom=0.4in]{geometry}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+\usepackage{multicol}
+\usepackage{tgheros}
+\renewcommand{\familydefault}{\sfdefault}
+\pagenumbering{gobble}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+% Colors
+\definecolor{primary}{RGB}{0,70,130}
+\definecolor{darkgray}{RGB}{50,50,50}
+
+% Section formatting
+\titleformat{\section}{\color{primary}\normalsize\bfseries\uppercase}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{5pt}{2pt}
+
+% FontAwesome5 with fallback
+\IfFileExists{fontawesome5.sty}{\usepackage{fontawesome5}}{\newcommand{\faPhone}{Tel:}\newcommand{\faMapMarker}{Loc:}\newcommand{\faGlobe}{Web:}\newcommand{\faGithub}{GH:}\newcommand{\faLinkedin}{LI:}}
+
+\begin{document}
+
+% Header
+\begin{center}
+  {\Large\bfseries\color{primary} YOSR BEN NAGRA}\\[2pt]
+  {\small\color{darkgray} Developpeur React \& Full Stack Senior}\\[3pt]
+  {\footnotesize
+    \faPhone\ +216 53916040 \quad
+    \faMapMarker*\ Tunis, Tunisie \quad
+    \faGlobe\ \href{https://portfolio-yosr.vercel.app/en}{Portfolio} \quad
+    \faGithub\ \href{https://github.com/YosrBennagra}{GitHub} \quad
+    \faLinkedin\ \href{https://www.linkedin.com/in/yosr-ben-nagra/}{LinkedIn}
+  }
+\end{center}
+
+\vspace{3pt}
+
+% Professional Summary
+\section*{Profil Professionnel}
+\vspace{1pt}
+{\small
+Developpeur full stack senior avec \textbf{5+ ans d'experience} specialise en \textbf{React, TypeScript et ecosystemes JavaScript modernes}. Expert dans la creation d'applications web scalables et production-ready utilisant React avec Redux, Next.js et frameworks de tests complets. Solide expertise backend avec \textbf{Node.js, NestJS et Express.js}. Experience demontree dans l'implementation de \textbf{pipelines CI/CD}, le maintien de standards de qualite eleves, et la livraison de fonctionnalites en environnement \textbf{Agile/Scrum}. Anglais courant.
+}
+
+\vspace{5pt}
+
+% Skills
+\section*{Competences Techniques}
+\vspace{2pt}
+{\small
+\textbf{Ecosysteme React:} React, TypeScript, Next.js, Redux Toolkit, Zustand, React Query, React Router, Context API\\[2pt]
+\textbf{Outils Frontend:} Webpack, Vite, Axios, Formik, React Hook Form, i18next\\[2pt]
+\textbf{Styling:} Styled Components, Sass/SCSS, Material-UI, Chakra UI, Tailwind CSS\\[2pt]
+\textbf{Tests:} Jest, React Testing Library, Cypress, Vitest\\[2pt]
+\textbf{Backend:} Node.js, NestJS, Express.js, Fastify, GraphQL, Socket.io, WebSockets\\[2pt]
+\textbf{BDD \& ORM:} PostgreSQL, MongoDB, Redis, Prisma, TypeORM, Mongoose\\[2pt]
+\textbf{Auth \& Securite:} JWT, Passport.js, OAuth\\[2pt]
+\textbf{DevOps:} Docker, Jenkins, Git, CI/CD, SonarQube, Nginx, Vercel, Netlify, Prometheus, Grafana
+}
+
+\vspace{5pt}
+
+% Experience
+\section*{Experience Professionnelle}
+\vspace{2pt}
+
+{\small
+
+\textbf{Developpeur Full Stack (PFE) -- Plateforme de Diagnostic Medical par IA}\\[1pt]
+\textit{Itserv, Tunis} \hfill \textit{02/2025 -- 08/2025}
+\begin{itemize}[leftmargin=12pt,itemsep=2pt,topsep=3pt,parsep=0pt]
+  \item Creation frontend production-ready \textbf{React + TypeScript} avec Material-UI, Redux Toolkit pour state management
+  \item Implementation API REST Flask avec authentification JWT, architecture hybride PostgreSQL/MongoDB
+  \item Integration modeles IA (Hugging Face, TensorFlow) pour predictions medicales temps reel
+  \item Livraison \textbf{pipeline CI/CD complet}: Jenkins, tests automatises (Jest, Cypress), SonarQube, Prometheus/Grafana
+  \item Travail en \textbf{Agile/Scrum}: daily standups, sprint planning, code reviews, collaboration PO
+\end{itemize}
+
+\vspace{3pt}
+\textbf{Developpeur Full Stack -- Plateforme Collaborative de Documents (type Notion)}\\[1pt]
+\textit{ESPRIT, Tunis (Projet academique)} \hfill \textit{2024}
+\begin{itemize}[leftmargin=12pt,itemsep=2pt,topsep=3pt,parsep=0pt]
+  \item Architecture et developpement application full stack \textbf{React + NestJS} avec TypeScript
+  \item Implementation collaboration temps reel avec \textbf{Socket.io}, Context API pour state management
+  \item Creation APIs RESTful avec NestJS, integration MongoDB via Mongoose
+  \item Mise en place pipeline CI/CD avec tests automatises, processus code review, workflow Agile
+\end{itemize}
+
+\vspace{3pt}
+\textbf{Developpeur Full Stack -- Plateforme Educative avec Planification Intelligente}\\[1pt]
+\textit{Ironbyte, Tunis} \hfill \textit{2024}
+\begin{itemize}[leftmargin=12pt,itemsep=2pt,topsep=3pt,parsep=0pt]
+  \item Developpement plateforme \textbf{NestJS/React} avec MongoDB: gestion devoirs, emplois du temps automatiques
+  \item Implementation algorithmes planification intelligents atteignant \textbf{+40\% d'amelioration d'efficacite}
+  \item Utilisation React Router pour navigation, Axios pour appels API, WebSockets pour mises a jour temps reel
+  \item Deploiement avec Docker, implementation automatisation CI/CD
+\end{itemize}
+
+\vspace{3pt}
+\textbf{Developpeur Full Stack -- Suite de Communication Interne}\\[1pt]
+\textit{Ooredoo, Tunis} \hfill \textit{2023}
+\begin{itemize}[leftmargin=12pt,itemsep=2pt,topsep=3pt,parsep=0pt]
+  \item Creation backend avec \textbf{Spring Boot (Java)}: architecture DAO/DTO, endpoints REST securises, authentification JWT
+  \item Developpement frontend \textbf{Angular + PrimeNG}: chat temps reel, filtrage avance, dashboard admin
+  \item Couverture tests complete avec Jest et tests d'integration
+  \item Utilisation IntelliJ IDEA, workflows Git, ceremonies Agile
+\end{itemize}
+
+}
+
+% Two columns
+\vspace{5pt}
+\begin{multicols}{2}
+
+\section*{Formation}
+\vspace{2pt}
+{\small
+\textbf{ESPRIT}\\[1pt]
+Ingenieur en Informatique\\[1pt]
+\textit{2020 -- 2025}\\[1pt]
+Tunis, Tunisie
+
+\vspace{4pt}
+\textbf{Lycee Soukra}\\[1pt]
+Baccalaureat Informatique\\[1pt]
+\textit{2019}
+}
+
+\vspace{4pt}
+\section*{Certifications}
+\vspace{2pt}
+{\small
+\textbf{MongoDB} -- Building RAG Apps\\[1pt]
+\textit{2025}
+
+\vspace{2pt}
+\textbf{Hadera} -- Hashgraph Developer\\[1pt]
+\textit{2025}
+
+\vspace{2pt}
+\textbf{Saylor Academy} -- C++\\[1pt]
+\textit{2022}
+}
+
+\columnbreak
+
+\section*{Langues}
+\vspace{2pt}
+{\small
+\textbf{Anglais} -- Courant\\[2pt]
+\textbf{Francais} -- Professionnel\\[2pt]
+\textbf{Arabe} -- Natif
+}
+
+\vspace{4pt}
+\section*{Points Cles}
+\vspace{2pt}
+{\small
+\textbf{Expertise React}\\[1pt]
+5+ ans creation apps production avec React, Redux, Next.js, tests complets
+
+\vspace{3pt}
+\textbf{Maitrise Full Stack}\\[1pt]
+Node.js, NestJS, Express.js, GraphQL, APIs REST, fonctionnalites temps reel
+
+\vspace{3pt}
+\textbf{DevOps \& Qualite}\\[1pt]
+Pipelines CI/CD, tests automatises, outils qualite code, monitoring
+
+\vspace{3pt}
+\textbf{Best Practices}\\[1pt]
+Agile/Scrum, TDD, code reviews, documentation, collaboration equipe
+}
+
+\end{multicols}
+
+\end{document}

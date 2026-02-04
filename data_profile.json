@@ -8,21 +8,102 @@
       "React",
       "TypeScript",
       "JavaScript",
-      "HTML",
-      "CSS",
-      "Tailwind CSS"
+      "HTML5",
+      "CSS3",
+      "Next.js",
+      "React Router",
+      "Redux",
+      "Redux Toolkit",
+      "Zustand",
+      "Context API",
+      "React Query",
+      "Axios"
+    ],
+    "styling": [
+      "Styled Components",
+      "Sass/SCSS",
+      "Material-UI (MUI)",
+      "Chakra UI",
+      "Tailwind CSS",
+      "CSS Modules"
+    ],
+    "testing": [
+      "Jest",
+      "React Testing Library",
+      "Cypress",
+      "Vitest"
+    ],
+    "build_tools": [
+      "Webpack",
+      "Vite",
+      "Create React App"
+    ],
+    "forms_i18n": [
+      "Formik",
+      "React Hook Form",
+      "i18next"
     ],
     "backend": [
+      "Node.js",
+      "NestJS",
+      "Express.js",
+      "Fastify",
       "Flask",
-      "NestJS"
+      "Spring Boot",
+      "Java",
+      "GraphQL",
+      "Socket.io"
+    ],
+    "authentication": [
+      "JWT",
+      "Passport.js"
+    ],
+    "database": [
+      "PostgreSQL",
+      "MongoDB",
+      "Redis",
+      "SQL"
+    ],
+    "orm": [
+      "Prisma",
+      "TypeORM",
+      "Mongoose"
     ],
     "devops": [
       "Docker",
       "Jenkins",
       "SonarQube",
       "Prometheus",
-      "Grafana"
+      "Grafana",
+      "CI/CD",
+      "Git",
+      "Nginx"
+    ],
+    "deployment": [
+      "Vercel",
+      "Netlify"
+    ],
+    "tools": [
+      "IntelliJ IDEA",
+      "Visual Studio Code",
+      "Git"
+    ],
+    "methodologies": [
+      "Agile/Scrum",
+      "REST APIs",
+      "WebSockets",
+      "Code Review",
+      "Unit Testing",
+      "TDD"
     ]
+  },
+  "domain_knowledge": [
+    "Banking/Finance"
+  ],
+  "languages": {
+    "english": "Fluent",
+    "french": "Professional",
+    "arabic": "Native"
   },
   "role": "React Focused Developer",
   "email": "",
