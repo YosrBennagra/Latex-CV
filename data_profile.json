@@ -71,10 +71,14 @@
     ],
     "devops": [
       "Docker",
+      "Kubernetes (basics)",
+      "Helm",
       "Jenkins",
+      "Harness",
       "SonarQube",
       "Prometheus",
       "Grafana",
+      "Bitbucket",
       "CI/CD",
       "Git",
       "Nginx"
@@ -126,7 +130,10 @@
       "tech": [
         "Hugging Face",
         "Transformers",
+        "RAG",
+        "Fine-tuning",
         "TensorFlow",
+        "Python",
         "React",
         "Flask",
         "PostgreSQL",
@@ -194,6 +201,61 @@
         "TypeScript",
         "WebSockets",
         "Testing"
+      ]
+    }
+  ],
+  "personal_projects": [
+    {
+      "title": "Overlayos",
+      "type": "Personal",
+      "summary_en": "Custom operations dashboard to centralize tracking for meetings, platform tools, and basic user/admin management.",
+      "tech": [
+        "React",
+        "TypeScript",
+        "Node.js",
+        "Express.js",
+        "PostgreSQL",
+        "MongoDB",
+        "Socket.io",
+        "Docker",
+        "Kubernetes (basics)",
+        "Helm",
+        "Bitbucket",
+        "Harness"
+      ]
+    },
+    {
+      "title": "Event-driven e-commerce",
+      "type": "Personal",
+      "status": "In progress",
+      "summary_en": "Small e-commerce system using event-driven patterns with reliability features (retries/idempotency) and an admin view for failures.",
+      "tech": [
+        "React",
+        "TypeScript",
+        "NestJS",
+        "Node.js",
+        "PostgreSQL",
+        "MongoDB",
+        "RabbitMQ/Kafka",
+        "Docker",
+        "Kubernetes (basics)",
+        "Helm",
+        "Prometheus",
+        "Grafana",
+        "OpenTelemetry",
+        "CI workflow"
+      ]
+    },
+    {
+      "title": "Portfolio Website",
+      "type": "Personal",
+      "summary_en": "Responsive, multilingual portfolio website to present projects, skills, and CV versions.",
+      "url": "https://portfolio-yosr.vercel.app/en",
+      "tech": [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Vercel"
       ]
     }
   ],

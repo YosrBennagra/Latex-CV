@@ -42,14 +42,25 @@ This file tracks all skills from job postings and whether you possess them.
 | Skill | Status | Notes |
 |-------|--------|-------|
 | Docker | ✅ Known | Containerization |
+| Kubernetes | 🔄 Learning | Basics (local demos, core concepts) |
+| Helm | ✅ Known | Kubernetes package manager |
 | Jenkins | ✅ Known | CI/CD pipeline |
+| Harness | ✅ Known | CI/CD platform |
 | SonarQube | ✅ Known | Code quality |
 | Prometheus | ✅ Known | Monitoring |
 | Grafana | ✅ Known | Observability |
+| OpenTelemetry | 🔄 Learning | Tracing/telemetry basics |
 | Git | ✅ Known | Version control |
+| Bitbucket | ✅ Known | Git hosting |
 | CI/CD | ✅ Known | Automation pipelines |
 | IntelliJ IDEA | ✅ Known | Java IDE |
 | Visual Studio Code | ✅ Known | Code editor |
+
+## Messaging & Event-driven
+| Skill | Status | Notes |
+|-------|--------|-------|
+| RabbitMQ | 🔄 Learning | Event-driven patterns basics |
+| Kafka | 🔄 Learning | Event-driven patterns basics |
 
 ## AI/ML Skills
 | Skill | Status | Notes |
@@ -57,6 +68,8 @@ This file tracks all skills from job postings and whether you possess them.
 | Hugging Face | ✅ Known | Transformers library |
 | Transformers | ✅ Known | NLP models |
 | TensorFlow | ✅ Known | ML framework |
+| RAG | ✅ Known | Retrieval-augmented generation pipeline |
+| LLMs | 🔄 Learning | Prompting and LLM tooling basics |
 
 ## Methodologies
 | Skill | Status | Notes |

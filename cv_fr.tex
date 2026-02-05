@@ -7,9 +7,12 @@
 \usepackage[hidelinks]{hyperref}
 \usepackage{parskip}
 \usepackage{titlesec}
+\usepackage{microtype}
 \usepackage{tgheros}
 \renewcommand{\familydefault}{\sfdefault}
 \pagenumbering{gobble}
+
+\setlist[itemize]{leftmargin=12pt,itemsep=2pt,topsep=2pt}
 
 \titleformat{\section}{\large\bfseries}{\thesection}{0em}{}[\titlerule]
 \titlespacing*{\section}{0pt}{6pt}{4pt}
@@ -61,7 +64,7 @@ Developpeur full stack avec plus de 4 ans d experience dans la creation d applic
 \textit{Developpeur full-stack (projet academique)}
 \begin{itemize}[leftmargin=12pt,itemsep=2pt]
   \item Developpe en groupe une application full-stack d edition collaborative de documents avec React et NestJS.
-  \item Mise en place de la collaboration en temps réel via WebSockets.
+  \item Mise en place de la collaboration en temps reel via WebSockets.
   \item Conception et maintenance d un pipeline CI/CD complet pour tests automatises et deploiement.
 \end{itemize}
 
@@ -90,11 +93,13 @@ Baccalauréat en Sciences de l'Informatique
 
 \section*{Competences}
 \textbf{Frontend:} React, TypeScript, JavaScript, HTML, CSS\\
-\textbf{Backend:} Node.js, Python, Flask, PostgreSQL, MongoDB\\
+\textbf{Backend:} Node.js, Python, Flask, PostgreSQL, MongoDB, Redis\\
 \textbf{IA/ML:} Hugging Face, Transformers, TensorFlow\\
-\textbf{CI/CD et Qualite:} Jenkins, SonarQube, Tests unitaires\\
+\textbf{Tests:} Jest, React Testing Library, Cypress\\
+\textbf{Build et Deploiement:} Vite, Vercel, Netlify\\
+\textbf{CI/CD et Qualite:} Jenkins, GitHub Actions, Harness, SonarQube, Tests unitaires\\
 \textbf{Observabilite:} Prometheus, Grafana\\
-\textbf{Outils:} Git, Docker, GitHub Actions, Jest
+\textbf{Outils:} Git, Docker, Bitbucket, Helm, Nginx
 
 \section*{Langues}
 Anglais (Natif) \textbar{} Francais (Professionnel)
@@ -102,7 +107,7 @@ Anglais (Natif) \textbar{} Francais (Professionnel)
 \section*{Certifications}
 \begin{itemize}[leftmargin=12pt,itemsep=2pt]
   \item CS107: C++ Programming — Saylor Academy (2022)
-  \item Sustainability, Work Ethics & Gender Equity — Honoris Online Academy (2024)
+  \item Sustainability, Work Ethics \& Gender Equity — Honoris Online Academy (2024)
   \item Hashgraph Developer Program — Hadera (2025)
   \item Building RAG Apps Using MongoDB — MongoDB (2025)
 \end{itemize}
