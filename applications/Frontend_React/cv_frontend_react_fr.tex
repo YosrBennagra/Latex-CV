@@ -1,0 +1,131 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+\usepackage[a4paper,margin=0.5in,top=0.4in,bottom=0.4in]{geometry}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+\usepackage{microtype}
+\usepackage{tgheros}
+\renewcommand{\familydefault}{\sfdefault}
+\pagenumbering{gobble}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+% List spacing (consistent across sections)
+\setlist[itemize]{leftmargin=12pt,itemsep=1pt,topsep=2pt,parsep=0pt}
+
+% Section formatting (ATS-friendly)
+\titleformat{\section}{\normalsize\bfseries}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{4pt}{2pt}
+
+\begin{document}
+
+% Header
+\begin{center}
+  {\Large\bfseries YOSR BEN NAGRA}\\[2pt]
+  {\small Developpeur Frontend (React/TypeScript)}\\[3pt]
+  {\footnotesize yosrbennagra@gmail.com \;|\; +216 53916040 \;|\; Tunis, Tunisie \;|\; \href{https://portfolio-yosr.vercel.app/fr}{portfolio-yosr.vercel.app} \;|\; \href{https://github.com/YosrBennagra}{github.com/YosrBennagra} \;|\; \href{https://www.linkedin.com/in/yosr-ben-nagra/}{linkedin.com/in/yosr-ben-nagra}}
+\end{center}
+
+% Professional Summary
+\section*{Profil}
+{\small
+Developpeur frontend specialise en \textbf{React et TypeScript}, concevant des applications web responsives, accessibles et performantes. Experience en gestion d'etat moderne, architecture de composants et tests. Solide comprehension de l'integration backend et des APIs RESTful. Passionne par l'UI/UX, le code propre et la qualite de l'experience utilisateur.
+}
+
+\vspace{4pt}
+
+\section*{Formation}
+{\small
+\textbf{ESPRIT}, Diplome d'Ingenieur en Informatique, \textit{2020--2025}, Tunis\\[1pt]
+\textbf{Lycee Soukra}, Bac Sciences Informatiques, \textit{2019}
+}
+
+\vspace{4pt}
+
+% Skills
+\section*{Competences Techniques}
+{\small
+\textbf{Core:} React, TypeScript, JavaScript (ES6+), HTML5, CSS3\\[2pt]
+\textbf{Gestion d'etat:} Redux Toolkit, Zustand, Context API, React Query\\[2pt]
+\textbf{Styling:} Tailwind CSS, Styled Components, Material-UI (MUI), Chakra UI, Sass/SCSS, CSS Modules\\[2pt]
+\textbf{Tests:} Jest, React Testing Library, Cypress, Vitest\\[2pt]
+\textbf{Outils de build:} Vite, Webpack, Next.js\\[2pt]
+\textbf{Formulaires \& i18n:} React Hook Form, Formik, i18next\\[2pt]
+\textbf{Integration Backend:} APIs REST, GraphQL, Axios, WebSockets (Socket.io)\\[2pt]
+\textbf{DevOps:} Git, Docker, CI/CD (GitHub Actions, Bitbucket), Vercel, Netlify\\[2pt]
+\textbf{Soft Skills:} Agile/Scrum, Travail en equipe, Resolution de problemes, Communication, Adaptabilite, Pensee critique, Gestion du temps, Autonome
+}
+
+\vspace{6pt}
+
+% Experience
+\section*{Experience Professionnelle}
+{\small
+
+\textbf{Developpeur Frontend (PFE) -- Plateforme IA de Diagnostic Medical}\\[1pt]
+\textit{Itserv, Tunis} \hfill \textit{02/2025 -- 08/2025}
+\begin{itemize}
+  \item Developpe un frontend \textbf{React/TypeScript} responsive avec architecture composants et hooks personnalises
+  \item Implemente la gestion d'etat avec \textbf{Redux Toolkit} et \textbf{React Query} pour le cache serveur
+  \item Cree une UI accessible, mobile-first avec \textbf{Tailwind CSS} et integration des resultats IA via APIs REST
+  \item Developpe des tableaux de bord interactifs avec visualisation de donnees medicales
+\end{itemize}
+
+\vspace{3pt}
+\textbf{Developpeur Frontend -- Plateforme Collaborative de Documents}\\[1pt]
+\textit{ESPRIT, Tunis (Projet Academique)} \hfill \textit{2024}
+\begin{itemize}
+  \item Developpe une SPA \textbf{React/TypeScript} avec collaboration temps reel via \textbf{Socket.io}
+  \item Implemente un editeur de texte riche avec formatage, gestion des permissions et historique des versions
+  \item Utilise \textbf{React Router} pour la navigation, \textbf{Context API} pour l'authentification et optimisation des re-renders
+\end{itemize}
+
+\vspace{3pt}
+\textbf{Developpeur Frontend -- Plateforme Educative}\\[1pt]
+\textit{Ironbyte, Tunis} \hfill \textit{2024}
+\begin{itemize}
+  \item Developpe un frontend \textbf{React} responsive avec mises a jour temps reel via WebSocket
+  \item Cree une bibliotheque de composants reutilisables, \textbf{+40\% d'efficacite} de developpement
+  \item Implemente pagination, filtres et recherche avec appels API optimises et etats de chargement
+\end{itemize}
+
+}
+
+\vspace{4pt}
+\section*{Projets Personnels}
+{\small
+\textbf{Site Portfolio}\\[1pt]
+\textit{Personnel} \hfill \textit{Next.js/React}
+\begin{itemize}
+  \item Developpe et deploye un portfolio responsive multilingue avec \textbf{Next.js/TypeScript} (SSG/SSR)
+  \item Implemente mode sombre, animations et i18n (anglais/francais) sur \textbf{Vercel}
+\end{itemize}
+
+\vspace{2pt}
+\textbf{Overlayos -- Tableau de Bord Operations}\\[1pt]
+\textit{Personnel} \hfill \textit{React/TypeScript}
+\begin{itemize}
+  \item Developpe un dashboard \textbf{React} avec graphiques dynamiques, statuts temps reel et vues par role
+  \item Implemente validation avec \textbf{React Hook Form}, gestion d'etat Zustand et integration API
+\end{itemize}
+}
+
+\vspace{3pt}
+\section*{Certifications}
+{\small
+\textbf{MongoDB} -- Building RAG Apps, \textit{2025}\\[1pt]
+\textbf{Hadera} -- Developpeur Hashgraph, \textit{2025}\\[1pt]
+\textbf{Saylor Academy} -- C++, \textit{2022}
+}
+
+\section*{Langues}
+{\small
+\textbf{Anglais} -- Courant\\[1pt]
+\textbf{Francais} -- Professionnel\\[1pt]
+\textbf{Arabe} -- Langue maternelle
+}
+
+\end{document}

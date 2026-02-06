@@ -50,7 +50,7 @@
       "Fastify",
       "Flask",
       "Spring Boot",
-      "Java",
+      "Java (8, 17, 21)",
       "GraphQL",
       "Socket.io"
     ],
@@ -110,7 +110,7 @@
     "arabic": "Native"
   },
   "role": "React Focused Developer",
-  "email": "",
+  "email": "yosrbennagra@gmail.com",
   "location": "Tunis, Tunisia",
   "github": "https://github.com/YosrBennagra",
   "website": "https://portfolio-yosr.vercel.app/en",
@@ -119,8 +119,8 @@
     {
       "title_en": "Final Year Internship (PFE) - AI Medical Diagnosis App",
       "title_fr": "Stage de fin d etude (PFE) - Application de diagnostic medical par IA",
-      "summary_en": "Built a body map interface to select a body part and symptoms, then predict likely disease using AI.",
-      "summary_fr": "Cree une interface body map pour selectionner une partie du corps et les symptomes, puis predire la maladie via IA.",
+      "summary_en": "Built a React/TypeScript frontend + Flask REST API backend with a hybrid PostgreSQL + MongoDB database; users select a body part and symptoms, then the app predicts likely disease using AI.",
+      "summary_fr": "Cree une application avec front React/TypeScript et back Flask (API REST) avec une base de donnees hybride PostgreSQL + MongoDB; l utilisateur selectionne une partie du corps et des symptomes, puis l application predit la maladie via IA.",
       "dates_en": "02/2025 - 08/2025",
       "dates_fr": "02/2025 - 08/2025",
       "role_en": "Full-stack Developer (Internship - PFE)",
@@ -197,7 +197,7 @@
       "tech": [
         "Spring Boot",
         "Angular",
-        "Java",
+        "Java (8, 17, 21)",
         "TypeScript",
         "WebSockets",
         "Testing"

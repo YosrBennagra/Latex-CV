@@ -1,0 +1,127 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+\usepackage[a4paper,margin=0.5in,top=0.4in,bottom=0.4in]{geometry}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+\usepackage{microtype}
+\usepackage{tgheros}
+\renewcommand{\familydefault}{\sfdefault}
+\pagenumbering{gobble}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+% List spacing (consistent across sections)
+\setlist[itemize]{leftmargin=12pt,itemsep=0pt,topsep=1pt,parsep=0pt}
+
+% Section formatting (ATS-friendly)
+\titleformat{\section}{\normalsize\bfseries}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{3pt}{1pt}
+
+\begin{document}
+
+% Header
+\begin{center}
+  {\Large\bfseries YOSR BEN NAGRA}\\[2pt]
+  {\small Developpeur Full Stack Java (Spring Boot)}\\[3pt]
+  {\footnotesize yosrbennagra@gmail.com \;|\; +216 53916040 \;|\; Tunis, Tunisie \;|\; \href{https://portfolio-yosr.vercel.app/en}{portfolio-yosr.vercel.app} \;|\; \href{https://github.com/YosrBennagra}{github.com/YosrBennagra} \;|\; \href{https://www.linkedin.com/in/yosr-ben-nagra/}{linkedin.com/in/yosr-ben-nagra}}
+\end{center}
+
+% Professional Summary
+\section*{Profil Professionnel}
+{\small
+Developpeur full stack oriente \textbf{Java/Spring Boot} cote back end, avec des front ends web modernes (\textbf{Angular} et \textbf{React}). Solides bases en \textbf{APIs REST}, authentification (JWT), temps reel (WebSockets), bases de donnees (PostgreSQL/MongoDB) et \textbf{CI/CD}.
+}
+
+\vspace{4pt}
+
+\section*{Formation}
+{\small
+\textbf{ESPRIT}, Ingenierie Informatique, \textit{2020--2025}, Tunis\\[1pt]
+\textbf{Lycee Soukra}, Bac Informatique, \textit{2019}
+}
+
+\vspace{4pt}
+
+% Skills
+\section*{Competences Techniques}
+{\small
+\textbf{Back-end (Java):} Java (8, 17, 21), Spring Boot; APIs REST, GraphQL\\[2pt]
+\textbf{Front-end:} Angular, React, TypeScript, JavaScript; PrimeNG\\[2pt]
+\textbf{Data:} PostgreSQL, MongoDB, Redis; SQL\\[2pt]
+\textbf{Auth \& Tests:} JWT, Passport.js; Unit Testing, Jest, Cypress\\[2pt]
+\textbf{DevOps:} Docker, Nginx, Kubernetes (basics), Helm; Jenkins, GitHub Actions, Harness, Bitbucket; SonarQube, Prometheus, Grafana\\[2pt]
+\textbf{Soft Skills:} Agile/Scrum, Travail en equipe, Resolution de problemes, Communication, Adaptabilite, Pensee critique, Gestion du temps, Autonome
+}
+
+\vspace{6pt}
+
+% Experience
+\section*{Experience Professionnelle}
+{\small
+
+\textbf{Developpeur Full Stack (PFE) -- Plateforme de diagnostic medical par IA}\\[1pt]
+\textit{Itserv, Tunis} \hfill \textit{02/2025 -- 08/2025}
+\begin{itemize}
+  \item Developpe application full stack avec frontend \textbf{React/TypeScript} et backend \textbf{Flask} (API REST), systeme de base de donnees hybride \textbf{PostgreSQL + MongoDB}
+  \item Implemente authentification \textbf{JWT}, controle d acces \textbf{RBAC} et integration de modeles IA via endpoints REST
+  \item Deploie \textbf{CI/CD} avec Jenkins/Docker; qualite et monitoring via SonarQube et Prometheus/Grafana
+\end{itemize}
+
+\vspace{3pt}
+\textbf{Developpeur Full Stack -- Application de communication interne}\\[1pt]
+\textit{Ooredoo} \hfill \textit{2023}
+\begin{itemize}
+  \item Concu des services \textbf{Spring Boot} avec couches DAO/DTO et endpoints REST securises
+  \item Developpe un front \textbf{Angular + PrimeNG} pour le chat en temps reel, le filtrage/recherche et des outils admin
+  \item Ajoute des tests unitaires/integration pour renforcer la stabilite et la qualite de livraison
+\end{itemize}
+
+\vspace{3pt}
+\textbf{Developpeur Full Stack -- Plateforme de documents collaboratifs}\\[1pt]
+\textit{ESPRIT, Tunis (Projet academique)} \hfill \textit{2024}
+\begin{itemize}
+  \item Concu un back end \textbf{NestJS} avec APIs REST et collaboration temps reel via \textbf{WebSockets}
+  \item Developpe un editeur avec permissions et historique de versions
+\end{itemize}
+
+}
+
+\vspace{4pt}
+\section*{Projets Personnels}
+{\small
+\textbf{E-commerce event-driven (en cours)}\\[1pt]
+\textit{Personnel} \hfill \textit{Full-stack (Java/Spring Boot)}
+\begin{itemize}
+  \item Construit un petit systeme e-commerce event-driven avec microservices \textbf{Spring Boot}
+  \item Implemente fiabilite (retries, idempotency) et vue admin pour tracer les erreurs
+  \item Utilise Docker; experimente Kubernetes (basics) + Helm et workflow CI
+\end{itemize}
+
+\vspace{2pt}
+\textbf{Overlayos -- Tableau de bord operations}\\[1pt]
+\textit{Personnel} \hfill \textit{Full-stack (Angular/Node.js)}
+\begin{itemize}
+  \item Construit un dashboard avec front Angular et API Node.js avec MongoDB/PostgreSQL et patterns JWT/RBAC
+  \item Mises a jour temps reel via Socket.io; Dockerisation
+\end{itemize}
+}
+
+\vspace{3pt}
+\section*{Certifications}
+{\small
+\textbf{MongoDB} -- Building RAG Apps, \textit{2025}\\[1pt]
+\textbf{Hadera} -- Hashgraph Developer, \textit{2025}\\[1pt]
+\textbf{Saylor Academy} -- C++, \textit{2022}
+}
+
+\section*{Langues}
+{\small
+\textbf{Anglais} -- Courant\\[1pt]
+\textbf{Francais} -- Professionnel\\[1pt]
+\textbf{Arabe} -- Langue maternelle
+}
+
+\end{document}
