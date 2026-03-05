@@ -2,14 +2,13 @@
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage[english]{babel}
-\usepackage[a4paper,margin=0.5in,top=0.4in,bottom=0.4in]{geometry}
+\usepackage[a4paper,margin=0.65in,top=0.55in,bottom=0.55in]{geometry}
 \usepackage{enumitem}
 \usepackage[hidelinks]{hyperref}
 \usepackage{titlesec}
 \usepackage{microtype}
 \usepackage{tgheros}
 \renewcommand{\familydefault}{\sfdefault}
-\pagenumbering{gobble}
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{0pt}
 
@@ -93,6 +92,16 @@ Full stack developer building end-to-end web applications across multiple stacks
 \vspace{4pt}
 \section*{Personal Projects}
 {\small
+\textbf{Veinpal -- Software \& Apps Platform} \hfill \href{https://veinpal.com}{veinpal.com}\\[1pt]
+\textit{Founder / Solo Developer} \hfill \textit{2025 -- Present}
+\begin{itemize}
+  \item Founded and built a full-stack platform for distributing Windows apps, web tools, and games; shipped 5 products including Trayline (desktop system monitor)
+  \item Architected \textbf{Next.js 15} monorepo (Turborepo + pnpm Workspaces) with \textbf{React 19} Server Components, strict \textbf{TypeScript 5}, and \textbf{Tailwind CSS}/shadcn/ui
+  \item Implemented \textbf{PostgreSQL 16} (Prisma ORM), \textbf{Redis} caching, S3/MinIO storage, and \textbf{NextAuth.js v5} OAuth (Google, GitHub, LinkedIn)
+  \item Built CI/CD pipeline: GitHub Actions (lint, typecheck, test, build, audit), \textbf{Vitest + Playwright} tests, Commitlint + Husky
+\end{itemize}
+
+\vspace{2pt}
 \textbf{Overlayos -- Custom operations dashboard}\\[1pt]
 \textit{Personal} \hfill \textit{Full-stack (React/Node.js)}
 \begin{itemize}

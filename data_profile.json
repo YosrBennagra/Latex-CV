@@ -83,6 +83,20 @@
       "Git",
       "Nginx"
     ],
+    "systems": [
+      "Linux",
+      "Shell scripting"
+    ],
+    "integration": [
+      "SOAP"
+    ],
+    "networking": [
+      "Networking"
+    ],
+    "enterprise_databases": [
+      "Oracle",
+      "PL/SQL"
+    ],
     "deployment": [
       "Vercel",
       "Netlify"
@@ -101,8 +115,20 @@
       "TDD"
     ]
   },
+  "current_job": {
+    "title_en": "Client Service Advisor 1",
+    "title_fr": "Conseiller Service Client 1",
+    "company": "Concentrix",
+    "location_en": "Tunis, Tunisia",
+    "location_fr": "Tunis, Tunisie",
+    "dates": "02/2026 - Present",
+    "summary_en": "Handling inbound/outbound customer inquiries, resolving tickets via CRM tools, providing multilingual support, and maintaining high customer satisfaction scores.",
+    "summary_fr": "Gestion des appels entrants/sortants, resolution de tickets via outils CRM, support multilingue et maintien de scores de satisfaction client eleves."
+  },
   "domain_knowledge": [
-    "Banking/Finance"
+    "Banking/Finance",
+    "Telecoms",
+    "Customer Service"
   ],
   "languages": {
     "english": "Fluent",
@@ -205,6 +231,35 @@
     }
   ],
   "personal_projects": [
+    {
+      "title": "Veinpal",
+      "type": "Personal / Founder",
+      "url": "https://veinpal.com/apps",
+      "summary_en": "Solo-founded platform for building and distributing Windows apps, web tools, and games. Built a full-stack monorepo with Next.js 15 (App Router, React Server Components), TypeScript 5, PostgreSQL 16, Redis caching, S3 object storage, OAuth authentication, and a complete CI/CD pipeline. Ships 5 products including a Windows desktop app (Trayline) and multiple web utilities.",
+      "summary_fr": "Plateforme fondee en solo pour creer et distribuer des applications Windows, outils web et jeux. Monorepo full-stack avec Next.js 15 (App Router, React Server Components), TypeScript 5, PostgreSQL 16, cache Redis, stockage objet S3, authentification OAuth et pipeline CI/CD complet. 5 produits dont une application desktop Windows (Trayline) et plusieurs utilitaires web.",
+      "dates": "2025 - Present",
+      "tech": [
+        "Next.js 15",
+        "React 19",
+        "TypeScript 5",
+        "Tailwind CSS",
+        "shadcn/ui",
+        "PostgreSQL 16",
+        "Prisma",
+        "Redis",
+        "S3/MinIO",
+        "NextAuth.js v5",
+        "Zod",
+        "Turborepo",
+        "pnpm Workspaces",
+        "Vitest",
+        "Playwright",
+        "GitHub Actions",
+        "ESLint",
+        "Prettier",
+        "Commitlint"
+      ]
+    },
     {
       "title": "Overlayos",
       "type": "Personal",

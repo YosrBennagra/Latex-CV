@@ -1,0 +1,133 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage[a4paper,margin=0.65in,top=0.55in,bottom=0.55in]{geometry}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+\usepackage{microtype}
+\usepackage{tgheros}
+\renewcommand{\familydefault}{\sfdefault}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+% List spacing (consistent across sections)
+\setlist[itemize]{leftmargin=12pt,itemsep=1pt,topsep=2pt,parsep=0pt}
+
+% Section formatting (ATS-friendly)
+\titleformat{\section}{\normalsize\bfseries}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{4pt}{2pt}
+
+\begin{document}
+
+% Header
+\begin{center}
+  {\Large\bfseries YOSR BEN NAGRA}\\[2pt]
+  {\small AI/ML Engineer}\\[3pt]
+  {\footnotesize yosrbennagra@gmail.com \;|\; +216 53916040 \;|\; Tunis, Tunisia \;|\; \href{https://portfolio-yosr.vercel.app/en}{portfolio-yosr.vercel.app} \;|\; \href{https://github.com/YosrBennagra}{github.com/YosrBennagra} \;|\; \href{https://www.linkedin.com/in/yosr-ben-nagra/}{linkedin.com/in/yosr-ben-nagra}}
+\end{center}
+
+% Professional Summary
+\section*{Professional Summary}
+{\small
+AI/ML Engineer with hands-on experience building end-to-end ML systems. Full-stack developer transitioning into machine learning with solid foundations in \textbf{Python}, \textbf{data processing}, and \textbf{model deployment in production}. Completed PFE developing a complete AI medical diagnosis platform (React frontend + Flask backend + RAG + Transformers). Eager to deepen expertise in ML engineering, model optimization, and data pipelines. Strong analytical mindset and quick learner.
+}
+
+\vspace{4pt}
+
+\section*{Education}
+{\small
+\textbf{ESPRIT}, Computer Science Engineering (Web and Internet Technology specialization), \textit{2020--2025}, Tunis\\[1pt]
+\textbf{Lycee Soukra}, CS Baccalaureate, \textit{2019}
+}
+
+\vspace{4pt}
+
+% Skills
+\section*{Technical Skills}
+{\small
+\textbf{Python \& Data:} Python (pandas, numpy); working knowledge of scikit-learn; Hugging Face Transformers (fine-tuning), PyTorch basics\\[2pt]
+\textbf{AI/LLM Exposure:} Generative AI concepts, RAG pipeline design, prompt engineering, OpenAI API integration\\[2pt]
+\textbf{Data Processing:} Data cleaning, preprocessing, EDA (pandas, seaborn, matplotlib); working with medical datasets\\[2pt]
+\textbf{Backend \& APIs:} Flask, FastAPI; REST API design and integration\\[2pt]
+\textbf{DevOps \& Deployment:} Docker, basic CI/CD (Jenkins), model containerization and deployment\\[2pt]
+\textbf{Databases:} PostgreSQL, MongoDB, SQL queries, data pipeline basics\\[2pt]
+\textbf{Web Integration:} React, TypeScript (for dashboard/UI components)\\[2pt]
+\textbf{Soft Skills:} Problem-Solving, Continuous Learning, Analytical Thinking, Communication, Adaptability, Team Collaboration, Autonomous
+}
+
+\vspace{6pt}
+
+% Experience
+\section*{Professional Experience}
+{\small
+
+\textbf{AI/ML Engineer (PFE) -- Medical Diagnosis Platform}\\[1pt]
+\textit{Itserv, Tunis} \hfill \textit{02/2025 -- 08/2025}
+\begin{itemize}
+  \item Built complete end-to-end AI system: \textbf{React/TypeScript} frontend, \textbf{Flask} REST API backend, ML pipeline
+  \item Data pipeline: collected medical datasets, performed cleaning/preprocessing, basic EDA using pandas/matplotlib
+  \item \textbf{Fine-tuned Transformer model} (Hugging Face) on medical data for disease prediction
+  \item Implemented \textbf{RAG pipeline} for context-aware inference; integrated with REST API
+  \item Deployed application using \textbf{Docker} and basic \textbf{CI/CD} (Jenkins); set up monitoring with Prometheus/Grafana
+  \item Worked with hybrid database (PostgreSQL + MongoDB); learned model versioning and deployment practices
+\end{itemize}
+
+\vspace{3pt}
+\textbf{Full Stack Developer -- Collaborative Documents Platform}\\[1pt]
+\textit{ESPRIT, Tunis (Academic Project)} \hfill \textit{2024}
+\begin{itemize}
+  \item Developed backend with real-time data processing and API optimization
+  \item Implemented data serialization and caching for high-throughput applications
+\end{itemize}
+
+\vspace{3pt}
+\textbf{Backend Developer -- Educational Platform}\\[1pt]
+\textit{Ironbyte, Tunis} \hfill \textit{2024}
+\begin{itemize}
+  \item Built \textbf{Node.js/Express} backend with optimized database schemas (indexing, query tuning) for efficient data retrieval
+  \item Implemented data aggregation pipelines with filtering, pagination, and full-text search
+\end{itemize}
+
+}
+
+\vspace{4pt}
+\section*{Key Projects}
+{\small
+\textbf{Veinpal -- Software \& Apps Platform} \hfill \href{https://veinpal.com}{veinpal.com}\\[1pt]
+\textit{Founder / Solo Developer} \hfill \textit{2025 -- Present}
+\begin{itemize}
+  \item Founded and built a full-stack platform for distributing Windows apps, web tools, and games; shipped 5 products including Trayline (desktop system monitor)
+  \item Architected \textbf{Next.js 15} monorepo (Turborepo + pnpm Workspaces) with \textbf{React 19} Server Components, strict \textbf{TypeScript 5}, and \textbf{Tailwind CSS}/shadcn/ui
+  \item Implemented \textbf{PostgreSQL 16} (Prisma ORM), \textbf{Redis} caching, S3/MinIO storage, and \textbf{NextAuth.js v5} OAuth (Google, GitHub, LinkedIn)
+  \item Built CI/CD pipeline: GitHub Actions (lint, typecheck, test, build, audit), \textbf{Vitest + Playwright} tests, Commitlint + Husky
+\end{itemize}
+
+\vspace{3pt}
+\textbf{Medical AI Diagnosis System (PFE)}\\[1pt]
+\textit{Full Stack + ML} \hfill \textit{Python, React, Flask, Hugging Face}
+\begin{itemize}
+  \item Integrated frontend (React dashboard) + backend (Flask API) + ML model (fine-tuned Transformer)
+  \item Learned data pipeline concepts: collection, cleaning, preprocessing, EDA
+  \item Implemented RAG system for retrieval-augmented diagnosis support
+  \item Deployed with Docker; basic CI/CD and monitoring setup
+\end{itemize}
+}
+
+\vspace{3pt}
+\section*{Certifications}
+{\small
+\textbf{MongoDB} -- Building RAG Apps, \textit{2025}\\[1pt]
+\textbf{Hadera} -- Hashgraph Developer, \textit{2025}\\[1pt]
+\textbf{Saylor Academy} -- C++, \textit{2022}
+}
+
+\section*{Languages}
+{\small
+\textbf{English} -- Fluent\\[1pt]
+\textbf{French} -- Professional\\[1pt]
+\textbf{Arabic} -- Native
+}
+
+\end{document}
