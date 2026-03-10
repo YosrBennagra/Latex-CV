@@ -1,20 +1,13 @@
-# Copilot Instructions - CV Project
+# Copilot Instructions - Latex-CV Project
 
-## Purpose
-Create and maintain two LaTeX CV files:
-- `cv_en.tex` (English)
-- `cv_fr.tex` (French)
-
-## Skills Policy
-- Always check `.github/skills` for relevant skills and follow them.
-- If a skill is missing or outdated for the request, update it.
-- Keep skills aligned with the current workflow and project structure.
+## Project
+Personal CV management system for **Yosr Ben Nagra**. Generates ATS-friendly LaTeX CVs tailored to job positions, in English and French. See [CLAUDE.md](../CLAUDE.md) for full conventions.
 
 ## Source of Truth
-User-provided data must be treated as canonical. Do not invent, guess, or replace it.
-Store and update the canonical data in `data_profile.json`.
+- **`data_profile.json`** — canonical profile data. Update here first, then reflect in CVs.
+- User-provided data is law. Never invent, guess, or replace it.
 
-### Current Canonical Data (from user)
+### Canonical Data
 - Name: Yosr Ben Nagra
 - Phone: +216 53916040
 - Gender: male (only include if user explicitly wants it in the CV)
@@ -23,16 +16,37 @@ Store and update the canonical data in `data_profile.json`.
 ## Rules
 1. Never falsify or fabricate user data.
 2. If any field is missing, ask the user before adding or changing it.
-3. Keep both CVs consistent (same facts, localized language).
-4. Default to ASCII text unless the user explicitly asks for accents.
-5. Only update the CV files and `data_profile.json` when the user provides new data.
-6. Never delete or blank-out previously saved user data unless the user explicitly asks to remove it.
-7. If the user asks to add content not provided, request clarification.
+3. Keep EN and FR versions consistent (same facts, localized language).
+4. Default to ASCII text unless user explicitly asks for accents.
+5. Only update CV files and `data_profile.json` when user provides new data.
+6. Never delete or blank-out previously saved user data unless user explicitly asks.
+7. If user asks to add content not provided, request clarification.
+8. Cover letters are **mandatory** for every job application.
 
 ## Update Workflow
 1. Update `data_profile.json` with new user data.
-2. Apply the same changes to `cv_en.tex` and `cv_fr.tex`.
+2. Apply the same changes to relevant CV files.
 3. Confirm what was changed and where.
 
+## Skills
+
+| Match these keywords | Skill path |
+|---|---|
+| create CV, update CV, edit CV, add experience, add skill | `.github/skills/CV Maker/SKILL.md` |
+| cover letter, application letter, motivation letter | `.github/skills/Cover Letter/SKILL.md` |
+| tailor CV, job posting, position-specific, adapt CV, new application | `.github/skills/CV Tailoring/SKILL.md` |
+| CV generation workflow, step-by-step CV creation | `.github/cv-generation-instructions.md` |
+| scaffold skills, bootstrap, init skills | `.github/skills/Skill Authoring/Scaffold Project Skills/SKILL.md` |
+| update agent, add skill, skill index drift | `.github/skills/Skill Authoring/Skill & Agent Governance/SKILL.md` |
+| skill, SKILL.md, create skill, build skill | `.github/skills/Skill Authoring/Skill Authoring Guide/SKILL.md` |
+
+## Key Files
+- `data_profile.json` — master profile data
+- `.github/skills/skills_tracker.md` — skills inventory with status
+- `templates/cv_template_compact.tex` — base CV template
+- `templates/cover_letter_universal.tex` — base cover letter template
+- `applications/` — position-specific CVs (one folder per position type)
+- `build.ps1` — build script (run `.\build.ps1` for usage)
+
 ## Output
-- LaTeX files only; PDFs generated on demand by user.
+- LaTeX files only; PDFs generated via `pdflatex` or `.\build.ps1`.

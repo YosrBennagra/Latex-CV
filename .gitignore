@@ -43,7 +43,7 @@ _minted-*/
 build/
 out/
 
-# Generated PDFs (uncomment if you want to keep PDFs under version control)
+# PDFs are tracked intentionally — do NOT uncomment
 # *.pdf
 
 # OS files
@@ -54,3 +54,6 @@ desktop.ini
 # IDEs and editors
 .vscode/
 .idea/
+
+# Qodo AI
+.qodo/

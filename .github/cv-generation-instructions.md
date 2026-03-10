@@ -46,8 +46,8 @@ Do you have experience with [SKILL]?
 - Store in application folder
 
 #### Step 8: Create Cover Letters (MANDATORY)
-- Generate French cover letter: `cover_letter_[company]_fr.txt`
-- Generate English cover letter: `cover_letter_[company]_en.txt`
+- Generate French cover letter: `cover_letter_[company]_fr.tex`
+- Generate English cover letter: `cover_letter_[company]_en.tex`
 - Tailor each letter to the specific job posting
 - Address key requirements and company context
 - Store in application folder
@@ -100,21 +100,25 @@ Do you have experience with [SKILL]?
 ```
 Latex-CV/
 ├── data_profile.json           # Master profile data
-├── cv_en.tex                   # Generic English CV
-├── cv_fr.tex                   # Generic French CV
+├── build.ps1                   # Build helper for PDFs and cleanup
+├── templates/
+│   ├── cv_template_compact.tex
+│   └── cover_letter_universal.tex
 ├── .github/
 │   ├── copilot-instructions.md # Main instructions
-│   ├── ├── cover_letter_cognizant_en.txt (MANDATORY)
-│   │   ├── cover_letter_cognizant_fr.txt (MANDATORY)
-│   │   cv-generation-instructions.md # This file
+│   ├── cv-generation-instructions.md # This file
 │   └── skills/
 │       ├── skills_tracker.md   # Skills tracking
-│       └── job_postings/       # Saved job descriptions
+│       ├── CV Maker/
+│       ├── Cover Letter/
+│       └── CV Tailoring/
 ├── applications/
 │   ├── Cognizant_FullStack_2026-02-03/
 │   │   ├── job_description.md
 │   │   ├── cv_cognizant_en.tex
 │   │   ├── cv_cognizant_fr.tex
+│   │   ├── cover_letter_cognizant_en.tex
+│   │   ├── cover_letter_cognizant_fr.tex
 │   │   └── notes.md
 │   └── [Company]_[Position]_[Date]/
 └── README.md

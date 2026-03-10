@@ -122,8 +122,8 @@
     "location_en": "Tunis, Tunisia",
     "location_fr": "Tunis, Tunisie",
     "dates": "02/2026 - Present",
-    "summary_en": "Handling inbound/outbound customer inquiries, resolving tickets via CRM tools, providing multilingual support, and maintaining high customer satisfaction scores.",
-    "summary_fr": "Gestion des appels entrants/sortants, resolution de tickets via outils CRM, support multilingue et maintien de scores de satisfaction client eleves."
+    "summary_en": "Working in the Uber Eats sales operation at Concentrix, handling sales-related customer interactions, CRM workflows, multilingual communication, and service quality follow-up.",
+    "summary_fr": "Travail au sein de l operation sales Uber Eats chez Concentrix, avec gestion des interactions commerciales, des workflows CRM, de la communication multilingue et du suivi de la qualite de service."
   },
   "domain_knowledge": [
     "Banking/Finance",
@@ -263,7 +263,8 @@
     {
       "title": "Overlayos",
       "type": "Personal",
-      "summary_en": "Custom operations dashboard to centralize tracking for meetings, platform tools, and basic user/admin management.",
+      "summary_en": "Windows customization app focused on making daily Windows usage easier with widgets, productivity tools, wallpapers, and animated wallpapers.",
+      "summary_fr": "Application de personnalisation Windows concue pour rendre l usage quotidien plus simple avec des widgets, des outils de productivite, des wallpapers et des wallpapers animes.",
       "tech": [
         "React",
         "TypeScript",

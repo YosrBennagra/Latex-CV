@@ -1,135 +1,101 @@
-# Latex-CV Project
+# Latex-CV
 
-A comprehensive CV management system for job applications with ATS-friendly templates.
+Personal CV management system — generates ATS-friendly, 1-page LaTeX CVs tailored to job positions in English and French.
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 Latex-CV/
-├── data_profile.json           # Your master profile (skills, experience, education)
-├── cv_en.tex                   # Generic English CV
-├── cv_fr.tex                   # Generic French CV
+├── data_profile.json              # Master profile data (update here first)
+├── build.ps1                      # Build script (compile .tex → .pdf)
+├── .latexmkrc                     # LaTeX build configuration
+├── CLAUDE.md                      # Project conventions
+│
 ├── templates/
-│   └── cv_template_compact.tex # 1-page compact template (copy for new applications)
-├── applications/
-│   └── [Company]_[Position]_[Date]/
-│       ├── job_description.md   # Saved job posting
-│       ├── cv_[company]_en.tex  # Tailored English CV
-│       ├── cv_[company]_fr.tex  # Tailored French CV
-│       ├── cover_letter_[company]_en.txt
-│       ├── cover_letter_[company]_fr.txt
-│       └── notes.md             # Analysis and interview prep
+│   ├── cv_template_compact.tex    # Base CV template
+│   └── cover_letter_universal.tex # Base cover letter template
+│
+├── applications/                  # One folder per position type
+│   ├── Frontend_React/            # cv_frontend_react_en/fr.tex
+│   ├── FullStack_Java/            # cv_fullstack_java_en/fr.tex
+│   ├── FullStack_MERN_React/      # cv_fullstack_mern_en/fr.tex
+│   ├── FullStack_NodeJS_React/    # cv_fullstack_node_en/fr.tex
+│   ├── Universal_FullStack/       # cv_fullstack_en.tex (generic)
+│   └── ...                        # More position variants
+│
 ├── .github/
-│   ├── copilot-instructions.md  # Copilot rules
-│   ├── cv-generation-instructions.md  # CV generation workflow
+│   ├── copilot-instructions.md    # AI assistant configuration
+│   ├── cv-generation-instructions.md
+│   ├── job-search-strategy.md
 │   └── skills/
-│       └── skills_tracker.md    # Skills database with status
-└── README.md                    # This file
+│       ├── skills_tracker.md      # Skills inventory (✅ ❌ 🔄)
+│       ├── CV Maker/SKILL.md      # Create/update CVs
+│       ├── Cover Letter/SKILL.md  # Create cover letters
+│       ├── CV Tailoring/SKILL.md  # Tailor CV to job posting
+│       └── Skill Authoring/       # Meta-skills for managing skills
 ```
 
-## 🚀 Quick Start
+## Quick Start
 
-### 1. Update Your Profile
-Edit `data_profile.json` with your latest information:
-- Personal info (name, phone, location)
-- Skills (frontend, backend, devops, etc.)
-- Projects and experience
-- Education and certifications
+### 1. Update your profile
+Edit `data_profile.json` with your latest data (skills, experience, projects).
 
-### 2. Apply for a Job
-Just paste the job description to Copilot and it will:
-1. ✅ Extract required skills
-2. ✅ Ask you about missing skills
-3. ✅ Update your skills tracker
-4. ✅ Create tailored CV (EN + FR)
-5. ✅ Create cover letters (EN + FR)
-6. ✅ Save everything organized
+### 2. Create a tailored CV
+Paste a job posting to Copilot — it will:
+1. Extract required skills and match against your profile
+2. Ask about any missing skills
+3. Create a tailored CV (EN + FR) + cover letters
+4. Save everything in `applications/{Company}_{Position}_{Date}/`
 
-### 3. Compile to PDF
-```bash
-cd applications/[Company]_[Position]_[Date]/
-pdflatex cv_[company]_fr.tex
-pdflatex cv_[company]_en.tex
+### 3. Build PDFs
+
+```powershell
+# Build one folder
+.\build.ps1 -Path applications\Frontend_React
+
+# Build a single file
+.\build.ps1 -Path applications\Frontend_React\cv_frontend_react_en.tex
+
+# Build all applications
+.\build.ps1 -All
+
+# Clean build artifacts
+.\build.ps1 -Clean
 ```
 
-## 📋 Features
-
-### ATS-Friendly Format
-- Standard section names (Experience, Education, Skills)
-- No tables, images, or complex formatting
-- Keywords from job description included
-- Clean structure parseable by ATS systems
-
-### 1-Page Compact Template
-- Fits everything on one page
-- Professional blue color scheme
-- Two-column layout for efficiency
-- FontAwesome icons (with fallback)
-
-### Skills Tracking
-- All skills logged in `.github/skills/skills_tracker.md`
-- Status: ✅ Known, ❌ Unknown, 🔄 Learning
-- Updated for each job application
-
-### Honest Approach
-- Only real experience
-- No fabricated years or companies
-- Highlights transferable skills
-- Clear about actual expertise level
-
-## 🛠 Requirements
-
-### LaTeX Distribution
-- **Windows**: MiKTeX or TeX Live
-- **Mac**: MacTeX
-- **Linux**: TeX Live
-
-### Required Packages
-```
-fontenc, inputenc, babel, geometry, enumitem, 
-xcolor, hyperref, titlesec, multicol, tgheros
+Or manually:
+```powershell
+cd applications\Frontend_React
+pdflatex cv_frontend_react_en.tex
 ```
 
-### Optional (recommended)
-```
-fontawesome5  # For icons in header
-```
+## Available Position Variants
 
-## 📝 Customization
+Existing folders in `applications/` are reusable role-based variants. For a new company-specific application, create a new folder using `applications/{Company}_{Position}_{Date}/`.
 
-### Colors
-In the template, modify:
-```latex
-\\definecolor{primary}{RGB}{0,70,130}  % Blue
-\\definecolor{darkgray}{RGB}{50,50,50}  % Text
-```
+| Folder | Focus | Best For |
+|---|---|---|
+| `Frontend_React` | React, TypeScript, UI/UX | Frontend-only roles |
+| `FullStack_Java` | Spring Boot, Java, Angular | Enterprise Java roles |
+| `FullStack_MERN_React` | MongoDB, Express, React, Node | MERN stack startups |
+| `FullStack_NodeJS_React` | Node.js, Express, React | Node.js full stack |
+| `FullStack_MEAN` | MongoDB, Express, Angular, Node | MEAN stack roles |
+| `FullStack_General` | Broad full stack | General applications |
+| `Universal_FullStack` | Everything | Widest coverage |
+| `AI_Engineer` | AI/ML, Flask, RAG | AI/ML positions |
+| `IT_Application_Operations` | IT ops, support | IT operations roles |
+| `React_FullStack_Generic` | React-first full stack | React-heavy companies |
 
-### Margins
-```latex
-\\usepackage[a4paper,margin=0.5in,top=0.4in,bottom=0.4in]{geometry}
-```
+## Requirements
 
-### Font Size
-```latex
-\\documentclass[10pt,a4paper]{article}  % 10pt for compact, 11pt for more space
-```
+- **LaTeX distribution**: MiKTeX (Windows), TeX Live (Linux), or MacTeX (Mac)
+- **Required packages**: fontenc, inputenc, babel, geometry, enumitem, xcolor, hyperref, titlesec, tgheros
+- **Optional**: fontawesome5 (for icons)
 
-## 📊 Your Profile Summary
+## Features
 
-**Name:** Yosr Ben Nagra  
-**Role:** Full Stack Developer (React focus)  
-**Location:** Tunis, Tunisia
-
-**Core Skills:**
-- Frontend: React, TypeScript, JavaScript, Angular
-- Backend: Java, Spring Boot, NestJS, Flask
-- DevOps: Jenkins, Docker, SonarQube, CI/CD
-- Database: PostgreSQL, MongoDB, SQL
-
-**Languages:** English (Fluent), French (Professional), Arabic (Native)
-
-**Domain Knowledge:** Banking/Finance
-
----
-
-*Last updated: 2026-02-03*
+- **ATS-optimized**: Standard section names, keywords, clean formatting
+- **1-page compact**: Everything fits on one page
+- **Bilingual**: English + French versions for every CV
+- **Skills tracking**: Automatic inventory of known/unknown/learning skills
+- **Honest**: Only real experience — never fabricated
