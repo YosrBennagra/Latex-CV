@@ -17,6 +17,7 @@
 \usepackage{titlesec}
 \usepackage{multicol}
 \usepackage{tgheros}
+\usepackage{graphicx}
 \renewcommand{\familydefault}{\sfdefault}
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{0pt}
@@ -35,17 +36,25 @@
 \begin{document}
 
 % ============= HEADER =============
-\begin{center}
-  {\Large\bfseries\color{primary} YOSR BEN NAGRA}\\[2pt]
-  {\small\color{darkgray} [ROLE]}\\[3pt]  % <-- CUSTOMIZE: Job title
-  {\footnotesize
-    \faPhone\ +216 53916040 \quad
-    \faMapMarker*\ Tunis, Tunisia \quad
-    \faGlobe\ \href{https://portfolio-yosr.vercel.app/en}{Portfolio} \quad
-    \faGithub\ \href{https://github.com/YosrBennagra}{GitHub} \quad
-    \faLinkedin\ \href{https://www.linkedin.com/in/yosr-ben-nagra/}{LinkedIn}
-  }
-\end{center}
+\noindent
+\begin{minipage}[c]{0.78\textwidth}
+  \begin{center}
+    {\Large\bfseries\color{primary} YOSR BEN NAGRA}\\[2pt]
+    {\small\color{darkgray} [ROLE]}\\[3pt]  % <-- CUSTOMIZE: Job title
+    {\footnotesize
+      \faPhone\ +216 53916040 \quad
+      \faMapMarker*\ Tunis, Tunisia \quad
+      \faGlobe\ \href{https://portfolio-yosr.vercel.app/en}{Portfolio} \quad
+      \faGithub\ \href{https://github.com/YosrBennagra}{GitHub} \quad
+      \faLinkedin\ \href{https://www.linkedin.com/in/yosr-ben-nagra/}{LinkedIn}
+    }
+  \end{center}
+\end{minipage}%
+\hfill
+\begin{minipage}[c]{0.18\textwidth}
+  \raggedleft
+  \includegraphics[width=\linewidth,clip]{../../assets/photo_yosr.png}
+\end{minipage}
 
 \vspace{-4pt}
 

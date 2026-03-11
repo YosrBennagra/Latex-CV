@@ -2,12 +2,13 @@
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage[french]{babel}
-\usepackage[a4paper,margin=0.6in,top=0.5in,bottom=0.5in]{geometry}
+\usepackage[a4paper,margin=0.5in,top=0.4in,bottom=0.4in]{geometry}
 \usepackage{enumitem}
 \usepackage{xcolor}
 \usepackage[hidelinks]{hyperref}
 \usepackage{titlesec}
 \usepackage{microtype}
+\usepackage{graphicx}
 \usepackage{tgheros}
 \renewcommand{\familydefault}{\sfdefault}
 \setlength{\parindent}{0pt}
@@ -17,12 +18,12 @@
 \definecolor{primary}{RGB}{0,70,130}
 \definecolor{accent}{RGB}{60,60,60}
 
-% Section formatting
+% Section formatting - compact
 \titleformat{\section}{\color{primary}\normalsize\bfseries}{}{0em}{\MakeUppercase}[\color{primary}\titlerule]
-\titlespacing*{\section}{0pt}{6pt}{3pt}
+\titlespacing*{\section}{0pt}{5pt}{2pt}
 
-% List style
-\setlist[itemize]{leftmargin=12pt,itemsep=1pt,topsep=2pt,parsep=0pt}
+% List style - tighter
+\setlist[itemize]{leftmargin=12pt,itemsep=0pt,topsep=1pt,parsep=0pt}
 
 % FontAwesome5 with fallback
 \IfFileExists{fontawesome5.sty}{\usepackage{fontawesome5}}{%
@@ -37,168 +38,116 @@
 \begin{document}
 
 % ======================== EN-TETE ========================
-\begin{center}
-  {\LARGE\bfseries\color{primary} YOSR BEN NAGRA}\\[4pt]
-  {\normalsize\color{accent} Developpeur Full Stack}\\[5pt]
+\noindent
+\begin{minipage}[c]{0.80\textwidth}
+  {\LARGE\bfseries\color{primary} YOSR BEN NAGRA}\\[3pt]
+  {\normalsize\color{accent} Developpeur Full Stack \;\textbar\; React / Node.js / Java}\\[4pt]
   {\footnotesize
     \faEnvelope\ \href{mailto:yosrbennagra@gmail.com}{yosrbennagra@gmail.com} \;\textbar\;
     \faPhone\ +216 53916040 \;\textbar\;
-    \faMapMarker\ Tunis, Tunisie \\[2pt]
-    \faGlobe\ \href{https://veinpal.com/apps}{veinpal.com/apps} \;\textbar\;
-    \faGlobe\ \href{https://portfolio-yosr.vercel.app/en}{portfolio-yosr.vercel.app} \;\textbar\;
-    \faGithub\ \href{https://github.com/YosrBennagra}{github.com/YosrBennagra} \;\textbar\;
-    \faLinkedin\ \href{https://www.linkedin.com/in/yosr-ben-nagra/}{linkedin.com/in/yosr-ben-nagra}
+    \faMapMarker\ Tunis, Tunisie\\[2pt]
+    \faGlobe\ \href{https://veinpal.com/apps}{veinpal.com} \;\textbar\;
+    \faGithub\ \href{https://github.com/YosrBennagra}{YosrBennagra} \;\textbar\;
+    \faLinkedin\ \href{https://www.linkedin.com/in/yosr-ben-nagra/}{yosr-ben-nagra}
   }
-\end{center}
+\end{minipage}%
+\hfill
+\begin{minipage}[c]{0.16\textwidth}
+  \raggedleft
+  \includegraphics[width=2.2cm,clip]{../../assets/photo_yosr.png}
+\end{minipage}
 
-% ======================== RESUME ========================
-\section*{Profil}
-{\small
-Developpeur full stack et fondateur de \textbf{Veinpal} (\href{https://veinpal.com/apps}{veinpal.com/apps}), une plateforme en production distribuant 5 produits a des utilisateurs reels. Je construis des applications web completes avec les ecosystemes \textbf{React/Next.js}, \textbf{Node.js} (Express, NestJS), \textbf{Java} (Spring Boot) et \textbf{Python} (Flask). Experience pratique avec \textbf{PostgreSQL}, \textbf{MongoDB}, \textbf{Redis} et les outils DevOps modernes (\textbf{Docker}, \textbf{CI/CD}, monitoring). Fort accent sur l'architecture propre, la surete de type, les tests automatises et la livraison de valeur en equipes Agile. Anglais courant.
+\vspace{2pt}
+
+{\footnotesize
+Developpeur full stack oriente React, avec experience sur des applications web en production en React, Node.js, Java et pipelines CI/CD modernes.
 }
 
-% ======================== COMPETENCES ========================
+% ======================== COMPETENCES (condensees) ========================
 \section*{Competences Techniques}
-{\small
-\textbf{Frontend :} React, TypeScript, JavaScript (ES6+), Next.js, Angular, HTML5, CSS3, Redux Toolkit, Zustand, React Query, React Router\\[2pt]
-\textbf{Styling :} Tailwind CSS, shadcn/ui, Material-UI (MUI), Chakra UI, Styled Components, Sass/SCSS, PrimeNG\\[2pt]
-\textbf{Backend :} Node.js, Express.js, NestJS, Fastify, Java (8/17/21), Spring Boot, Python, Flask, GraphQL, REST APIs\\[2pt]
-\textbf{Temps reel :} WebSockets, Socket.io\\[2pt]
-\textbf{Bases de donnees \& ORM :} PostgreSQL, MongoDB, Redis, Prisma, TypeORM, Mongoose, SQL\\[2pt]
-\textbf{Authentification :} JWT, Passport.js, NextAuth.js (OAuth)\\[2pt]
-\textbf{Tests :} Jest, React Testing Library, Vitest, Cypress, Playwright\\[2pt]
-\textbf{DevOps :} Docker, Git, GitHub Actions, Jenkins, Harness, Nginx, Kubernetes (bases), Helm, Vercel, Netlify\\[2pt]
-\textbf{Qualite \& Monitoring :} SonarQube, Prometheus, Grafana, ESLint, Prettier, Commitlint\\[2pt]
-\textbf{Build \& Outillage :} Vite, Webpack, Turborepo, pnpm Workspaces, Zod\\[2pt]
-\textbf{Methodes :} Agile/Scrum, TDD, Code Review, CI/CD, Architecture Monorepo
+{\footnotesize
+\textbf{Frontend :} React, TypeScript, Next.js, Angular, Redux Toolkit, Zustand, React Query, Tailwind CSS, MUI, shadcn/ui\\[1pt]
+\textbf{Backend :} Node.js, NestJS, Express, Java (Spring Boot), Python (Flask), GraphQL, REST APIs, WebSockets\\[1pt]
+\textbf{Donnees :} PostgreSQL, MongoDB, Redis, Prisma, TypeORM, Mongoose \quad \textbf{Auth :} JWT, OAuth, Passport.js, NextAuth.js\\[1pt]
+\textbf{DevOps :} Docker, Git, GitHub Actions, Jenkins, Nginx, K8s, SonarQube, Prometheus, Grafana, CI/CD\\[1pt]
+\textbf{Tests :} Jest, Vitest, Cypress, Playwright, React Testing Library \quad \textbf{Methodes :} Agile/Scrum, TDD, Code Review
 }
 
-% ======================== POSTE ACTUEL ========================
-\section*{Poste Actuel}
-{\small
-\textbf{Conseiller Service Client 1 -- Concentrix} \hfill \textit{02/2026 -- Present}\\[1pt]
-\textit{Tunis, Tunisie}
-\begin{itemize}
-  \item Support de l'\textbf{operation sales Uber Eats} : gestion des interactions commerciales, workflows de suivi et resolution de problemes via les \textbf{outils CRM}
-  \item \textbf{Support multilingue} (anglais, francais, arabe) avec maintien de la qualite de service par une communication claire, une ecoute active et un suivi precis
-\end{itemize}
-}
-
-% ======================== PROJET SOLO ========================
-\section*{Projet Solo}
-{\small
-\textbf{Fondateur \& Developpeur Full Stack -- Veinpal} \hfill \href{https://veinpal.com/apps}{veinpal.com/apps}\\[1pt]
-\textit{Projet solo} \hfill \textit{2025 -- Present}
-\begin{itemize}
-  \item Fonde et construit une \textbf{plateforme en production} pour distribuer des applications Windows, outils web et jeux -- \textbf{5 produits livres} a des utilisateurs reels, dont Trayline (moniteur systeme desktop avec 1K+ telechargements)
-  \item Architecture d'un \textbf{monorepo Next.js 15} (Turborepo, pnpm Workspaces) avec \textbf{React 19} Server Components, \textbf{TypeScript 5} strict et un design system personnalise \textbf{Tailwind CSS}/shadcn/ui
-  \item Implementation de \textbf{PostgreSQL 16} avec Prisma ORM, cache \textbf{Redis 7} (Upstash), stockage objet \textbf{S3/MinIO} pour les telechargements avec URLs presignees
-  \item Mis en place \textbf{NextAuth.js v5} OAuth multi-fournisseur (Google, GitHub, LinkedIn), validation runtime Zod sur chaque frontiere API, systeme de tickets de support
-  \item Pipeline CI/CD complet : \textbf{GitHub Actions} (lint $\rightarrow$ typecheck $\rightarrow$ test $\rightarrow$ build $\rightarrow$ audit), tests unitaires/integration \textbf{Vitest}, tests E2E \textbf{Playwright} multi-navigateurs, \textbf{Commitlint} + Husky hooks
-\end{itemize}
-}
-
-% ======================== STAGES ========================
-\section*{Stages}
+% ======================== EXPERIENCE ========================
+\section*{Experience}
 {\small
 
-% --- PFE ---
-\textbf{Developpeur Full Stack (PFE) -- Plateforme de Diagnostic Medical par IA} \\[1pt]
-\textit{Itserv, Tunis} \hfill \textit{02/2025 -- 08/2025}
+\textbf{Fondateur \& Developpeur Full Stack -- Veinpal} \hfill \href{https://veinpal.com/apps}{veinpal.com/apps} \;\textbar\; \textit{2025 -- Present}
 \begin{itemize}
-  \item Application complete : frontend \textbf{React/TypeScript} avec architecture composants, backend API REST \textbf{Flask}, base de donnees hybride \textbf{PostgreSQL + MongoDB}
-  \item Integration de modeles IA (\textbf{Hugging Face Transformers}, TensorFlow) pour la prediction de maladies ; implementation d'un \textbf{pipeline RAG} pour l'inference medicale contextuelle
-  \item Implementation de l'authentification \textbf{JWT} avec controle d'acces \textbf{RBAC}, tableaux de bord medicaux interactifs avec visualisation de donnees
-  \item Deploiement \textbf{CI/CD} complet avec Jenkins/Docker, qualite de code via \textbf{SonarQube}, monitoring en production avec \textbf{Prometheus/Grafana}
-  \item Travail en \textbf{Agile/Scrum} : standups quotidiens, planification de sprints, revues de code, collaboration avec le PO
+  \item Plateforme en production livrant 5 produits a des utilisateurs reels (1K+ telechargements), applications Windows et outils web
+  \item \textbf{Next.js 15} monorepo (Turborepo) avec React 19, TypeScript 5, PostgreSQL 16, Redis, stockage S3, OAuth, pipeline CI/CD complet
+  \item Qualite bout en bout : GitHub Actions, tests Vitest + Playwright, SonarQube, Commitlint, validation runtime Zod
 \end{itemize}
 
-\vspace{4pt}
-% --- Ironbyte ---
-\textbf{Developpeur Full Stack -- Plateforme Educative avec Planification Intelligente} \\[1pt]
-\textit{Ironbyte, Tunis} \hfill \textit{2024}
+\vspace{2pt}
+\textbf{Developpeur Full Stack (PFE) -- Diagnostic Medical par IA} \hfill \textit{Itserv \;\textbar\; 02/2025 -- 08/2025}
 \begin{itemize}
-  \item Plateforme \textbf{NestJS/React/MongoDB} pour la gestion des devoirs, le partage de cours et la creation automatique d'emplois du temps
-  \item Implementation d'algorithmes de planification intelligente avec \textbf{+40\% d'amelioration d'efficacite} dans la generation d'emplois du temps
-  \item Backend optimise avec indexation MongoDB, APIs RESTful avec pagination/filtrage et mises a jour WebSocket en temps reel
-  \item Containerisation avec Docker, automatisation du pipeline CI/CD
+  \item Application \textbf{React/TypeScript} + \textbf{Flask} avec PostgreSQL/MongoDB hybride ; prediction IA via Hugging Face \& pipeline RAG
+  \item CI/CD complet (Jenkins, Docker, SonarQube), monitoring Prometheus/Grafana, auth JWT/RBAC, Agile/Scrum
 \end{itemize}
 
-\vspace{4pt}
-% --- Ooredoo ---
-\textbf{Developpeur Full Stack -- Suite de Communication Interne} \\[1pt]
-\textit{Ooredoo, Tunis} \hfill \textit{2023}
+\vspace{2pt}
+\textbf{Developpeur Full Stack -- Plateforme Educative} \hfill \textit{Ironbyte \;\textbar\; 2024}
 \begin{itemize}
-  \item Architecture backend \textbf{Spring Boot (Java)} avec couches DAO/DTO, endpoints REST securises et authentification JWT
-  \item Frontend \textbf{Angular + PrimeNG} : chat en temps reel, filtrage/recherche avancee et tableau de bord administrateur
-  \item Redaction de \textbf{tests unitaires et d'integration} complets pour ameliorer la stabilite et la qualite des livraisons
-  \item Utilisation d'IntelliJ IDEA, workflows Git et ceremonies Agile dans un environnement telecom
+  \item Plateforme \textbf{NestJS/React/MongoDB} avec algorithmes de planification intelligente (\textbf{+40\% efficacite}), WebSockets, Docker CI/CD
+\end{itemize}
+
+\vspace{2pt}
+\textbf{Developpeur Full Stack -- Communication Interne} \hfill \textit{Ooredoo \;\textbar\; 2023}
+\begin{itemize}
+  \item Backend \textbf{Spring Boot} (DAO/DTO, JWT) + frontend \textbf{Angular/PrimeNG} avec chat temps reel, outils admin, tests unitaires/integration
+\end{itemize}
+
+\vspace{2pt}
+\textbf{Conseiller Service Client -- Concentrix (Uber Eats)} \hfill \textit{02/2026 -- Present}
+\begin{itemize}
+  \item Prospection de proprietaires de restaurants pour integration Uber Eats via \textbf{Salesforce} CRM ; support multilingue (EN/FR/AR)
 \end{itemize}
 
 }
 
-% ======================== PROJET ACADEMIQUE ========================
-\section*{Projet Academique}
-{\small
-\textbf{Developpeur Full Stack -- Plateforme de Documents Collaboratifs (type Notion)} \\[1pt]
-\textit{ESPRIT, Tunis} \hfill \textit{2024}
-\begin{itemize}
-  \item Developpe en equipe un editeur de documents collaboratif full-stack \textbf{React + NestJS} avec TypeScript sur l'ensemble du codebase
-  \item Implementation de la \textbf{collaboration en temps reel} via Socket.io, editeur de texte riche avec formatage, systeme de permissions et historique des versions
-  \item Authentification \textbf{JWT} avec refresh tokens, middleware API pour la validation, gestion des erreurs et journalisation
-  \item Pipeline CI/CD avec tests automatises, processus systematique de revue de code et workflow Agile en equipe
-\end{itemize}
-}
-
-% ======================== PROJETS PERSONNELS ========================
-\section*{Projets Personnels}
+% ======================== PROJETS ========================
+\section*{Projets}
 {\small
 
-\textbf{Systeme E-commerce Event-Driven} \hfill \textit{En cours}\\[1pt]
-\textit{React, NestJS, PostgreSQL, MongoDB, RabbitMQ/Kafka, Docker, K8s, Prometheus, OpenTelemetry}
-\begin{itemize}
-  \item Construction d'un systeme e-commerce utilisant l'\textbf{architecture event-driven} avec des fonctionnalites de fiabilite (retries, idempotence)
-  \item Implementation d'outils admin pour tracer, inspecter et retraiter les evenements echoues ; observabilite complete avec OpenTelemetry
-\end{itemize}
-
-\vspace{3pt}
-\textbf{Overlayos -- Application de Personnalisation Windows} \\[1pt]
-\textit{React, TypeScript, Node.js/Express, PostgreSQL, MongoDB, Socket.io, Docker, K8s, Helm}
-\begin{itemize}
-  \item Application de \textbf{personnalisation Windows} concue pour rendre l'usage quotidien plus simple avec des widgets, des outils de productivite, des wallpapers et des wallpapers animes
-  \item Fonctionnalites de personnalisation du bureau et d'ergonomie pour ameliorer l'experience utilisateur Windows
-\end{itemize}
-
-\vspace{3pt}
-\textbf{Portfolio} \hfill \href{https://portfolio-yosr.vercel.app/en}{portfolio-yosr.vercel.app}\\[1pt]
-\textit{Next.js, React, TypeScript, Vercel}
-\begin{itemize}
-  \item Portfolio responsive et multilingue avec SSG/SSR, mode sombre, animations et i18n (anglais/francais)
-\end{itemize}
+\textbf{Plateforme Documents Collaboratifs (type Notion)} \;\textbar\; \textit{ESPRIT, 2024} --
+React + NestJS, collaboration temps reel via Socket.io, authentification JWT, CI/CD, workflow Agile\\[2pt]
+\textbf{E-commerce Event-Driven} \;\textbar\; \textit{En cours} --
+NestJS, PostgreSQL, RabbitMQ/Kafka, Docker, K8s, retries/idempotence, observabilite OpenTelemetry\\[2pt]
+\textbf{Overlayos} --
+Application de personnalisation Windows avec widgets et outils de productivite : React, TypeScript, Node.js, Docker, K8s, Helm\\[2pt]
+\textbf{Portfolio} \;\textbar\; \href{https://portfolio-yosr.vercel.app/en}{portfolio-yosr.vercel.app} --
+Next.js, multilingue SSG/SSR, mode sombre, i18n
 
 }
 
 % ======================== FORMATION ========================
 \section*{Formation}
-{\small
-\textbf{ESPRIT} -- Ingenierie Informatique \hfill \textit{2020 -- 2025}\\[1pt]
-Ecole Superieure Privee d'Ingenierie et de Technologies, Tunis\\[3pt]
-\textbf{Lycee Soukra} -- Baccalaureat Informatique \hfill \textit{2019}
+{\footnotesize
+\textbf{ESPRIT} -- Ingenierie Info \hfill \textit{2020--2025}\\
+Tunis, Tunisie\\[2pt]
+\textbf{Lycee Soukra} -- Bac Info \hfill \textit{2019}
 }
 
 % ======================== CERTIFICATIONS ========================
 \section*{Certifications}
-{\small
-\textbf{MongoDB} -- Building RAG Apps Using MongoDB, \textit{2025}\\[1pt]
-\textbf{Hadera} -- Hashgraph Developer Program, \textit{2025}\\[1pt]
-\textbf{Honoris Online Academy} -- Durabilite, Ethique du travail \& Equite de genre, \textit{2024}\\[1pt]
-\textbf{Saylor Academy} -- CS107 : Programmation C++, \textit{2022}
+{\footnotesize
+MongoDB -- RAG Apps \hfill \textit{2025}\\
+Hadera -- Hashgraph Dev \hfill \textit{2025}\\
+Saylor -- Programmation C++ \hfill \textit{2022}
 }
 
 % ======================== LANGUES ========================
 \section*{Langues}
-{\small
-\textbf{Anglais} -- Courant \quad\textbar\quad \textbf{Francais} -- Professionnel \quad\textbar\quad \textbf{Arabe} -- Langue maternelle
+{\footnotesize
+\textbf{Anglais} -- Courant\\
+\textbf{Francais} -- Professionnel\\
+\textbf{Arabe} -- Langue maternelle
 }
 
 \end{document}

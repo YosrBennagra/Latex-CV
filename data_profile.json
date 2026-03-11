@@ -3,6 +3,7 @@
   "phone": "+216 53916040",
   "gender": "male",
   "focus": "React",
+  "photo": "assets/photo_yosr.png",
   "skills": {
     "frontend": [
       "React",
@@ -122,13 +123,14 @@
     "location_en": "Tunis, Tunisia",
     "location_fr": "Tunis, Tunisie",
     "dates": "02/2026 - Present",
-    "summary_en": "Working in the Uber Eats sales operation at Concentrix, handling sales-related customer interactions, CRM workflows, multilingual communication, and service quality follow-up.",
-    "summary_fr": "Travail au sein de l operation sales Uber Eats chez Concentrix, avec gestion des interactions commerciales, des workflows CRM, de la communication multilingue et du suivi de la qualite de service."
+    "summary_en": "Working in the Uber Eats sales operation at Concentrix using Salesforce CRM. Contacting restaurant owners to onboard them onto the Uber Eats platform, managing sales pipelines, multilingual communication, and service quality follow-up.",
+    "summary_fr": "Travail au sein de l operation sales Uber Eats chez Concentrix avec utilisation de Salesforce CRM. Contact de proprietaires de restaurants pour les integrer a la plateforme Uber Eats, gestion des pipelines de vente, communication multilingue et suivi de la qualite de service."
   },
   "domain_knowledge": [
     "Banking/Finance",
     "Telecoms",
-    "Customer Service"
+    "Customer Service",
+    "Salesforce CRM"
   ],
   "languages": {
     "english": "Fluent",
