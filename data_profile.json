@@ -263,23 +263,62 @@
       ]
     },
     {
-      "title": "Overlayos",
+      "title": "OverlayOS",
       "type": "Personal",
-      "summary_en": "Windows customization app focused on making daily Windows usage easier with widgets, productivity tools, wallpapers, and animated wallpapers.",
-      "summary_fr": "Application de personnalisation Windows concue pour rendre l usage quotidien plus simple avec des widgets, des outils de productivite, des wallpapers et des wallpapers animes.",
+      "summary_en": "Built a production-grade Windows desktop widget host with a secure community plugin system. Implemented Clean Architecture with .NET 8, C# and WPF, EF Core + SQLite persistence, isolated AssemblyLoadContext plugin loading, DPAPI-based secure storage, and observability with Serilog + Application Insights.",
+      "summary_fr": "Cree une application desktop Windows de type widget host avec un systeme securise de plugins communautaires. Architecture Clean en .NET 8, C# et WPF, persistence EF Core + SQLite, chargement isole des plugins via AssemblyLoadContext, stockage securise base sur DPAPI et observabilite avec Serilog + Application Insights.",
       "tech": [
-        "React",
-        "TypeScript",
-        "Node.js",
-        "Express.js",
-        "PostgreSQL",
-        "MongoDB",
-        "Socket.io",
-        "Docker",
-        "Kubernetes (basics)",
-        "Helm",
-        "Bitbucket",
-        "Harness"
+        ".NET 8",
+        "C#",
+        "WPF",
+        "CommunityToolkit.Mvvm",
+        "EF Core 8",
+        "SQLite",
+        "AssemblyLoadContext",
+        "DPAPI",
+        "Serilog",
+        "Application Insights",
+        "WebView2",
+        "MinIO",
+        "xUnit",
+        "Inno Setup",
+        "GitHub Actions"
+      ]
+    },
+    {
+      "title": "Secryx",
+      "type": "Personal",
+      "summary_en": "Built a desktop secret inventory and monitoring app to scan env-like files across projects. Implemented lifecycle tracking for found, changed, removed, and restored secrets, with metadata and history in SQLite and secure secret storage through the OS keychain.",
+      "summary_fr": "Cree une application desktop d inventaire et de suivi des secrets pour scanner les fichiers de type env dans plusieurs projets. Implementation du suivi du cycle de vie des secrets (found, changed, removed, restored), avec metadata et historique dans SQLite et stockage securise via le keychain du systeme.",
+      "tech": [
+        "Tauri v2",
+        "Rust 2021",
+        "React 19",
+        "TypeScript 5",
+        "Vite 7",
+        "Tailwind CSS",
+        "Zustand",
+        "SQLite (rusqlite)",
+        "OS Keychain (keyring)",
+        "Serde",
+        "Tokio"
+      ]
+    },
+    {
+      "title": "TypeW",
+      "type": "Personal",
+      "summary_en": "Built a browser-based typing and cognitive training platform with 41 playable modes and mini-games across typing, reflex, memory, brain, and puzzle categories. Designed a scalable game registry architecture with modular React components, centralized Zustand game state, live WPM/accuracy tracking, and CI/CD pipelines for quality checks and production deployment.",
+      "summary_fr": "Cree une plateforme web d entrainement au typing et aux capacites cognitives avec 41 modes et mini-jeux jouables repartis entre typing, reflex, memory, brain et puzzle. Conception d une architecture evolutive basee sur un registre de jeux modulaire, composants React decoupes, etat global Zustand, suivi en direct du WPM/accuracy, et pipelines CI/CD pour qualite et deploiement production.",
+      "tech": [
+        "React 19",
+        "TypeScript 5",
+        "Vite 6",
+        "Tailwind CSS 4",
+        "Zustand 5",
+        "Vitest",
+        "ESLint",
+        "GitHub Actions",
+        "Vercel"
       ]
     },
     {

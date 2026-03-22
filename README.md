@@ -16,11 +16,11 @@ Latex-CV/
 │   └── cover_letter_universal.tex # Base cover letter template
 │
 ├── applications/                  # One folder per position type
-│   ├── Frontend_React/            # cv_frontend_react_en/fr.tex
-│   ├── FullStack_Java/            # cv_fullstack_java_en/fr.tex
-│   ├── FullStack_MERN_React/      # cv_fullstack_mern_en/fr.tex
-│   ├── FullStack_NodeJS_React/    # cv_fullstack_node_en/fr.tex
-│   ├── Universal_FullStack/       # cv_fullstack_en.tex (generic)
+│   ├── Frontend_React/            # EN/cv_frontend_react_en.tex + FR/cv_frontend_react_fr.tex
+│   ├── FullStack_Java/            # EN/ + FR/ language split
+│   ├── FullStack_MERN_React/      # EN/ + FR/ language split
+│   ├── FullStack_NodeJS_React/    # EN/ + FR/ language split
+│   ├── Universal_FullStack/       # EN/cv_fullstack_en(.long).tex + FR/cv_fullstack_fr(.long).tex
 │   └── ...                        # More position variants
 │
 ├── .github/
@@ -54,7 +54,7 @@ Paste a job posting to Copilot — it will:
 .\build.ps1 -Path applications\Frontend_React
 
 # Build a single file
-.\build.ps1 -Path applications\Frontend_React\cv_frontend_react_en.tex
+.\build.ps1 -Path applications\Frontend_React\EN\cv_frontend_react_en.tex
 
 # Build all applications
 .\build.ps1 -All
@@ -65,7 +65,7 @@ Paste a job posting to Copilot — it will:
 
 Or manually:
 ```powershell
-cd applications\Frontend_React
+cd applications\Frontend_React\EN
 pdflatex cv_frontend_react_en.tex
 ```
 

@@ -13,6 +13,7 @@
     Also build files in the templates/ folder.
 .EXAMPLE
     .\build.ps1 -Path applications\Frontend_React
+    .\build.ps1 -Path applications\Frontend_React\EN\cv_frontend_react_en.tex
     .\build.ps1 -All
     .\build.ps1 -Clean
     .\build.ps1 -Clean -Path applications\Frontend_React
@@ -125,7 +126,7 @@ elseif ($All) {
 else {
     Write-Host "Usage:" -ForegroundColor White
     Write-Host "  .\build.ps1 -Path applications\Frontend_React   # Build one folder"
-    Write-Host "  .\build.ps1 -Path applications\Frontend_React\cv_frontend_react_en.tex  # Build one file"
+    Write-Host "  .\build.ps1 -Path applications\Frontend_React\EN\cv_frontend_react_en.tex  # Build one file"
     Write-Host "  .\build.ps1 -All                                 # Build all applications"
     Write-Host "  .\build.ps1 -All -Templates                      # Build all including templates"
     Write-Host "  .\build.ps1 -Clean                               # Clean all artifacts"
