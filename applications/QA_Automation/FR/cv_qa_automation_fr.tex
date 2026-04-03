@@ -1,0 +1,122 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+\usepackage[a4paper,margin=0.65in,top=0.55in,bottom=0.55in]{geometry}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+\usepackage{microtype}
+\usepackage{tgheros}
+\renewcommand{\familydefault}{\sfdefault}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+% List spacing (consistent across sections)
+\setlist[itemize]{leftmargin=12pt,itemsep=1pt,topsep=2pt,parsep=0pt}
+
+% Section formatting (ATS-friendly)
+\titleformat{\section}{\normalsize\bfseries}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{4pt}{2pt}
+
+\begin{document}
+
+% Header
+\begin{center}
+  {\Large\bfseries YOSR BEN NAGRA}\\[2pt]
+  {\small Ingenieur QA Automation}\\[3pt]
+  {\footnotesize yosrbennagra@gmail.com \;|\; +216 53916040 \;|\; Tunis, Tunisie \;|\; \href{https://portfolio-yosr.vercel.app/fr}{portfolio-yosr.vercel.app} \;|\; \href{https://github.com/YosrBennagra}{github.com/YosrBennagra} \;|\; \href{https://www.linkedin.com/in/yosr-ben-nagra/}{linkedin.com/in/yosr-ben-nagra}}
+\end{center}
+
+% Profil
+\section*{Profil Professionnel}
+{\small
+Ingenieur logiciel oriente QA Automation avec experience pratique en creation de suites de tests automatises et de controles qualite CI pour des produits web et desktop. Solide pratique des tests unitaires, integration et end-to-end avec \textbf{Jest}, \textbf{React Testing Library}, \textbf{Cypress}, \textbf{Vitest}, \textbf{Playwright} et \textbf{xUnit}. Experience des quality gates, du monitoring et de la fiabilite des livraisons avec \textbf{Jenkins}, \textbf{GitHub Actions}, \textbf{SonarQube}, \textbf{Prometheus} et \textbf{Grafana}.
+}
+
+\vspace{4pt}
+
+% Competences
+\section*{Competences Techniques}
+{\small
+\textbf{Automatisation des tests:} Playwright, Cypress, Jest, React Testing Library, Vitest, xUnit\\[2pt]
+\textbf{Perimetre de test:} Tests unitaires, tests d integration, tests end-to-end, tests de regression, validation UI et API\\[2pt]
+\textbf{Qualite logicielle:} SonarQube, TDD, pratiques de code review, quality gates lint/typecheck/test\\[2pt]
+\textbf{CI/CD et DevOps:} Jenkins, GitHub Actions, Docker, Git, Nginx, Kubernetes (basics), Helm\\[2pt]
+\textbf{Stack applicatif:} React, TypeScript, Next.js, Node.js, NestJS, Spring Boot, Flask, APIs REST, GraphQL, WebSockets\\[2pt]
+\textbf{Data et monitoring:} PostgreSQL, MongoDB, Redis, SQL, Prometheus, Grafana
+}
+
+\vspace{6pt}
+
+% Experience
+\section*{Experience Professionnelle}
+{\small
+
+\textbf{Fondateur et Developpeur Full Stack -- Veinpal}\\[1pt]
+\textit{Tunis (Remote)} \hfill \textit{2025 -- Present}
+\begin{itemize}
+  \item Mise en place de pipelines CI imposant lint, typecheck, tests et build avant livraison sur plusieurs produits.
+  \item Implementation de tests automatises avec \textbf{Vitest} et \textbf{Playwright} pour les parcours critiques et la validation de release.
+  \item Maintien des standards qualite via workflows de code review et outillage qualite automatise.
+\end{itemize}
+
+\vspace{3pt}
+\textbf{Conseiller Service Client 1 -- Operation sales Uber Eats}\\[1pt]
+\textit{Concentrix, Tunis} \hfill \textit{02/2026 -- Present}
+\begin{itemize}
+  \item Suivi qualite de service et traitement multilingue des demandes dans des workflows Salesforce CRM.
+\end{itemize}
+
+\vspace{3pt}
+\textbf{Developpeur Full Stack (PFE) -- Plateforme de diagnostic medical IA}\\[1pt]
+\textit{Itserv, Tunis} \hfill \textit{02/2025 -- 08/2025}
+\begin{itemize}
+  \item Developpement d une application React/TypeScript + Flask avec PostgreSQL et MongoDB pour des workflows de diagnostic assiste par IA.
+  \item Integration des tests unitaires et des controles qualite \textbf{SonarQube} dans un pipeline CI/CD \textbf{Jenkins}.
+  \item Mise en place de dashboards \textbf{Prometheus/Grafana} pour detecter les defaillances et accelerer le troubleshooting.
+\end{itemize}
+
+\vspace{3pt}
+\textbf{Stagiaire Developpeur Full Stack -- Application de communication interne}\\[1pt]
+\textit{Ooredoo} \hfill \textit{2023}
+\begin{itemize}
+  \item Livraison de services Spring Boot et interfaces Angular avec endpoints REST securises et communication temps reel.
+  \item Ajout de tests unitaires et integration complets pour ameliorer fiabilite et maintenabilite.
+\end{itemize}
+
+\vspace{3pt}
+\textbf{Stagiaire Developpeur Full Stack -- Plateforme educative}\\[1pt]
+\textit{Ironbyte, Tunis} \hfill \textit{2024}
+\begin{itemize}
+  \item Developpement de fonctionnalites NestJS/React pour les workflows de devoirs et la generation automatique d emploi du temps.
+  \item Contribution a la mise en place CI/CD et a la livraison stable de fonctionnalites WebSocket.
+\end{itemize}
+
+}
+
+\vspace{4pt}
+\section*{Formation}
+{\small
+\textbf{ESPRIT}, Etudes d ingenierie informatique \hfill \textit{2020--2025}\\[1pt]
+Tunis, Tunisie\\[2pt]
+\textbf{Lycee Soukra}, Baccalaureat sciences informatiques \hfill \textit{2019}
+}
+
+\vspace{4pt}
+\section*{Certifications}
+{\small
+\textbf{MongoDB} -- Building RAG Apps, \textit{2025}\\[1pt]
+\textbf{Hadera} -- Hashgraph Developer Program, \textit{2025}\\[1pt]
+\textbf{Honoris Online Academy} -- Sustainability, Work Ethics and Gender Equity, \textit{2024}\\[1pt]
+\textbf{Saylor Academy} -- CS107: C++ Programming, \textit{2022}
+}
+
+\section*{Langues}
+{\small
+\textbf{Anglais} -- Courant\\[1pt]
+\textbf{Francais} -- Professionnel\\[1pt]
+\textbf{Arabe} -- Langue maternelle
+}
+
+\end{document}
