@@ -19,6 +19,7 @@
 \usepackage[hidelinks]{hyperref}
 \usepackage{titlesec}
 \usepackage{paracol}
+\usepackage{eso-pic}
 \usepackage{tgheros}
 \renewcommand{\familydefault}{\sfdefault}
 \setlength{\parindent}{0pt}
@@ -35,8 +36,12 @@
   {\color{white!60}\rule{\linewidth}{0.6pt}}\par\vspace{3pt}}
 
 % Main section headers
-\titleformat{\section}{\color{accent}\large\bfseries\uppercase}{}{0em}{}[{\color{accent}\titlerule}]
+\titleformat{\section}{\color{accent}\large\bfseries}{}{0em}{\MakeUppercase}[{\color{accent}\titlerule}]
 \titlespacing*{\section}{0pt}{10pt}{4pt}
+
+% Full-height sidebar band painted behind column 0 on every page
+\AddToShipoutPictureBG{%
+  \AtPageLowerLeft{\color{sidebarbg}\rule{0.34\paperwidth}{\paperheight}}}
 
 \begin{document}
 \pagestyle{empty}
@@ -47,9 +52,8 @@
 \begin{paracol}{2}
 
 % ===================== LEFT SIDEBAR =====================
-\backgroundcolor{c[0]}{sidebarbg}
-\color{white}
 \begin{leftcolumn}
+\color{white}
 \vspace{24pt}
 \hspace{14pt}\begin{minipage}{0.82\linewidth}
 \raggedright
@@ -94,6 +98,7 @@ C++ -- Saylor Academy (2022)
 
 % ===================== RIGHT MAIN COLUMN =====================
 \begin{rightcolumn}
+\color{maindark}
 \vspace{24pt}
 \hspace{14pt}\begin{minipage}{0.9\linewidth}
 
