@@ -1,0 +1,106 @@
+% CV Template - Minimal (Clean, Whitespace, Thin Rules)
+% Single column, elegant typography, generous whitespace, subtle thin rules.
+% ATS-friendly (single column, real text) while looking refined and modern.
+%
+% Usage: Copy this file and customize for each job application.
+% Replace [ROLE] with the job title.
+
+\documentclass[10pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}  % Change to [french] for French CV
+\usepackage[a4paper,margin=0.85in,top=0.7in,bottom=0.7in]{geometry}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+\usepackage{tgheros}
+\renewcommand{\familydefault}{\sfdefault}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+\definecolor{ink}{RGB}{30,30,30}
+\definecolor{muted}{RGB}{110,110,110}
+\color{ink}
+
+% Letter-spaced, muted, thin-ruled section headers
+\titleformat{\section}{\color{muted}\footnotesize\bfseries\uppercase}{}{0em}{}[{\color{muted!40}\vspace{1pt}\titlerule[0.4pt]}]
+\titlespacing*{\section}{0pt}{12pt}{4pt}
+
+\newcommand{\role}[3]{% #1 title, #2 org, #3 dates
+  \textbf{#1}\hfill{\color{muted}\small #3}\\
+  {\color{muted}\small\itshape #2}\par}
+
+\begin{document}
+\pagestyle{empty}
+
+% ============= HEADER =============
+\begin{center}
+  {\huge\bfseries YOSR BEN NAGRA}\\[5pt]
+  {\color{muted}\normalsize [ROLE]}\\[7pt]  % <-- CUSTOMIZE: Job title
+  {\color{muted}\small
+    +216 53916040 \quad yosrbennagra@gmail.com \quad Tunis, Tunisia\\[2pt]
+    \href{https://portfolio-yosr.vercel.app/en}{portfolio-yosr.vercel.app} \quad
+    \href{https://github.com/YosrBennagra}{github.com/YosrBennagra} \quad
+    \href{https://www.linkedin.com/in/yosr-ben-nagra/}{linkedin.com/in/yosr-ben-nagra}
+  }
+\end{center}
+
+% ============= PROFILE =============
+\section*{Profile}
+\small
+Full-stack developer specialized in React and TypeScript, fluent across backend
+(Node.js, NestJS, Spring Boot), databases, and DevOps. Engineering graduate from ESPRIT
+seeking a [ROLE] position to build clean, reliable software end to end.
+
+% ============= EXPERIENCE =============
+\section*{Experience}
+\small
+\role{AI Medical Diagnosis Application}{Full-stack Developer -- Itserv, Tunis}{02/2025 -- 08/2025}
+\begin{itemize}[leftmargin=12pt,itemsep=1pt,topsep=3pt,parsep=0pt]
+  \item Full-stack React + Flask application on a hybrid PostgreSQL/MongoDB database.
+  \item AI disease prediction with Hugging Face Transformers, RAG, and TensorFlow.
+  \item Complete CI/CD pipeline: Jenkins, SonarQube, Prometheus/Grafana monitoring.
+\end{itemize}
+
+\vspace{5pt}
+\role{Collaborative Documents App (Notion-like)}{Full-stack Developer -- ESPRIT, Tunis}{2024}
+\begin{itemize}[leftmargin=12pt,itemsep=1pt,topsep=3pt,parsep=0pt]
+  \item React + NestJS editor with real-time collaboration over WebSockets.
+  \item Complete CI/CD pipeline and systematic team code review.
+\end{itemize}
+
+\vspace{5pt}
+\role{Educational Platform with Timetable Tool}{Full-stack Developer -- Ironbyte, Tunis}{2024}
+\begin{itemize}[leftmargin=12pt,itemsep=1pt,topsep=3pt,parsep=0pt]
+  \item NestJS/React/MongoDB platform for assignments, lessons, and timetables.
+  \item Scheduling algorithms improved planning efficiency by 40\%.
+\end{itemize}
+
+\vspace{5pt}
+\role{Internal Communication Application}{Full-stack Developer -- Ooredoo, Tunis}{2023}
+\begin{itemize}[leftmargin=12pt,itemsep=1pt,topsep=3pt,parsep=0pt]
+  \item Spring Boot services (DAO/DTO, secure REST) with Angular + PrimeNG frontend.
+  \item Real-time chat, advanced search, admin tooling, unit/integration tests.
+\end{itemize}
+
+% ============= SKILLS =============
+\section*{Technical Skills}
+\small
+\textbf{Frontend} \enspace React, TypeScript, JavaScript, Next.js, Redux, Tailwind CSS\\[2pt]
+\textbf{Backend} \enspace Node.js, NestJS, Express, Spring Boot, Java, Flask, REST, GraphQL\\[2pt]
+\textbf{Databases} \enspace PostgreSQL, MongoDB, Redis, SQL, Prisma, TypeORM\\[2pt]
+\textbf{DevOps} \enspace Docker, Jenkins, CI/CD, Git, SonarQube, Prometheus, Grafana, Linux
+
+% ============= EDUCATION + LANGUAGES =============
+\section*{Education}
+\small
+\textbf{ESPRIT} -- Engineering / Computer Science, Tunis \hfill {\color{muted}2020 -- 2025}\\[2pt]
+\textbf{Lycee Soukra} -- Baccalaureate in Computer Science \hfill {\color{muted}2019}
+
+\section*{Languages \& Certifications}
+\small
+English (Fluent), French (Professional), Arabic (Native)\\[2pt]
+RAG Apps -- MongoDB (2025) \quad Hashgraph Developer (2025) \quad C++ -- Saylor (2022)
+
+\end{document}

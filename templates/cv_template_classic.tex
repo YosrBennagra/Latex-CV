@@ -1,0 +1,122 @@
+% CV Template - Classic (Maximum ATS Compatibility)
+% Pure single-column, black & white, no photo, no icons, no multi-column.
+% This is the safest choice when you do not know which ATS the company uses.
+%
+% Usage: Copy this file and customize for each job application.
+% Replace [ROLE] with the job title.
+% Replace the Key Strengths bullets to match the job description.
+
+\documentclass[10pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}  % Change to [french] for French CV
+\usepackage[a4paper,margin=0.7in,top=0.6in,bottom=0.6in]{geometry}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+\renewcommand{\familydefault}{\rmdefault}  % Serif: most ATS-neutral, prints cleanly
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+% Plain section headers - no color, just bold uppercase + rule (ATS reads the text)
+\titleformat{\section}{\normalsize\bfseries\uppercase}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{8pt}{3pt}
+
+\begin{document}
+
+% ============= HEADER =============
+\begin{center}
+  {\LARGE\bfseries YOSR BEN NAGRA}\\[3pt]
+  {\normalsize [ROLE]}\\[4pt]  % <-- CUSTOMIZE: Job title
+  {\small
+    +216 53916040 \ $\vert$ \
+    yosrbennagra@gmail.com \ $\vert$ \
+    Tunis, Tunisia\\
+    \href{https://portfolio-yosr.vercel.app/en}{portfolio-yosr.vercel.app} \ $\vert$ \
+    \href{https://github.com/YosrBennagra}{github.com/YosrBennagra} \ $\vert$ \
+    \href{https://www.linkedin.com/in/yosr-ben-nagra/}{linkedin.com/in/yosr-ben-nagra}
+  }
+\end{center}
+
+% ============= SUMMARY (optional - customize per job) =============
+\section*{Professional Summary}
+\small
+Full-stack developer specialized in React and TypeScript with hands-on experience across
+backend (Node.js, NestJS, Spring Boot), databases (PostgreSQL, MongoDB), and DevOps (Docker,
+Jenkins, CI/CD). Engineering graduate from ESPRIT seeking a [ROLE] position to build reliable,
+maintainable software end to end.
+
+% ============= TECHNICAL SKILLS =============
+\section*{Technical Skills}
+\small
+\textbf{Frontend:} React, TypeScript, JavaScript, Next.js, Redux, HTML5, CSS3, Tailwind CSS\\
+\textbf{Backend:} Node.js, NestJS, Express, Spring Boot, Java, Flask, REST APIs, GraphQL\\
+\textbf{Databases:} PostgreSQL, MongoDB, Redis, SQL, Prisma, TypeORM\\
+\textbf{DevOps \& Tools:} Docker, Jenkins, CI/CD, Git, SonarQube, Prometheus, Grafana, Linux
+
+% ============= PROFESSIONAL EXPERIENCE =============
+\section*{Professional Experience}
+\small
+
+\textbf{Final Year Internship -- AI Medical Diagnosis Application} \hfill Itserv, Tunis \\
+\textit{Full-stack Developer} \hfill \textit{02/2025 -- 08/2025}
+\begin{itemize}[leftmargin=14pt,itemsep=1pt,topsep=2pt,parsep=0pt]
+  \item Built a full-stack React + Flask application with a hybrid PostgreSQL/MongoDB database.
+  \item Integrated AI disease-prediction models (Hugging Face Transformers, RAG, TensorFlow).
+  \item Delivered a complete CI/CD pipeline with Jenkins, SonarQube, and Prometheus/Grafana monitoring.
+\end{itemize}
+
+\vspace{3pt}
+\textbf{Academic Project -- Collaborative Documents App (Notion-like)} \hfill ESPRIT, Tunis \\
+\textit{Full-stack Developer} \hfill \textit{2024}
+\begin{itemize}[leftmargin=14pt,itemsep=1pt,topsep=2pt,parsep=0pt]
+  \item Developed a React + NestJS editor with real-time collaboration over WebSockets.
+  \item Implemented a complete CI/CD pipeline and team code-review workflow.
+\end{itemize}
+
+\vspace{3pt}
+\textbf{Internship -- Educational Platform with Timetable Tool} \hfill Ironbyte, Tunis \\
+\textit{Full-stack Developer} \hfill \textit{2024}
+\begin{itemize}[leftmargin=14pt,itemsep=1pt,topsep=2pt,parsep=0pt]
+  \item Built a NestJS/React/MongoDB platform for assignments, lessons, and timetables.
+  \item Designed scheduling algorithms that improved planning efficiency by 40\%.
+\end{itemize}
+
+\vspace{3pt}
+\textbf{Internship -- Internal Communication Application} \hfill Ooredoo, Tunis \\
+\textit{Full-stack Developer} \hfill \textit{2023}
+\begin{itemize}[leftmargin=14pt,itemsep=1pt,topsep=2pt,parsep=0pt]
+  \item Built Spring Boot services (DAO/DTO, secure REST endpoints) with Angular + PrimeNG frontend.
+  \item Delivered real-time chat, advanced search, and admin tooling with unit/integration tests.
+\end{itemize}
+
+% ============= EDUCATION =============
+\section*{Education}
+\small
+\textbf{ESPRIT -- Ecole Superieure Privee d'Ingenierie et de Technologies} \hfill \textit{2020 -- 2025}\\
+Engineering / Computer Science, Tunis, Tunisia\\[2pt]
+\textbf{Lycee Soukra} \hfill \textit{2019}\\
+Baccalaureate in Computer Science, Tunis, Tunisia
+
+% ============= CERTIFICATIONS =============
+\section*{Certifications}
+\small
+Building RAG Apps using MongoDB -- MongoDB (2025) \ $\vert$ \
+Hashgraph Developer Program -- Hadera (2025) \ $\vert$ \
+CS107 C++ Programming -- Saylor Academy (2022)
+
+% ============= LANGUAGES =============
+\section*{Languages}
+\small
+English: Fluent \quad French: Professional \quad Arabic: Native
+
+% ============= KEY STRENGTHS - Customize for each job =============
+\section*{Key Strengths}
+\small
+\begin{itemize}[leftmargin=14pt,itemsep=1pt,topsep=2pt,parsep=0pt]
+  \item [STRENGTH 1 - Match to job requirement]
+  \item [STRENGTH 2 - Match to job requirement]
+  \item [STRENGTH 3 - Domain knowledge / soft skill]
+\end{itemize}
+
+\end{document}

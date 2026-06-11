@@ -1,0 +1,51 @@
+% Cover Letter - Concise / Punchy (3 short paragraphs)
+% Best for: startups, fast-moving teams, online applications with a short
+% "message to the hiring team" box, or when you want a letter that fits on a
+% single screen. Respects the reader's time while still making the case.
+%
+% Usage: Copy and replace the placeholders:
+%   [ROLE]     -> the job title
+%   [COMPANY]  -> the company name
+
+\documentclass[11pt,a4paper]{letter}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[top=0.9in, bottom=0.9in, left=1in, right=1in]{geometry}
+\usepackage{hyperref}
+\usepackage{lmodern}
+
+\hypersetup{colorlinks=true, linkcolor=black, urlcolor=blue}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.7em}
+
+\signature{Yosr Ben Nagra}
+\address{
+    Yosr Ben Nagra \\
+    +216 53916040 \\
+    yosrbennagra@gmail.com \\
+    \href{https://portfolio-yosr.vercel.app/en}{portfolio-yosr.vercel.app}
+}
+
+\begin{document}
+
+\begin{letter}{}
+
+\opening{Dear Hiring Team,}
+
+I would love to join \textbf{[COMPANY]} as a \textbf{[ROLE]}. I am a full-stack developer
+specialized in React and TypeScript, equally comfortable in the backend (Node.js, NestJS,
+Spring Boot), databases (PostgreSQL, MongoDB), and DevOps (Docker, Jenkins, CI/CD).
+
+Most recently I built a full-stack AI medical diagnosis app (React + Flask, hybrid
+PostgreSQL/MongoDB, AI models, full CI/CD) during my engineering internship at Itserv, and
+earlier shipped real production features at Ooredoo with Spring Boot and Angular. I care
+about clean, tested, maintainable code and I learn fast.
+
+You can see my work at \href{https://portfolio-yosr.vercel.app/en}{portfolio-yosr.vercel.app}.
+I would be glad to talk about how I can help \textbf{[COMPANY]}. Thank you for your time.
+
+\closing{Best regards,}
+
+\end{letter}
+
+\end{document}
