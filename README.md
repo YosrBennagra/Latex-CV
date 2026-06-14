@@ -84,6 +84,7 @@ Existing folders in `applications/` are reusable role-based variants. For a new 
 | `Universal_FullStack` | Everything | Widest coverage |
 | `AI_Engineer` | AI/ML, Flask, RAG | AI/ML positions |
 | `IT_Application_Operations` | IT ops, support | IT operations roles |
+| `Customer_Support_Telephone_Operator` | Customer support, call handling, CRM workflows | Telephone operator and remote customer support roles |
 | `QA_Automation` | Test automation, CI quality, reliability | QA Automation and SDET roles |
 | `React_FullStack_Generic` | React-first full stack | React-heavy companies |
 
