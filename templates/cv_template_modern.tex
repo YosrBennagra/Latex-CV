@@ -1,0 +1,156 @@
+% CV Template - Modern (Accent Sidebar)
+% Two-column layout: a colored left sidebar (contact, skills, languages) and a
+% main right column (experience, education). Stylish but still ATS-parseable
+% because it uses a real text two-column layout (paracol), not text boxes.
+%
+% NOTE: Some strict ATS parsers prefer a single column. If the posting routes
+% through a large ATS (Workday/Taleo), prefer cv_template_classic.tex instead.
+%
+% Usage: Copy this file and customize for each job application.
+% Replace [ROLE] with the job title.
+
+\documentclass[10pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}  % Change to [french] for French CV
+\usepackage[a4paper,margin=0in,top=0in,bottom=0in]{geometry}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+\usepackage{paracol}
+\usepackage{eso-pic}
+\usepackage{tgheros}
+\renewcommand{\familydefault}{\sfdefault}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+% Colors - customize the accent here
+\definecolor{accent}{RGB}{0,70,130}
+\definecolor{sidebarbg}{RGB}{0,70,130}
+\definecolor{maindark}{RGB}{40,40,40}
+
+% Sidebar section headers (white on accent)
+\newcommand{\sidesection}[1]{%
+  \par\vspace{8pt}{\color{white}\bfseries\large #1}\par
+  {\color{white!60}\rule{\linewidth}{0.6pt}}\par\vspace{3pt}}
+
+% Main section headers
+\titleformat{\section}{\color{accent}\large\bfseries}{}{0em}{\MakeUppercase}[{\color{accent}\titlerule}]
+\titlespacing*{\section}{0pt}{10pt}{4pt}
+
+% Full-height sidebar band painted behind column 0 on every page
+\AddToShipoutPictureBG{%
+  \AtPageLowerLeft{\color{sidebarbg}\rule{0.34\paperwidth}{\paperheight}}}
+
+\begin{document}
+\pagestyle{empty}
+\color{maindark}
+
+\setlength{\columnsep}{0pt}
+\columnratio{0.34}
+\begin{paracol}{2}
+
+% ===================== LEFT SIDEBAR =====================
+\begin{leftcolumn}
+\color{white}
+\vspace{24pt}
+\hspace{14pt}\begin{minipage}{0.82\linewidth}
+\raggedright
+
+{\Large\bfseries YOSR BEN NAGRA}\\[4pt]
+{\normalsize [ROLE]}  % <-- CUSTOMIZE: Job title
+
+\sidesection{Contact}
+\small
++216 53916040\\[3pt]
+yosrbennagra@gmail.com\\[3pt]
+Tunis, Tunisia\\[3pt]
+\href{https://portfolio-yosr.vercel.app/en}{\color{white}portfolio-yosr.vercel.app}\\[3pt]
+\href{https://github.com/YosrBennagra}{\color{white}github.com/YosrBennagra}\\[3pt]
+\href{https://www.linkedin.com/in/yosr-ben-nagra/}{\color{white}linkedin.com/in/yosr-ben-nagra}
+
+\sidesection{Technical Skills}
+\small
+\textbf{Frontend}\\
+React, TypeScript, Next.js, Redux, Tailwind CSS\\[5pt]
+\textbf{Backend}\\
+Node.js, NestJS, Spring Boot, Java, Flask\\[5pt]
+\textbf{Databases}\\
+PostgreSQL, MongoDB, Redis, SQL, Prisma\\[5pt]
+\textbf{DevOps \& Tools}\\
+Docker, Jenkins, CI/CD, Git, SonarQube, Grafana
+
+\sidesection{Languages}
+\small
+English -- Fluent\\[3pt]
+French -- Professional\\[3pt]
+Arabic -- Native
+
+\sidesection{Certifications}
+\small
+RAG Apps -- MongoDB (2025)\\[3pt]
+Hashgraph Developer (2025)\\[3pt]
+C++ -- Saylor Academy (2022)
+
+\end{minipage}
+\end{leftcolumn}
+
+% ===================== RIGHT MAIN COLUMN =====================
+\begin{rightcolumn}
+\color{maindark}
+\vspace{24pt}
+\hspace{14pt}\begin{minipage}{0.9\linewidth}
+
+\section*{Profile}
+\small
+Full-stack developer specialized in React and TypeScript, comfortable across backend,
+databases, and DevOps. Engineering graduate from ESPRIT seeking a [ROLE] role to ship
+reliable, maintainable products end to end.
+
+\section*{Experience}
+\small
+
+\textbf{AI Medical Diagnosis Application} \hfill \textit{02/2025 -- 08/2025}\\
+\textit{Full-stack Developer -- Itserv, Tunis}
+\begin{itemize}[leftmargin=12pt,itemsep=1pt,topsep=2pt,parsep=0pt]
+  \item React + Flask app, hybrid PostgreSQL/MongoDB database.
+  \item AI disease prediction (Hugging Face, RAG, TensorFlow).
+  \item CI/CD with Jenkins, SonarQube, Prometheus/Grafana.
+\end{itemize}
+
+\vspace{4pt}
+\textbf{Collaborative Documents App (Notion-like)} \hfill \textit{2024}\\
+\textit{Full-stack Developer -- ESPRIT, Tunis}
+\begin{itemize}[leftmargin=12pt,itemsep=1pt,topsep=2pt,parsep=0pt]
+  \item React + NestJS, real-time collaboration via WebSockets.
+  \item Complete CI/CD pipeline and team code-review workflow.
+\end{itemize}
+
+\vspace{4pt}
+\textbf{Educational Platform with Timetable Tool} \hfill \textit{2024}\\
+\textit{Full-stack Developer -- Ironbyte, Tunis}
+\begin{itemize}[leftmargin=12pt,itemsep=1pt,topsep=2pt,parsep=0pt]
+  \item NestJS/React/MongoDB: assignments, lessons, timetables.
+  \item Scheduling algorithms improved planning efficiency by 40\%.
+\end{itemize}
+
+\vspace{4pt}
+\textbf{Internal Communication Application} \hfill \textit{2023}\\
+\textit{Full-stack Developer -- Ooredoo, Tunis}
+\begin{itemize}[leftmargin=12pt,itemsep=1pt,topsep=2pt,parsep=0pt]
+  \item Spring Boot services (DAO/DTO, secure REST), Angular + PrimeNG UI.
+  \item Real-time chat, advanced search, admin tools, full test coverage.
+\end{itemize}
+
+\section*{Education}
+\small
+\textbf{ESPRIT} -- Engineering / Computer Science \hfill \textit{2020 -- 2025}\\
+Ecole Superieure Privee d'Ingenierie, Tunis\\[3pt]
+\textbf{Lycee Soukra} -- CS Baccalaureate \hfill \textit{2019}
+
+\end{minipage}
+\end{rightcolumn}
+
+\end{paracol}
+\end{document}

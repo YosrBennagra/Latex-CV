@@ -1,0 +1,69 @@
+% Cover Letter - Technical / Achievement-Driven
+% Best for: senior engineers / tech leads on the hiring panel, roles with a
+% detailed tech stack in the job description, or when you want to map your
+% experience directly onto their requirements with concrete results.
+%
+% Usage: Copy and replace the placeholders:
+%   [ROLE]      -> the job title
+%   [COMPANY]   -> the company name
+%   [STACK]     -> 2-3 technologies from THEIR job posting
+%   bullets     -> reorder/edit so the top items match their must-haves
+
+\documentclass[11pt,a4paper]{letter}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[top=0.7in, bottom=0.7in, left=0.9in, right=0.9in]{geometry}
+\usepackage{hyperref}
+\usepackage{lmodern}
+\usepackage{enumitem}
+
+\hypersetup{colorlinks=true, linkcolor=black, urlcolor=blue}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.55em}
+
+\signature{Yosr Ben Nagra}
+\address{
+    Yosr Ben Nagra \\
+    +216 53916040 \\
+    yosrbennagra@gmail.com \\
+    \href{https://github.com/YosrBennagra}{github.com/YosrBennagra} \\
+    \href{https://portfolio-yosr.vercel.app/en}{portfolio-yosr.vercel.app}
+}
+
+\begin{document}
+
+\begin{letter}{}
+
+\opening{Dear Hiring Team,}
+
+I am applying for the \textbf{[ROLE]} position at \textbf{[COMPANY]}. I noticed your stack
+relies on [STACK], which maps directly onto how I have been building and shipping software.
+Rather than restate my CV, let me connect my experience to what the role needs:
+
+\begin{itemize}[leftmargin=1.2em, topsep=0.2em, itemsep=0.45em, parsep=0pt]
+  \item \textbf{Frontend at depth:} React, TypeScript, Next.js and Redux in production,
+        with attention to performance, accessibility, and a tested component architecture.
+  \item \textbf{End-to-end delivery:} On my AI medical diagnosis project I owned the React
+        frontend, a Flask REST API, and a hybrid PostgreSQL/MongoDB database -- then wired it
+        all into a Jenkins CI/CD pipeline with SonarQube quality gates.
+  \item \textbf{Measurable impact:} At Ironbyte I designed scheduling algorithms that cut
+        planning effort and improved efficiency by \textbf{40\%}.
+  \item \textbf{Production backend:} At Ooredoo I built secure Spring Boot services
+        (DAO/DTO layering, REST, access control) with an Angular + PrimeNG frontend and
+        full unit/integration test coverage.
+  \item \textbf{Observability \& DevOps:} Docker, Jenkins, CI/CD, Prometheus and Grafana --
+        I instrument what I ship so I can see how it behaves in production.
+\end{itemize}
+
+Beyond work, I build and ship my own products (Veinpal, a Next.js platform; OverlayOS, a
+\mbox{.NET} desktop app) which keeps me sharp on architecture and trade-offs. My code is on
+\href{https://github.com/YosrBennagra}{GitHub} if you would like to read it.
+
+I would welcome a technical conversation about how I can contribute to \textbf{[COMPANY]}.
+Thank you for your time and consideration.
+
+\closing{Best regards,}
+
+\end{letter}
+
+\end{document}

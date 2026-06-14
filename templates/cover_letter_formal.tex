@@ -1,0 +1,73 @@
+% Cover Letter - Formal / Traditional Business Style
+% Best for: corporates, banks, public sector, conservative companies, recruiters
+% who expect a standard professional letter.
+%
+% Usage: Copy and replace the placeholders:
+%   [ROLE]            -> the job title
+%   [COMPANY]         -> the company name
+%   [HIRING MANAGER]  -> name if known (else keep "Hiring Manager")
+%   [CITY]            -> company city if known
+%   [SOURCE]          -> where you saw the posting (LinkedIn, company site, ...)
+
+\documentclass[11pt,a4paper]{letter}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[top=0.8in, bottom=0.8in, left=1in, right=1in]{geometry}
+\usepackage{hyperref}
+\usepackage{lmodern}
+\usepackage{enumitem}
+
+\hypersetup{colorlinks=true, linkcolor=black, urlcolor=blue}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.6em}
+
+\signature{Yosr Ben Nagra}
+\address{
+    Yosr Ben Nagra \\
+    +216 53916040 \\
+    yosrbennagra@gmail.com \\
+    Tunis, Tunisia \\
+    \href{https://www.linkedin.com/in/yosr-ben-nagra/}{linkedin.com/in/yosr-ben-nagra}
+}
+
+\begin{document}
+
+% Note: braces around bracketed placeholders prevent "\\ [X]" from being
+% misread as the optional argument of \\
+\begin{letter}{
+    {[HIRING MANAGER]} \\
+    {[COMPANY]} \\
+    {[CITY]}
+}
+
+\opening{Dear [HIRING MANAGER],}
+
+I am writing to apply for the position of \textbf{[ROLE]} at \textbf{[COMPANY]}, which I
+discovered via [SOURCE]. As a full-stack developer specialized in React and TypeScript,
+with an engineering degree from ESPRIT and hands-on internship experience at companies such
+as Ooredoo, I am confident that my skills align closely with the requirements of this role.
+
+During my final-year internship at Itserv, I designed and delivered a full-stack AI medical
+diagnosis application: a React/TypeScript frontend, a Flask REST backend, and a hybrid
+PostgreSQL/MongoDB database, supported by a complete CI/CD pipeline with Jenkins, SonarQube,
+and Prometheus/Grafana monitoring. This experience strengthened my ability to take ownership
+of a product from architecture through to deployment and observability.
+
+My earlier internships reinforced these foundations. At Ooredoo I built secure Spring Boot
+services with an Angular and PrimeNG frontend, and at Ironbyte I delivered an educational
+platform whose scheduling algorithms improved planning efficiency by 40\%. Across each role I
+worked within Agile teams, valued clean and well-tested code, and treated code review as an
+opportunity to raise quality.
+
+I am particularly drawn to [COMPANY] because of [SPECIFIC REASON -- product, mission, or
+technology]. I would welcome the opportunity to contribute to your team and to grow as an
+engineer in an environment that values craftsmanship and collaboration.
+
+Thank you for considering my application. I have attached my CV and would be glad to discuss
+how I can contribute to [COMPANY] at your convenience.
+
+\closing{Yours sincerely,}
+
+\end{letter}
+
+\end{document}
