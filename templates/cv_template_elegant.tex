@@ -1,0 +1,122 @@
+% CV Template - Elegant (serif, small caps headers, thin rules, no photo)
+% ATS-friendly and HR-approved: single column, standard section names,
+% selectable text, restrained typography.
+%
+% Best for: consulting firms, agencies, design-aware corporates, EU companies.
+%
+% CUSTOMIZE per application: [ROLE], Summary, Skills order.
+% Data source: data_profile.json + profile/
+
+\documentclass[10pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}  % Change to [french] for French CV
+\usepackage[a4paper,margin=0.7in,top=0.55in,bottom=0.55in]{geometry}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+\usepackage{tgpagella}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\pagestyle{empty}
+
+\definecolor{ink}{RGB}{35,35,35}
+\definecolor{soft}{RGB}{110,110,110}
+\color{ink}
+
+\titleformat{\section}{\normalsize\scshape\bfseries}{}{0em}{}[{\titlerule[0.4pt]}]
+\titlespacing*{\section}{0pt}{8pt}{3pt}
+
+\begin{document}
+
+% ============= HEADER =============
+\begin{center}
+  {\LARGE\scshape Yosr Ben Nagra}\\[3pt]
+  {\normalsize\color{soft} [ROLE]}\\[4pt]
+  {\footnotesize
+    +216 53916040 \; \textperiodcentered \; \href{mailto:yosrbennagra@gmail.com}{yosrbennagra@gmail.com}
+    \; \textperiodcentered \; Tunis, Tunisia\\[1pt]
+    \href{https://portfolio-yosr.vercel.app/en}{portfolio-yosr.vercel.app}
+    \; \textperiodcentered \; \href{https://github.com/YosrBennagra}{github.com/YosrBennagra}
+    \; \textperiodcentered \; \href{https://www.linkedin.com/in/yosr-ben-nagra/}{linkedin.com/in/yosr-ben-nagra}
+  }
+\end{center}
+
+\vspace{-2pt}
+% ============= SUMMARY =============
+\section*{Summary}
+{\small
+Full-stack developer specializing in React/TypeScript and Node.js/NestJS, with
+internship experience across AI, real-time collaboration, and enterprise systems,
+and founder of a platform shipping five products. [1 LINE TAILORED TO COMPANY].
+}
+
+% ============= EXPERIENCE =============
+\section*{Experience}
+{\small
+
+\textbf{Full-stack Developer (Final Year Internship)} \hfill 02/2025 -- 08/2025\\
+{\itshape Itserv, Tunis --- AI Medical Diagnosis Application}
+\begin{itemize}[leftmargin=14pt,itemsep=0pt,topsep=1pt,parsep=0pt]
+  \item React/TypeScript frontend and Flask REST API over hybrid PostgreSQL + MongoDB
+  \item AI disease prediction with Hugging Face Transformers, RAG, fine-tuning, TensorFlow
+  \item CI/CD with Jenkins and SonarQube; monitoring with Prometheus and Grafana
+\end{itemize}
+
+\vspace{3pt}
+\textbf{Full-stack Developer (Internship)} \hfill 2024\\
+{\itshape Ironbyte --- Educational Platform with Timetable Tool}
+\begin{itemize}[leftmargin=14pt,itemsep=0pt,topsep=1pt,parsep=0pt]
+  \item NestJS/React/MongoDB platform for assignments, lessons, and automated timetables
+  \item Raised scheduling efficiency by 40\% with intelligent scheduling algorithms
+\end{itemize}
+
+\vspace{3pt}
+\textbf{Full-stack Developer (Academic Project)} \hfill 2024\\
+{\itshape ESPRIT --- Collaborative Documents Application (Notion-like)}
+\begin{itemize}[leftmargin=14pt,itemsep=0pt,topsep=1pt,parsep=0pt]
+  \item Team-built React + NestJS editor with real-time WebSockets collaboration and CI/CD
+\end{itemize}
+
+\vspace{3pt}
+\textbf{Full-stack Developer (Internship)} \hfill 2023\\
+{\itshape Ooredoo --- Internal Communication Application}
+\begin{itemize}[leftmargin=14pt,itemsep=0pt,topsep=1pt,parsep=0pt]
+  \item Spring Boot services with DAO/DTO layers and secure REST endpoints
+  \item Angular + PrimeNG frontend: real-time chat, advanced search, admin tooling, tests
+\end{itemize}
+
+}
+
+% ============= PROJECTS =============
+\section*{Selected Projects}
+{\small
+\textbf{Veinpal} (Founder, 2025--Present) --- five shipped products on a Next.js 15 /
+React 19 / TypeScript 5 / PostgreSQL 16 monorepo with Redis, Prisma, and full CI/CD.
+\href{https://veinpal.com/apps}{veinpal.com}\\[2pt]
+\textbf{TypeW} --- typing and cognitive training platform with 41 game modes;
+React 19, Zustand, Vitest, GitHub Actions.
+}
+
+% ============= SKILLS =============
+\section*{Skills}
+{\small
+\textbf{Frontend:} React, TypeScript, JavaScript, Next.js, Redux Toolkit, Zustand, Tailwind CSS, HTML5, CSS3\\
+\textbf{Backend:} Node.js, NestJS, Express.js, Flask, Spring Boot, Java, REST APIs, GraphQL, WebSockets\\
+\textbf{Data:} PostgreSQL, MongoDB, Redis, SQL, Prisma, TypeORM\\
+\textbf{DevOps \& Testing:} Docker, Jenkins, GitHub Actions, SonarQube, Prometheus, Grafana, Jest, Cypress, Vitest, TDD
+}
+
+% ============= EDUCATION =============
+\section*{Education \& Certifications}
+{\small
+\textbf{ESPRIT}, Tunis --- Computer Science Engineering studies \hfill 2020 -- 2025\\[1pt]
+Building RAG Apps Using MongoDB (2025) \textperiodcentered\ Hashgraph Developer Program (2025)
+}
+
+% ============= LANGUAGES =============
+\section*{Languages}
+{\small Arabic (Native) \textperiodcentered\ English (Fluent) \textperiodcentered\ French (Professional)}
+
+\end{document}

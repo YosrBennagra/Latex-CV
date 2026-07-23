@@ -1,0 +1,132 @@
+% CV Template - Professional (single column, navy accents, no photo)
+% ATS-friendly and HR-approved: standard section names, single column,
+% real selectable text, no tables/graphics in the content flow.
+%
+% Best for: general applications, LinkedIn "Easy Apply", mid-size companies.
+%
+% CUSTOMIZE per application:
+%   [ROLE]      - exact job title from the posting
+%   Summary     - 2-3 lines matched to the posting
+%   Skills      - reorder so the posting's keywords come first
+%
+% Data source: data_profile.json + profile/ (never add skills not listed there)
+
+\documentclass[10pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}  % Change to [french] for French CV
+\usepackage[a4paper,margin=0.6in,top=0.5in,bottom=0.5in]{geometry}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+\usepackage{tgheros}
+\renewcommand{\familydefault}{\sfdefault}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\pagestyle{empty}
+
+\definecolor{navy}{RGB}{18,52,98}
+\definecolor{gray}{RGB}{90,90,90}
+
+\titleformat{\section}{\color{navy}\large\bfseries}{}{0em}{}[{\color{navy}\titlerule[0.8pt]}]
+\titlespacing*{\section}{0pt}{7pt}{3pt}
+
+\newcommand{\entry}[3]{% title, org+place, dates
+  \textbf{#1} --- #2 \hfill {\color{gray}\textit{#3}}\par}
+
+\begin{document}
+
+% ============= HEADER =============
+{\huge\bfseries\color{navy} YOSR BEN NAGRA}\\[2pt]
+{\large\color{gray} [ROLE]}\\[4pt]
+{\small
+  +216 53916040 \,|\, \href{mailto:yosrbennagra@gmail.com}{yosrbennagra@gmail.com} \,|\, Tunis, Tunisia \,|\,
+  \href{https://portfolio-yosr.vercel.app/en}{Portfolio} \,|\,
+  \href{https://github.com/YosrBennagra}{GitHub} \,|\,
+  \href{https://www.linkedin.com/in/yosr-ben-nagra/}{LinkedIn}
+}
+
+% ============= SUMMARY - tailor to each posting =============
+\section*{Professional Summary}
+{\small
+Full-stack developer (React/TypeScript, Node.js/NestJS) with hands-on internship
+experience delivering AI, real-time, and enterprise applications, and founder of
+Veinpal, a platform shipping 5 products with complete CI/CD. [ADD 1 LINE
+MATCHING THE POSTING: stack + what you would bring to COMPANY].
+}
+
+% ============= SKILLS =============
+\section*{Technical Skills}
+{\small
+\begin{itemize}[leftmargin=0pt,label={},itemsep=1pt,topsep=1pt,parsep=0pt]
+  \item \textbf{Frontend:} React, TypeScript, JavaScript, Next.js, Redux Toolkit, Zustand, React Query, HTML5, CSS3, Tailwind CSS
+  \item \textbf{Backend:} Node.js, NestJS, Express.js, Flask, Spring Boot, Java (8/17/21), GraphQL, REST APIs, WebSockets
+  \item \textbf{Databases:} PostgreSQL, MongoDB, Redis, SQL, Prisma, TypeORM, Mongoose
+  \item \textbf{DevOps \& Quality:} Docker, Kubernetes (basics), Jenkins, GitHub Actions, SonarQube, Prometheus, Grafana, CI/CD, Git
+  \item \textbf{Testing:} Jest, React Testing Library, Cypress, Vitest, Playwright, TDD
+\end{itemize}
+}
+
+% ============= EXPERIENCE =============
+\section*{Professional Experience}
+{\small
+
+\entry{Full-stack Developer (Final Year Internship - PFE)}{Itserv, Tunis}{02/2025 -- 08/2025}
+\begin{itemize}[leftmargin=12pt,itemsep=0pt,topsep=1pt,parsep=0pt]
+  \item Built an AI medical diagnosis app: React/TypeScript frontend, Flask REST API, hybrid PostgreSQL + MongoDB
+  \item Integrated AI models (Hugging Face Transformers, RAG, fine-tuning, TensorFlow) for disease prediction
+  \item Set up full CI/CD: Jenkins, SonarQube quality gates, unit tests, Prometheus/Grafana monitoring
+\end{itemize}
+
+\vspace{3pt}
+\entry{Full-stack Developer (Internship)}{Ironbyte, Tunis}{2024}
+\begin{itemize}[leftmargin=12pt,itemsep=0pt,topsep=1pt,parsep=0pt]
+  \item Developed an educational platform (NestJS, React, MongoDB, TypeScript): assignments, lessons, timetables
+  \item Improved scheduling efficiency by 40\% with intelligent scheduling algorithms; WebSockets; CI/CD
+\end{itemize}
+
+\vspace{3pt}
+\entry{Full-stack Developer (Academic Project)}{ESPRIT, Tunis}{2024}
+\begin{itemize}[leftmargin=12pt,itemsep=0pt,topsep=1pt,parsep=0pt]
+  \item Team-built a Notion-like collaborative document editor with React and NestJS
+  \item Implemented real-time collaboration via WebSockets and a complete CI/CD pipeline
+\end{itemize}
+
+\vspace{3pt}
+\entry{Full-stack Developer (Internship)}{Ooredoo, Tunis}{2023}
+\begin{itemize}[leftmargin=12pt,itemsep=0pt,topsep=1pt,parsep=0pt]
+  \item Architected Spring Boot services (DAO/DTO layers, secure REST endpoints) for an internal communication suite
+  \item Delivered Angular + PrimeNG frontend: real-time chat, advanced filtering, admin tools, unit/integration tests
+\end{itemize}
+
+% Optional: current non-dev employment (uncomment if relevant to the role)
+%\vspace{3pt}
+%\entry{Client Service Advisor 1}{Concentrix, Tunis}{02/2026 -- Present}
+%\begin{itemize}[leftmargin=12pt,itemsep=0pt,topsep=1pt,parsep=0pt]
+%  \item Uber Eats sales operation: Salesforce CRM, client onboarding, multilingual communication
+%\end{itemize}
+
+}
+
+% ============= PROJECTS =============
+\section*{Personal Projects}
+{\small
+\textbf{Veinpal} (Founder, 2025--Present) --- \href{https://veinpal.com/apps}{veinpal.com} ---
+Platform shipping 5 products (web tools, games, a Windows app). Next.js 15, React 19,
+TypeScript 5, PostgreSQL 16, Prisma, Redis, Turborepo, full CI/CD.\\[2pt]
+\textbf{TypeW} --- Typing and cognitive training platform, 41 game modes.
+React 19, TypeScript, Zustand, Vitest, GitHub Actions, Vercel.
+}
+
+% ============= EDUCATION & MORE =============
+\section*{Education \& Certifications}
+{\small
+\textbf{ESPRIT} --- Computer Science Engineering studies, Tunis \hfill {\color{gray}\textit{2020 -- 2025}}\\[1pt]
+Certifications: Building RAG Apps Using MongoDB (2025), Hashgraph Developer Program (2025)
+}
+
+\section*{Languages}
+{\small \textbf{Arabic:} Native \quad \textbf{English:} Fluent \quad \textbf{French:} Professional}
+
+\end{document}

@@ -19,8 +19,19 @@ Personal CV management system for **Yosr Ben Nagra**. Generates ATS-friendly, 1-
 ## Architecture
 ```
 data_profile.json          ← Master profile (update here first)
-templates/                 ← Reusable LaTeX templates
+profile/                   ← Organized views of the profile data
+  job_titles.md            ← Job titles qualified for (by fit tier)
+  skills.md                ← Skills inventory by category
+  technologies.md          ← Technology list with usage evidence
+  experience.md            ← Experience/internships (EN + FR)
+  projects.md              ← Personal projects catalog + selection guide
+  education_certifications.md
+  languages_soft_skills.md
+  ats_keywords.md          ← ATS keyword bank per target role
+templates/                 ← Reusable LaTeX templates (9 CV + 4 letters)
   cv_template_compact.tex  ← Base 1-page CV template
+  cv_template_*.tex        ← Variants: classic, minimal, modern,
+                             professional, elegant, tech, graduate, executive
   cover_letter_universal.tex ← Base cover letter template
 applications/              ← Position-specific tailored CVs
   {Position_Name}/
@@ -62,7 +73,7 @@ latexmk -pdf cv_{name}_en.tex
 ## Git & Workflow
 - **PDFs are tracked** — commit compiled CVs for easy sharing
 - **Build artifacts** (.aux, .log, .fls, .fdb_latexmk, .out, .synctex.gz) — gitignored
-- **Workflow**: Update `data_profile.json` → generate/update LaTeX files → compile → commit
+- **Workflow**: Update `data_profile.json` → sync affected `profile/*.md` views → generate/update LaTeX files → compile → commit
 
 ## Profile Data Fields
 Key fields in `data_profile.json`:

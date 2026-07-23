@@ -1,0 +1,118 @@
+% CV Template - Graduate (education-first, warm accent, no photo)
+% ATS-friendly and HR-approved: single column, standard section names,
+% selectable text. Education and internships lead, matching junior/graduate
+% program expectations.
+%
+% Best for: graduate programs, junior openings, first-CDI applications,
+% companies that ask for "jeune diplome" profiles.
+%
+% CUSTOMIZE per application: [ROLE], Objective line, Skills order.
+% Data source: data_profile.json + profile/
+
+\documentclass[10pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}  % Change to [french] for French CV
+\usepackage[a4paper,margin=0.65in,top=0.55in,bottom=0.55in]{geometry}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+\usepackage{tgheros}
+\renewcommand{\familydefault}{\sfdefault}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\pagestyle{empty}
+
+\definecolor{plum}{RGB}{88,44,110}
+\definecolor{gray}{RGB}{95,95,95}
+
+\titleformat{\section}{\color{plum}\normalsize\bfseries}{}{0em}{}[{\color{plum}\titlerule[0.6pt]}]
+\titlespacing*{\section}{0pt}{7pt}{3pt}
+
+\begin{document}
+
+% ============= HEADER =============
+\begin{center}
+  {\huge\bfseries\color{plum} YOSR BEN NAGRA}\\[3pt]
+  {\normalsize\color{gray} [ROLE]}\\[4pt]
+  {\small
+    +216 53916040 \,|\, \href{mailto:yosrbennagra@gmail.com}{yosrbennagra@gmail.com} \,|\, Tunis, Tunisia\\[1pt]
+    \href{https://portfolio-yosr.vercel.app/en}{Portfolio} \,|\,
+    \href{https://github.com/YosrBennagra}{GitHub} \,|\,
+    \href{https://www.linkedin.com/in/yosr-ben-nagra/}{LinkedIn}
+  }
+\end{center}
+
+% ============= OBJECTIVE =============
+\section*{Objective}
+{\small
+Computer science engineering graduate (ESPRIT, 2025) seeking a [ROLE] position
+at [COMPANY]. Hands-on experience from three internships (AI application,
+educational platform, telecom communication suite) and founder of a platform
+shipping 5 products. [1 LINE ON WHY THIS COMPANY].
+}
+
+% ============= EDUCATION FIRST =============
+\section*{Education}
+{\small
+\textbf{ESPRIT: Ecole Superieure Privee d'Ingenierie et de Technologies}, Tunis \hfill {\color{gray}\textit{2020 -- 2025}}\\
+Engineering / Computer Science studies\\[2pt]
+\textbf{Lycee Soukra}, Tunis --- Baccalaureate in Computer Science \hfill {\color{gray}\textit{2019}}
+}
+
+% ============= INTERNSHIPS =============
+\section*{Internships \& Academic Projects}
+{\small
+
+\textbf{Final Year Internship (PFE) --- AI Medical Diagnosis App} \hfill {\color{gray}\textit{Itserv, Tunis | 02/2025 -- 08/2025}}
+\begin{itemize}[leftmargin=12pt,itemsep=0pt,topsep=1pt,parsep=0pt]
+  \item React/TypeScript + Flask REST API over hybrid PostgreSQL/MongoDB; AI disease prediction
+  \item Hugging Face Transformers, RAG, fine-tuning, TensorFlow; Jenkins CI/CD, SonarQube, monitoring
+\end{itemize}
+
+\vspace{2pt}
+\textbf{Internship --- Educational Platform with Timetable Tool} \hfill {\color{gray}\textit{Ironbyte | 2024}}
+\begin{itemize}[leftmargin=12pt,itemsep=0pt,topsep=1pt,parsep=0pt]
+  \item NestJS/React/MongoDB platform; +40\% scheduling efficiency via intelligent algorithms
+\end{itemize}
+
+\vspace{2pt}
+\textbf{Academic Project --- Collaborative Documents App (Notion-like)} \hfill {\color{gray}\textit{ESPRIT | 2024}}
+\begin{itemize}[leftmargin=12pt,itemsep=0pt,topsep=1pt,parsep=0pt]
+  \item Team project: React + NestJS, real-time WebSockets collaboration, CI/CD, code reviews
+\end{itemize}
+
+\vspace{2pt}
+\textbf{Internship --- Internal Communication App} \hfill {\color{gray}\textit{Ooredoo | 2023}}
+\begin{itemize}[leftmargin=12pt,itemsep=0pt,topsep=1pt,parsep=0pt]
+  \item Spring Boot (DAO/DTO, secure REST) + Angular/PrimeNG: real-time chat, filtering, admin tools
+\end{itemize}
+
+}
+
+% ============= PROJECTS =============
+\section*{Personal Projects}
+{\small
+\textbf{Veinpal} (Founder, 2025--Present) --- 5 shipped products; Next.js 15, React 19,
+TypeScript 5, PostgreSQL, Prisma, Redis, CI/CD. \href{https://veinpal.com/apps}{veinpal.com}\\[2pt]
+\textbf{TypeW} --- typing/cognitive training platform, 41 modes; React 19, Zustand, Vitest, Vercel.
+}
+
+% ============= SKILLS =============
+\section*{Technical Skills}
+{\small
+\textbf{Frontend:} React, TypeScript, JavaScript, Next.js, Redux Toolkit, Zustand, Tailwind CSS, HTML5, CSS3\\
+\textbf{Backend:} Node.js, NestJS, Express.js, Flask, Spring Boot, Java, REST APIs, WebSockets\\
+\textbf{Databases:} PostgreSQL, MongoDB, Redis, SQL, Prisma\\
+\textbf{DevOps \& Testing:} Docker, Jenkins, GitHub Actions, SonarQube, CI/CD, Jest, Cypress, Vitest, TDD
+}
+
+% ============= CERTS + LANGUAGES =============
+\section*{Certifications \& Languages}
+{\small
+Building RAG Apps Using MongoDB (2025) \,|\, Hashgraph Developer Program (2025) \,|\, C++ Programming, Saylor (2022)\\[2pt]
+\textbf{Arabic:} Native \quad \textbf{English:} Fluent \quad \textbf{French:} Professional
+}
+
+\end{document}

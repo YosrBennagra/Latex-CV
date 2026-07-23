@@ -11,9 +11,27 @@ Latex-CV/
 ├── .latexmkrc                     # LaTeX build configuration
 ├── CLAUDE.md                      # Project conventions
 │
-├── templates/
-│   ├── cv_template_compact.tex    # Base CV template
-│   └── cover_letter_universal.tex # Base cover letter template
+├── profile/                       # Organized views of the profile data
+│   ├── job_titles.md              # Job titles qualified for (fit tiers)
+│   ├── skills.md                  # Skills inventory by category
+│   ├── technologies.md            # Technologies + where each was used
+│   ├── experience.md              # Experience & internships (EN + FR)
+│   ├── projects.md                # Personal projects + selection guide
+│   ├── education_certifications.md
+│   ├── languages_soft_skills.md
+│   └── ats_keywords.md            # ATS keyword bank per target role
+│
+├── templates/                     # 9 CV templates + 4 cover letters
+│   ├── cv_template_classic.tex        # Max ATS safety (B&W serif)
+│   ├── cv_template_professional.tex   # Default: navy, summary-led
+│   ├── cv_template_minimal.tex        # Clean, whitespace
+│   ├── cv_template_elegant.tex        # Serif, small caps
+│   ├── cv_template_tech.tex           # Skills matrix first
+│   ├── cv_template_graduate.tex       # Education first
+│   ├── cv_template_compact.tex        # Dense, with photo
+│   ├── cv_template_executive.tex      # Dark header band
+│   ├── cv_template_modern.tex         # Colored sidebar
+│   └── cover_letter_{universal,formal,concise,technical}.tex
 │
 ├── applications/                  # One folder per position type
 │   ├── Frontend_React/            # EN/cv_frontend_react_en.tex + FR/cv_frontend_react_fr.tex
@@ -38,7 +56,9 @@ Latex-CV/
 ## Quick Start
 
 ### 1. Update your profile
-Edit `data_profile.json` with your latest data (skills, experience, projects).
+Edit `data_profile.json` with your latest data (skills, experience, projects),
+then sync the affected views in `profile/` (job titles, skills, technologies,
+ATS keywords, ...). `data_profile.json` stays the single source of truth.
 
 ### 2. Create a tailored CV
 Paste a job posting to Copilot — it will:
