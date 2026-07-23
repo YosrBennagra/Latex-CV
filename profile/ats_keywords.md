@@ -25,12 +25,13 @@ Socket.io, JWT, Passport.js, OAuth, Microservices (event-driven project),
 Docker, CI/CD, Jenkins, GitHub Actions, Git, Unit Testing, TDD, Agile, Scrum,
 MERN, Full Stack, API Design, Authentication, Real-time
 
-## Full Stack Developer (Java / Spring)
+## Full Stack Developer (Java / Spring / Angular)
 
 Java, Java 8, Java 17, Java 21, Spring Boot, REST API, DAO, DTO, Angular,
 PrimeNG, TypeScript, SQL, PostgreSQL, Oracle, PL/SQL, SOAP, Unit Testing,
 Integration Testing, Git, Jenkins, SonarQube, Agile, Scrum, WebSockets,
-Secure REST endpoints, Telecom (domain)
+Secure REST endpoints, ERP, Construction industry (domain), Telecom (domain),
+3 years experience, Client requirements, Backlog management
 
 ## Next.js Developer
 
@@ -43,8 +44,17 @@ GitHub Actions, Monorepo, CI/CD
 
 Python, Hugging Face, Transformers, RAG, Retrieval-Augmented Generation,
 Fine-tuning, TensorFlow, Flask, REST API, PostgreSQL, MongoDB, React,
-Machine Learning, NLP, Model Deployment, Jenkins, Prometheus, Grafana,
-SonarQube, Unit Testing, MongoDB RAG certificate
+Machine Learning, NLP, Model Deployment, LLM, OpenAI API, Claude API,
+Prompt Engineering, AI-assisted development, GitHub Copilot, Jenkins,
+Prometheus, Grafana, SonarQube, Unit Testing, MongoDB RAG certificate
+
+## Technical Lead / Client-Facing / BA-flavored roles
+
+Requirements gathering, Needs analysis, Stakeholder communication,
+Client-facing, Backlog management, Backlog refinement, User stories,
+Sprint planning, Agile, Scrum, Mentoring, Supervising junior developers,
+Task assignment, Code review, End-to-end delivery, ERP,
+Direct client contact, Technical leadership
 
 ## QA Automation Engineer
 
@@ -78,4 +88,6 @@ Do not add these without asking the user first — they are commonly requested
 but NOT evidenced in `data_profile.json`: AWS/Azure/GCP certifications,
 Terraform, Ansible, Vue.js, Svelte, PHP/Laravel, Django, Go, Kotlin, Swift,
 React Native, Flutter, Elasticsearch, Kafka in production (only in-progress
-project), Kubernetes beyond basics, management/lead experience.
+project), Kubernetes beyond basics, formal people-management titles
+(mentoring/supervising juniors at Wico IS evidenced; "Engineering Manager"
+or "Team Lead" as a held job title is NOT).

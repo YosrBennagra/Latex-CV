@@ -3,7 +3,28 @@
 > Derived from `data_profile.json` -> `current_job` + `projects[]`.
 > Chronological (newest first). EN and FR wording must stay synchronized.
 
-## 1. Client Service Advisor 1 — Concentrix (current)
+## 1. Full-stack Developer (Angular/Spring Boot) — Wico (current)
+
+- **FR role:** Developpeur full-stack (Angular/Spring Boot)
+- **Project:** ERP application for a construction company
+- **Dates:** 2024 - Present (part-time 2024-2025, full-time since 2026) — ~3 years with Angular/Spring
+- **EN:** Developing an ERP application for a construction company at Wico.
+  Working directly with the client to gather needs and translate them into
+  backlog items, building features end-to-end with Angular and Spring Boot,
+  applying DevOps practices (CI/CD, deployments), and supervising and
+  mentoring junior developers on their tasks.
+- **FR:** Developpement d une application ERP pour une entreprise de
+  construction chez Wico. Travail direct avec le client pour recueillir les
+  besoins et les traduire en elements de backlog, developpement des
+  fonctionnalites de bout en bout avec Angular et Spring Boot, application des
+  pratiques DevOps (CI/CD, deploiements) et encadrement de developpeurs juniors.
+- **Tech:** Angular, Spring Boot, Java, TypeScript, DevOps, CI/CD
+- **CV usage:** flagship professional experience — lead entry on all dev CVs.
+  Backs the "3+ years Angular/Spring" claim, client-facing/backlog skills,
+  and junior supervision. Emphasize per role: Angular/Spring roles -> stack;
+  lead/BA-flavored roles -> client + backlog + mentoring bullets.
+
+## 2. Client Service Advisor 1 — Concentrix (current)
 
 - **FR title:** Conseiller Service Client 1
 - **Location:** Tunis, Tunisia
@@ -19,7 +40,7 @@
 - **CV usage:** include on customer-service / support CVs; optional one-liner
   on dev CVs (shows current employment); omit if space is tight.
 
-## 2. Final Year Internship (PFE) — AI Medical Diagnosis App — Itserv
+## 3. Final Year Internship (PFE) — AI Medical Diagnosis App — Itserv
 
 - **Role:** Full-stack Developer (Internship - PFE) / Developpeur full-stack (Stage PFE)
 - **Company:** Itserv, Tunis, Tunisia
@@ -30,9 +51,9 @@
 - **Tech:** Hugging Face, Transformers, RAG, Fine-tuning, TensorFlow, Python,
   React, Flask, PostgreSQL, MongoDB, Jenkins, Prometheus, Grafana, SonarQube,
   Unit Tests
-- **CV usage:** flagship experience for dev and AI roles; always first dev entry.
+- **CV usage:** flagship for AI roles; on dev CVs it follows the Wico entry.
 
-## 3. Academic Project — Collaborative Documents App (Notion-like) — ESPRIT
+## 4. Academic Project — Collaborative Documents App (Notion-like) — ESPRIT
 
 - **Role:** Full-stack Developer (Academic project) / Developpeur full-stack (projet academique)
 - **Institution:** ESPRIT, Tunis, Tunisia
@@ -42,7 +63,7 @@
 - **Tech:** React, NestJS, WebSockets, Real-time Collaboration, CI/CD
 - **CV usage:** shows teamwork + real-time systems; good for NestJS roles.
 
-## 4. Internship — Educational Platform with Timetable Tool — Ironbyte
+## 5. Internship — Educational Platform with Timetable Tool — Ironbyte
 
 - **Role:** Full-stack Developer (Internship) / Developpeur full-stack (Stage)
 - **Company:** Ironbyte
@@ -53,7 +74,7 @@
 - **Tech:** NestJS, React, MongoDB, TypeScript, JavaScript, WebSockets, CI/CD
 - **CV usage:** the only entry with a quantified metric (+40%) — keep the metric.
 
-## 5. Internship — Internal Communication App — Ooredoo
+## 6. Internship — Internal Communication App — Ooredoo
 
 - **Role:** Full-stack Developer (Internship) / Developpeur full-stack (Stage)
 - **Company:** Ooredoo

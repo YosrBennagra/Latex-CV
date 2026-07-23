@@ -80,7 +80,7 @@ Key fields in `data_profile.json`:
 - `name`, `phone`, `email`, `location`, `gender`, `focus`
 - `github`, `linkedin`, `website`
 - `skills.*` (frontend, backend, database, devops, etc.)
-- `projects[]` (internships with dates, tech, descriptions)
+- `projects[]` (work experience and internships with dates, tech, descriptions — includes the Wico ERP job)
 - `personal_projects[]` (Veinpal, Overlayos, etc.)
 - `certificates[]`, `education[]`, `languages`
 - `current_job` (Concentrix)

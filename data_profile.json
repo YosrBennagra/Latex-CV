@@ -114,6 +114,23 @@
       "Code Review",
       "Unit Testing",
       "TDD"
+    ],
+    "ai": [
+      "LLM API integration (OpenAI, Claude)",
+      "Prompt engineering",
+      "AI-assisted development (GitHub Copilot and similar tools)",
+      "Hugging Face",
+      "Transformers",
+      "RAG",
+      "Fine-tuning",
+      "TensorFlow"
+    ],
+    "leadership_client_facing": [
+      "Client requirements gathering",
+      "Translating client needs into backlog items",
+      "Backlog management (user stories)",
+      "Supervising and mentoring junior developers",
+      "Task assignment and follow-up"
     ]
   },
   "current_job": {
@@ -130,7 +147,9 @@
     "Banking/Finance",
     "Telecoms",
     "Customer Service",
-    "Salesforce CRM"
+    "Salesforce CRM",
+    "Construction industry (ERP)",
+    "ERP systems"
   ],
   "languages": {
     "english": "Fluent",
@@ -144,6 +163,33 @@
   "website": "https://portfolio-yosr.vercel.app/en",
   "linkedin": "https://www.linkedin.com/in/yosr-ben-nagra/",
   "projects": [
+    {
+      "title_en": "ERP Application for a Construction Company",
+      "title_fr": "Application ERP pour une entreprise de construction",
+      "summary_en": "Developing an ERP application for a construction company at Wico (part-time 2024-2025, full-time since 2026). Working directly with the client to gather needs and translate them into backlog items, building features end-to-end with Angular and Spring Boot, applying DevOps practices (CI/CD, deployments), and supervising and mentoring junior developers on their tasks.",
+      "summary_fr": "Developpement d une application ERP pour une entreprise de construction chez Wico (temps partiel 2024-2025, temps plein depuis 2026). Travail direct avec le client pour recueillir les besoins et les traduire en elements de backlog, developpement des fonctionnalites de bout en bout avec Angular et Spring Boot, application des pratiques DevOps (CI/CD, deploiements) et encadrement de developpeurs juniors sur leurs taches.",
+      "dates_en": "2024 - Present",
+      "dates_fr": "2024 - Present",
+      "employment_type": "Part-time 2024-2025, full-time since 2026",
+      "role_en": "Full-stack Developer (Angular/Spring Boot)",
+      "role_fr": "Developpeur full-stack (Angular/Spring Boot)",
+      "company_en": "Wico",
+      "company_fr": "Wico",
+      "responsibilities": [
+        "Direct client contact: requirements gathering and needs analysis",
+        "Translating client needs into backlog items and building them",
+        "Supervising junior developers: task assignment, code help, mentoring",
+        "DevOps practices: CI/CD and deployments"
+      ],
+      "tech": [
+        "Angular",
+        "Spring Boot",
+        "Java",
+        "TypeScript",
+        "DevOps",
+        "CI/CD"
+      ]
+    },
     {
       "title_en": "Final Year Internship (PFE) - AI Medical Diagnosis App",
       "title_fr": "Stage de fin d etude (PFE) - Application de diagnostic medical par IA",

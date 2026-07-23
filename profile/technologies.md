@@ -5,6 +5,7 @@
 > every keyword placed on a CV.
 >
 > Evidence codes:
+> **WICO** = Wico, ERP application for a construction company (part-time 2024-2025, full-time since 2026)
 > **PFE** = Itserv final-year internship (AI medical diagnosis app, 02/2025-08/2025)
 > **NOTION** = ESPRIT academic project (Notion-like collaborative docs)
 > **IRONBYTE** = Ironbyte internship 2024 (educational platform)
@@ -22,9 +23,9 @@
 
 | Technology | Evidence |
 |------------|----------|
-| TypeScript (5) | PFE, IRONBYTE, OOREDOO, VEINPAL, SECRYX, TYPEW, ECOM, PORTFOLIO |
+| TypeScript (5) | WICO, PFE, IRONBYTE, OOREDOO, VEINPAL, SECRYX, TYPEW, ECOM, PORTFOLIO |
 | JavaScript | IRONBYTE, SKILL (frontend) |
-| Java (8, 17, 21) | OOREDOO |
+| Java (8, 17, 21) | WICO (2024-present), OOREDOO |
 | Python | PFE |
 | C# | OVERLAYOS |
 | Rust (2021) | SECRYX |
@@ -38,7 +39,7 @@
 |------------|----------|
 | React (incl. React 19) | PFE, NOTION, IRONBYTE, VEINPAL, SECRYX, TYPEW, ECOM, PORTFOLIO |
 | Next.js (incl. 15, App Router, RSC) | VEINPAL, PORTFOLIO |
-| Angular + PrimeNG | OOREDOO |
+| Angular | WICO (~3 years, 2024-present), OOREDOO (+ PrimeNG) |
 | Redux / Redux Toolkit / Zustand / Context API / React Query | SKILL (frontend); Zustand: SECRYX, TYPEW |
 | Tailwind CSS | VEINPAL, SECRYX, TYPEW |
 | shadcn/ui | VEINPAL |
@@ -54,7 +55,7 @@
 | Node.js / Express.js / Fastify | SKILL (backend); Node: ECOM |
 | NestJS | NOTION, IRONBYTE, ECOM |
 | Flask | PFE |
-| Spring Boot (DAO/DTO, secure REST) | OOREDOO |
+| Spring Boot | WICO (~3 years, 2024-present), OOREDOO (DAO/DTO, secure REST) |
 | GraphQL | SKILL (backend) |
 | Socket.io / WebSockets | NOTION, IRONBYTE, OOREDOO |
 | REST APIs | PFE, OOREDOO, SKILL (methodologies) |
@@ -68,6 +69,9 @@
 | Technology | Evidence |
 |------------|----------|
 | Hugging Face / Transformers | PFE |
+| LLM APIs (OpenAI, Claude) | professional/personal use (confirmed by user, 2026) |
+| Prompt engineering | professional/personal use (confirmed by user, 2026) |
+| AI-assisted development (GitHub Copilot and similar) | professional use (confirmed by user, 2026) |
 | RAG | PFE; MongoDB RAG certificate (2025) |
 | Fine-tuning | PFE |
 | TensorFlow | PFE |
@@ -132,9 +136,12 @@
 | Vite (6, 7) | SECRYX, TYPEW, SKILL (build_tools) |
 | Webpack / CRA | SKILL (build_tools) |
 
-## Business / CRM
+## Business / CRM / Client-Facing
 
-| Technology | Evidence |
+| Technology / practice | Evidence |
 |------------|----------|
-| Salesforce CRM | CCX (current job, Uber Eats sales operation) |
+| Salesforce CRM | CCX (Uber Eats sales operation) |
 | Sales pipeline management, multilingual support | CCX |
+| Client requirements gathering -> backlog items | WICO (direct client contact) |
+| Supervising / mentoring junior developers | WICO |
+| ERP domain (construction industry) | WICO |

@@ -56,8 +56,19 @@ IntelliJ IDEA, Visual Studio Code, Git
 ## Methodologies & Practices
 Agile/Scrum, REST APIs, WebSockets, Code Review, Unit Testing, TDD
 
+## AI & LLM
+LLM API integration (OpenAI, Claude), Prompt engineering, AI-assisted
+development (GitHub Copilot and similar tools), Hugging Face, Transformers,
+RAG, Fine-tuning, TensorFlow
+
+## Leadership & Client-Facing
+Client requirements gathering, Translating client needs into backlog items,
+Backlog management (user stories), Supervising and mentoring junior
+developers, Task assignment and follow-up
+
 ## Domain Knowledge
-Banking/Finance, Telecoms, Customer Service, Salesforce CRM
+Banking/Finance, Telecoms, Customer Service, Salesforce CRM,
+Construction industry (ERP), ERP systems
 
 ---
 

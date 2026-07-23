@@ -15,18 +15,24 @@
 | Full Stack JavaScript/TypeScript Developer | Developpeur Full Stack JavaScript/TypeScript | End-to-end TS: React, NestJS, Prisma, PostgreSQL |
 | MERN Stack Developer | Developpeur MERN | MongoDB, Express, React, Node used together (Ironbyte, personal projects) |
 | Web Developer | Developpeur Web | General web credentials across all experience |
+| Angular Developer | Developpeur Angular | ~3 years at Wico (ERP, 2024-present) + Ooredoo internship |
+| Full Stack Developer (Java/Spring Boot) | Developpeur Full Stack (Java/Spring Boot) | ~3 years at Wico (ERP) + Ooredoo internship |
+| Full Stack Developer (Angular/Spring) | Developpeur Full Stack (Angular/Spring) | Exact Wico stack, ~3 years, ERP in production |
+| ERP Application Developer | Developpeur Applications ERP | Wico: ERP for construction industry, client-facing |
 
 ## Tier 2 — Good match (tailor the CV before applying)
 
 | Title (EN) | Title (FR) | Why qualified |
 |------------|-----------|---------------|
-| Full Stack Developer (Java/Spring Boot) | Developpeur Full Stack (Java/Spring Boot) | Ooredoo internship: Spring Boot + Angular + Java 8/17/21 |
-| Software Engineer (Junior) | Ingenieur Logiciel (Junior) | Engineering degree (ESPRIT) + broad stack |
+| Software Engineer | Ingenieur Logiciel | Engineering degree (ESPRIT) + ~3 years professional experience (Wico) |
 | Next.js Developer | Developpeur Next.js | Veinpal (Next.js 15, RSC), portfolio site |
-| Frontend Developer (Angular) | Developpeur Frontend (Angular) | Ooredoo internship: Angular + PrimeNG |
-| MEAN Stack Developer | Developpeur MEAN | Angular (Ooredoo) + Node/Express + MongoDB |
+| MEAN Stack Developer | Developpeur MEAN | Angular (Wico, Ooredoo) + Node/Express + MongoDB |
 | AI Engineer (Junior) / AI Application Developer | Ingenieur IA (Junior) | PFE: Hugging Face, Transformers, RAG, fine-tuning, TensorFlow, Flask |
 | QA Automation Engineer (Junior) | Ingenieur QA Automatisation (Junior) | Jest, RTL, Cypress, Vitest, Playwright, xUnit, CI quality gates |
+| Technical Lead (small team) | Lead Technique (petite equipe) | Wico: supervising/mentoring junior devs, task assignment |
+| Technical Consultant | Consultant Technique | Wico: direct client contact, needs analysis, end-to-end delivery |
+| Proxy Product Owner / Technical BA | Proxy Product Owner / BA Technique | Wico: translating client needs into backlog items |
+| Client-Facing Software Engineer | Ingenieur Logiciel en contact client | Wico: requirements gathering + build + follow-up |
 
 ## Tier 3 — Possible / secondary paths
 
@@ -40,8 +46,12 @@
 
 ## Notes
 
-- "Junior" tiers reflect that professional experience is internship-based
-  (PFE + 2 internships) plus a current non-dev role; do not claim senior titles.
+- Professional experience: ~3 years at Wico (Angular/Spring ERP, part-time
+  2024-2025 then full-time) + 3 internships. Mid-level titles are now fair;
+  do not claim senior titles yet.
+- Lead/BA-flavored titles are backed by the Wico role (client needs -> backlog,
+  junior supervision), not by a formal lead job title — phrase CVs accordingly
+  ("acting as", "responsible for") and be ready to explain in interviews.
 - For each application, pick ONE title matching the posting exactly —
   ATS systems match the header title against the posting title.
 - Matching CV variants already exist in `applications/` for most Tier 1/2 titles.
