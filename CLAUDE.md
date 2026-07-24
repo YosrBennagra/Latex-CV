@@ -57,17 +57,26 @@ latexmk -pdf cv_{name}_en.tex
 
 ### Build all CVs in an application folder
 ```powershell
-.\build.ps1 -Path applications/{Position_Name}
+.\build.ps1 -Path applications/{Position_Name}   # Windows
+```
+```bash
+./build.sh applications/{Position_Name}          # Linux/macOS
 ```
 
 ### Build everything
 ```powershell
-.\build.ps1 -All
+.\build.ps1 -All          # Windows
+```
+```bash
+./build.sh --all          # Linux/macOS
 ```
 
 ### Clean build artifacts
 ```powershell
-.\build.ps1 -Clean
+.\build.ps1 -Clean        # Windows
+```
+```bash
+./build.sh --clean        # Linux/macOS
 ```
 
 ## Git & Workflow

@@ -19,7 +19,7 @@
 
 % Section formatting
 \titleformat{\section}{\color{primary}\normalsize\bfseries\uppercase}{}{0em}{}[\titlerule]
-\titlespacing*{\section}{0pt}{5pt}{2pt}
+\titlespacing*{\section}{0pt}{2pt}{1pt}
 
 % FontAwesome5 with fallback
 \IfFileExists{fontawesome5.sty}{\usepackage{fontawesome5}}{\newcommand{\faPhone}{Tel:}\newcommand{\faMapMarker}{Loc:}\newcommand{\faGlobe}{Web:}\newcommand{\faGithub}{GH:}\newcommand{\faLinkedin}{LI:}}
@@ -48,7 +48,7 @@
 Senior full stack developer with \textbf{5+ years of experience} specializing in \textbf{React, TypeScript, and modern JavaScript ecosystems}. Expert in building scalable, production-ready web applications using React with Redux, Next.js, and comprehensive testing frameworks. Strong backend expertise with \textbf{Node.js, NestJS, and Express.js}. Proven track record in implementing complete \textbf{CI/CD pipelines}, maintaining high code quality standards, and delivering features in \textbf{Agile/Scrum} environments. Fluent English.
 }
 
-\vspace{5pt}
+\vspace{3pt}
 
 % Skills
 \section*{Technical Skills}
@@ -64,7 +64,7 @@ Senior full stack developer with \textbf{5+ years of experience} specializing in
 \textbf{DevOps:} Docker, Jenkins, Git, CI/CD, SonarQube, Nginx, Vercel, Netlify, Prometheus, Grafana
 }
 
-\vspace{5pt}
+\vspace{3pt}
 
 % Experience
 \section*{Professional Experience}
@@ -72,9 +72,17 @@ Senior full stack developer with \textbf{5+ years of experience} specializing in
 
 {\small
 
+\textbf{Full Stack Developer (Angular/Spring Boot) -- ERP Application}\\[1pt]
+\textit{Wico} \hfill \textit{2024 -- Present}
+\begin{itemize}[leftmargin=12pt,itemsep=1pt,topsep=1pt,parsep=0pt]
+  \item Develop an ERP application for a construction company end-to-end with \textbf{Angular} and \textbf{Spring Boot}; work directly with the client (requirements gathering, translation into backlog items, feature delivery)
+  \item Supervise and mentor junior developers; apply DevOps practices (CI/CD, deployments); part-time 2024--2025, full-time since 2026
+\end{itemize}
+
+\vspace{3pt}
 \textbf{Full Stack Developer (PFE) -- AI Medical Diagnosis Platform}\\[1pt]
 \textit{Itserv, Tunis} \hfill \textit{02/2025 -- 08/2025}
-\begin{itemize}[leftmargin=12pt,itemsep=2pt,topsep=3pt,parsep=0pt]
+\begin{itemize}[leftmargin=12pt,itemsep=1pt,topsep=1pt,parsep=0pt]
   \item Built production-ready \textbf{React + TypeScript} frontend with Material-UI, Redux Toolkit for state management
   \item Implemented Flask REST API with JWT authentication, hybrid PostgreSQL/MongoDB architecture
   \item Integrated AI models (Hugging Face, TensorFlow) for real-time medical predictions
@@ -83,53 +91,27 @@ Senior full stack developer with \textbf{5+ years of experience} specializing in
 \end{itemize}
 
 \vspace{3pt}
-\textbf{Full Stack Developer -- Collaborative Documents Platform (Notion-like)}\\[1pt]
-\textit{ESPRIT, Tunis (Academic Project)} \hfill \textit{2024}
-\begin{itemize}[leftmargin=12pt,itemsep=2pt,topsep=3pt,parsep=0pt]
-  \item Architected and developed \textbf{React + NestJS} full stack application with TypeScript
-  \item Implemented real-time collaboration using \textbf{Socket.io}, Context API for state management
-  \item Built RESTful APIs with NestJS, MongoDB integration via Mongoose
-  \item Established CI/CD pipeline with automated testing, code review process, Agile workflow
-\end{itemize}
-
-\vspace{3pt}
 \textbf{Full Stack Developer -- Educational Platform with Smart Scheduling}\\[1pt]
 \textit{Ironbyte, Tunis} \hfill \textit{2024}
-\begin{itemize}[leftmargin=12pt,itemsep=2pt,topsep=3pt,parsep=0pt]
+\begin{itemize}[leftmargin=12pt,itemsep=1pt,topsep=1pt,parsep=0pt]
   \item Developed \textbf{NestJS/React} platform with MongoDB: assignment management, automated timetables
   \item Implemented intelligent scheduling algorithms achieving \textbf{+40\% efficiency improvement}
-  \item Used React Router for navigation, Axios for API calls, WebSockets for real-time updates
   \item Deployed with Docker, implemented CI/CD automation
 \end{itemize}
 
 \vspace{3pt}
 \textbf{Full Stack Developer -- Internal Communication Suite}\\[1pt]
 \textit{Ooredoo, Tunis} \hfill \textit{2023}
-\begin{itemize}[leftmargin=12pt,itemsep=2pt,topsep=3pt,parsep=0pt]
+\begin{itemize}[leftmargin=12pt,itemsep=1pt,topsep=1pt,parsep=0pt]
   \item Built backend with \textbf{Spring Boot (Java)}: DAO/DTO architecture, secure REST endpoints, JWT authentication
   \item Developed \textbf{Angular + PrimeNG} frontend: real-time chat, advanced filtering, admin dashboard
   \item Comprehensive test coverage with Jest and integration tests
-  \item Used IntelliJ IDEA, Git workflows, Agile ceremonies
 \end{itemize}
 
-}
-
-\vspace{4pt}
-\section*{Personal Projects}
-\vspace{2pt}
-{\small
-\textbf{Veinpal -- Software \& Apps Platform} \hfill \href{https://veinpal.com}{veinpal.com}\\[1pt]
-\textit{Founder / Solo Developer} \hfill \textit{2025 -- Present}
-\begin{itemize}[leftmargin=12pt,itemsep=2pt,topsep=3pt,parsep=0pt]
-  \item Founded and built a full-stack platform for distributing Windows apps, web tools, and games; shipped 5 products including Trayline (desktop system monitor)
-  \item Architected \textbf{Next.js 15} monorepo (Turborepo + pnpm Workspaces) with \textbf{React 19} Server Components, strict \textbf{TypeScript 5}, and \textbf{Tailwind CSS}/shadcn/ui
-  \item Implemented \textbf{PostgreSQL 16} (Prisma ORM), \textbf{Redis} caching, S3/MinIO storage, and \textbf{NextAuth.js v5} OAuth (Google, GitHub, LinkedIn)
-  \item Built CI/CD pipeline: GitHub Actions (lint, typecheck, test, build, audit), \textbf{Vitest + Playwright} tests, Commitlint + Husky
-\end{itemize}
 }
 
 % Two columns
-\vspace{5pt}
+\vspace{3pt}
 \begin{multicols}{2}
 
 \section*{Education}
@@ -140,13 +122,13 @@ Computer Science Engineering\\[1pt]
 \textit{2020 -- 2025}\\[1pt]
 Tunis, Tunisia
 
-\vspace{4pt}
+\vspace{3pt}
 \textbf{Lycee Soukra}\\[1pt]
 CS Baccalaureate\\[1pt]
 \textit{2019}
 }
 
-\vspace{4pt}
+\vspace{3pt}
 \section*{Certifications}
 \vspace{2pt}
 {\small
@@ -170,26 +152,6 @@ CS Baccalaureate\\[1pt]
 \textbf{English} -- Fluent\\[2pt]
 \textbf{French} -- Professional\\[2pt]
 \textbf{Arabic} -- Native
-}
-
-\vspace{4pt}
-\section*{Key Highlights}
-\vspace{2pt}
-{\small
-\textbf{React Expertise}\\[1pt]
-5+ years building production apps with React, Redux, Next.js, comprehensive testing
-
-\vspace{3pt}
-\textbf{Full Stack Mastery}\\[1pt]
-Node.js, NestJS, Express.js, GraphQL, REST APIs, real-time features
-
-\vspace{3pt}
-\textbf{DevOps \& Quality}\\[1pt]
-CI/CD pipelines, automated testing, code quality tools, monitoring
-
-\vspace{3pt}
-\textbf{Best Practices}\\[1pt]
-Agile/Scrum, TDD, code reviews, documentation, team collaboration
 }
 
 \end{multicols}

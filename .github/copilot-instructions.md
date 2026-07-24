@@ -42,11 +42,11 @@ Personal CV management system for **Yosr Ben Nagra**. Generates ATS-friendly LaT
 
 ## Key Files
 - `data_profile.json` — master profile data
+- `profile/` — organized views of the profile (job titles, skills, technologies with evidence, experience, projects, ATS keywords) — sync after every `data_profile.json` change
 - `.github/skills/skills_tracker.md` — skills inventory with status
-- `templates/cv_template_compact.tex` — base CV template
-- `templates/cover_letter_universal.tex` — base cover letter template
+- `templates/` — 9 CV templates + 4 cover letters (see `templates/README.md` for the picker)
 - `applications/` — position-specific CVs (one folder per position type)
-- `build.ps1` — build script (run `.\build.ps1` for usage)
+- `build.ps1` (Windows) / `build.sh` (Linux/macOS) — build scripts
 
 ## Output
 - LaTeX files only; PDFs generated via `pdflatex` or `.\build.ps1`.

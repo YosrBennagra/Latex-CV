@@ -52,6 +52,13 @@ skills, technologies with evidence, ATS keywords per role — see the
 `profile/` folder at the repo root. Never add a skill or experience that is
 not in `data_profile.json`.
 
+## Photo path (compact template)
+
+`cv_template_compact.tex` includes `../../assets/photo_yosr.png`, which is
+correct when the file sits at `applications/{Position}/`. The repo convention
+is `applications/{Position}/EN/` (one level deeper), so after copying, change
+the path to `../../../assets/photo_yosr.png`.
+
 ## Placeholders to replace
 
 - `[ROLE]` — the exact job title from the posting

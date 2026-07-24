@@ -47,7 +47,9 @@ Generate position-targeted CVs by reordering and emphasizing skills/experience f
 
 ## Key Files
 - `data_profile.json` — source of all profile data
-- `templates/cv_template_compact.tex` — base CV template to copy
+- `templates/` — 9 CV templates; pick per `templates/README.md` situation guide (default: `cv_template_professional.tex`)
+- `profile/ats_keywords.md` — ATS keyword bank per role
+- `profile/job_titles.md` — header titles by fit tier
 - `templates/cover_letter_universal.tex` — base cover letter template
 - `.github/skills/skills_tracker.md` — check/update skill statuses
 - `applications/` — one subfolder per position variant
