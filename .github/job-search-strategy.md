@@ -31,7 +31,7 @@
 - Full Stack Developer (NestJS/React)
 
 ### Good Fit (Medium match)
-- Full Stack Developer (Java/React) - *highlight Ooredoo experience*
+- Full Stack Developer (Java/React) - *highlight Wico + Ooredoo experience*
 - Full Stack Developer (Python/React) - *highlight Flask experience*
 
 ### Stretch Positions
@@ -119,17 +119,20 @@ A: All my projects used Scrum:
 
 When asked about 5+ years Java experience:
 ```
-"My primary expertise is React and modern full-stack development.
-I have solid Spring Boot experience from the Ooredoo project where
-I built production-ready services. My strength is adaptability -
-I've mastered React, NestJS, Flask, and Spring Boot because I focus
-on understanding patterns rather than just syntax. I'm confident
-I can deepen my Java expertise quickly given my architectural knowledge."
+"I have about 3 years of hands-on Angular and Spring Boot experience
+building an ERP for a construction company at Wico - part-time for two
+years alongside my studies, and full-time since 2026. I work directly
+with the client, translate their needs into backlog items, deliver the
+features end to end, and supervise junior developers. Before that I
+built production-ready Spring Boot services at Ooredoo. I'm confident
+I can keep deepening my Java expertise given that foundation."
 ```
 
 ### Highlight Matching Skills
 - React + TypeScript ✅ (primary requirement)
-- Spring Boot ✅ (Ooredoo project)
+- Spring Boot ✅ (3 years at Wico + Ooredoo project)
+- Angular ✅ (3 years at Wico)
+- Client-facing + backlog management ✅ (Wico)
 - CI/CD + Jenkins ✅ (all projects)
 - Agile/Scrum ✅ (all projects)
 - SQL databases ✅ (PostgreSQL experience)

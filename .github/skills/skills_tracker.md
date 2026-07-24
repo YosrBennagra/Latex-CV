@@ -18,7 +18,7 @@ This file tracks all skills from job postings and whether you possess them.
 | HTML | ✅ Known | Web fundamentals |
 | CSS | ✅ Known | Web fundamentals |
 | Tailwind CSS | ✅ Known | Utility-first CSS |
-| Angular | ✅ Known | Used in Ooredoo internship |
+| Angular | ✅ Known | ~3 years at Wico (ERP, 2024-present) + Ooredoo internship |
 | PrimeNG | ✅ Known | Used with Angular |
 
 ## Backend Skills
@@ -26,7 +26,7 @@ This file tracks all skills from job postings and whether you possess them.
 |-------|--------|-------|
 | Flask | ✅ Known | Python backend framework |
 | NestJS | ✅ Known | Node.js framework |
-| Spring Boot | ✅ Known | Java framework (Ooredoo 2023) |
+| Spring Boot | ✅ Known | ~3 years at Wico (ERP, 2024-present) + Ooredoo 2023 |
 | Java | ✅ Known | Used with Spring Boot |
 | Node.js | ✅ Known | Backend development |
 | Python | ✅ Known | Backend & AI/ML |
@@ -36,6 +36,7 @@ This file tracks all skills from job postings and whether you possess them.
 |-------|--------|-------|
 | PostgreSQL | ✅ Known | Relational database |
 | MongoDB | ✅ Known | NoSQL database |
+| Redis | ✅ Known | Caching (Veinpal) |
 | SQL | ✅ Known | Database querying |
 
 ## DevOps & Tools
@@ -52,6 +53,7 @@ This file tracks all skills from job postings and whether you possess them.
 | OpenTelemetry | 🔄 Learning | Tracing/telemetry basics |
 | Git | ✅ Known | Version control |
 | Bitbucket | ✅ Known | Git hosting |
+| GitHub Actions | ✅ Known | CI/CD (Veinpal, OverlayOS, TypeW) |
 | CI/CD | ✅ Known | Automation pipelines |
 | IntelliJ IDEA | ✅ Known | Java IDE |
 | Visual Studio Code | ✅ Known | Code editor |
@@ -69,7 +71,9 @@ This file tracks all skills from job postings and whether you possess them.
 | Transformers | ✅ Known | NLP models |
 | TensorFlow | ✅ Known | ML framework |
 | RAG | ✅ Known | Retrieval-augmented generation pipeline |
-| LLMs | 🔄 Learning | Prompting and LLM tooling basics |
+| LLM APIs (OpenAI, Claude) | ✅ Known | Confirmed by user (2026) |
+| Prompt engineering | ✅ Known | Confirmed by user (2026) |
+| AI-assisted development | ✅ Known | GitHub Copilot and similar tools |
 
 ## Methodologies
 | Skill | Status | Notes |
@@ -81,10 +85,20 @@ This file tracks all skills from job postings and whether you possess them.
 | Code Review | ✅ Known | Quality assurance |
 | Level 3 Support | ❌ Unknown | Production troubleshooting |
 
+## Leadership & Client-Facing
+| Skill | Status | Notes |
+|-------|--------|-------|
+| Client requirements gathering | ✅ Known | Wico: direct client contact |
+| Backlog management | ✅ Known | Wico: needs -> backlog items -> build |
+| Supervising/mentoring juniors | ✅ Known | Wico: task assignment, code help |
+
 ## Domain Knowledge
 | Domain | Status | Notes |
 |--------|--------|-------|
 | Banking/Finance | ✅ Known | Experience with financial systems |
+| Construction / ERP | ✅ Known | Wico ERP application (2024-present) |
+| Telecoms | ✅ Known | Ooredoo internship |
+| Customer Service / Salesforce CRM | ✅ Known | Concentrix (Uber Eats operation) |
 
 ## Languages
 | Language | Proficiency | Notes |
@@ -95,4 +109,4 @@ This file tracks all skills from job postings and whether you possess them.
 
 ---
 
-*Last updated: 2026-02-03*
+*Last updated: 2026-07-24*

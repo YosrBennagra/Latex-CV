@@ -1,0 +1,128 @@
+% CV Template - Executive (dark header band, photo optional, bold typography)
+% HR-approved and ATS-parseable: body is single column selectable text with
+% standard section names. The colored header band is decorative only.
+%
+% Best for: direct-to-human applications (email to hiring manager),
+% recruiters, career fairs, printed copies.
+%
+% CUSTOMIZE per application: [ROLE], Summary, Key Achievements.
+% Data source: data_profile.json + profile/
+
+\documentclass[10pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}  % Change to [french] for French CV
+\usepackage[a4paper,margin=0.6in,top=0.85cm,bottom=0.5in]{geometry}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+\usepackage{tgheros}
+\usepackage{tikz}
+\renewcommand{\familydefault}{\sfdefault}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\pagestyle{empty}
+
+\definecolor{charcoal}{RGB}{38,42,48}
+\definecolor{accent}{RGB}{202,138,4}
+\definecolor{gray}{RGB}{95,95,95}
+
+\titleformat{\section}{\color{charcoal}\normalsize\bfseries}{}{0em}{}[{\color{accent}\titlerule[1pt]}]
+\titlespacing*{\section}{0pt}{7pt}{3pt}
+
+\begin{document}
+
+% ============= HEADER BAND =============
+\begin{tikzpicture}[remember picture,overlay]
+  \fill[charcoal] (current page.north west) rectangle
+    ([yshift=-3.3cm]current page.north east);
+\end{tikzpicture}
+\vspace*{0pt}
+{\color{white}
+  {\huge\bfseries YOSR BEN NAGRA}\\[3pt]
+  {\large\color{accent}\bfseries [ROLE]}\\[5pt]
+  {\small
+    +216 53916040 \,|\, \href{mailto:yosrbennagra@gmail.com}{\color{white}yosrbennagra@gmail.com} \,|\, Tunis, Tunisia \,|\,
+    \href{https://portfolio-yosr.vercel.app/en}{\color{white}Portfolio} \,|\,
+    \href{https://github.com/YosrBennagra}{\color{white}GitHub} \,|\,
+    \href{https://www.linkedin.com/in/yosr-ben-nagra/}{\color{white}LinkedIn}
+  }
+}
+\vspace{0.75cm}
+
+% ============= SUMMARY =============
+\section*{Profile}
+{\small
+Full-stack developer with 3+ years of professional experience delivering an ERP
+for the construction industry (Angular, Spring Boot) at Wico --- owning the client
+relationship from needs to backlog to delivery and supervising junior developers.
+Founder of Veinpal (5 shipped products, full CI/CD).
+[1 LINE TAILORED TO COMPANY AND ROLE].
+}
+
+% ============= KEY ACHIEVEMENTS =============
+\section*{Key Achievements}
+{\small
+\begin{itemize}[leftmargin=12pt,itemsep=1pt,topsep=1pt,parsep=0pt]
+  \item \textbf{3+ years} building an ERP end-to-end (Angular/Spring Boot); client needs \textbf{-> backlog -> delivery}
+  \item Supervise and mentor \textbf{junior developers} at Wico (task assignment, code help)
+  \item Founded and solo-built \textbf{Veinpal} --- 5 shipped products on a Next.js 15/React 19 monorepo
+  \item Improved scheduling efficiency by \textbf{40\%} with intelligent algorithms (Ironbyte internship)
+  \item Delivered an \textbf{AI medical diagnosis app} end-to-end: React, Flask, Hugging Face, RAG, CI/CD
+  \item Built \textbf{41-mode} training platform (TypeW) with scalable game registry architecture
+\end{itemize}
+}
+
+% ============= EXPERIENCE =============
+\section*{Experience}
+{\small
+
+\textbf{Full-stack Developer (Angular/Spring Boot)} --- Wico, ERP for construction \hfill {\color{gray}\textit{2024 -- Present}}
+\begin{itemize}[leftmargin=12pt,itemsep=0pt,topsep=1pt,parsep=0pt]
+  \item ERP development with Angular + Spring Boot (part-time 2024--2025, full-time since 2026); DevOps practices (CI/CD)
+  \item Client-facing: requirements gathering, backlog management, feature delivery; junior developer supervision
+\end{itemize}
+
+\vspace{2pt}
+\textbf{Full-stack Developer (PFE Internship)} --- Itserv, Tunis \hfill {\color{gray}\textit{02/2025 -- 08/2025}}
+\begin{itemize}[leftmargin=12pt,itemsep=0pt,topsep=1pt,parsep=0pt]
+  \item AI medical diagnosis app: React/TypeScript, Flask REST API, PostgreSQL + MongoDB, TensorFlow/Transformers
+  \item Full CI/CD (Jenkins, SonarQube) and monitoring (Prometheus, Grafana)
+\end{itemize}
+
+\vspace{2pt}
+\textbf{Full-stack Developer (Internship)} --- Ironbyte \hfill {\color{gray}\textit{2024}}
+\begin{itemize}[leftmargin=12pt,itemsep=0pt,topsep=1pt,parsep=0pt]
+  \item Educational platform (NestJS, React, MongoDB) with automated timetable creation (+40\% efficiency)
+\end{itemize}
+
+\vspace{2pt}
+\textbf{Full-stack Developer (Internship)} --- Ooredoo \hfill {\color{gray}\textit{2023}}
+\begin{itemize}[leftmargin=12pt,itemsep=0pt,topsep=1pt,parsep=0pt]
+  \item Spring Boot services (DAO/DTO, secure REST) and Angular/PrimeNG front with real-time chat and admin tools
+\end{itemize}
+
+}
+
+% ============= SKILLS =============
+\section*{Skills}
+{\small
+\textbf{Frontend:} Angular, React, TypeScript, Next.js, Zustand, Tailwind CSS \quad
+\textbf{Backend:} Node.js, NestJS, Flask, Spring Boot, Java\\
+\textbf{Data:} PostgreSQL, MongoDB, Redis, Prisma \quad
+\textbf{DevOps:} Docker, Jenkins, GitHub Actions, SonarQube, CI/CD \quad
+\textbf{Testing:} Jest, Cypress, Vitest, TDD\\
+\textbf{AI:} LLM APIs (OpenAI, Claude), prompt engineering, AI-assisted development, RAG
+
+}
+
+% ============= EDUCATION + LANGUAGES =============
+\section*{Education \& Languages}
+{\small
+\textbf{ESPRIT}, Tunis --- Computer Science Engineering studies \hfill {\color{gray}\textit{2020 -- 2025}}\\[1pt]
+\textbf{Arabic:} Native \quad \textbf{English:} Fluent \quad \textbf{French:} Professional \quad
+Certifications: MongoDB RAG (2025), Hashgraph (2025)
+}
+
+\end{document}

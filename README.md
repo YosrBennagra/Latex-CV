@@ -7,13 +7,32 @@ Personal CV management system — generates ATS-friendly, 1-page LaTeX CVs tailo
 ```
 Latex-CV/
 ├── data_profile.json              # Master profile data (update here first)
-├── build.ps1                      # Build script (compile .tex → .pdf)
+├── build.ps1                      # Build script — Windows (compile .tex → .pdf)
+├── build.sh                       # Build script — Linux/macOS
 ├── .latexmkrc                     # LaTeX build configuration
 ├── CLAUDE.md                      # Project conventions
 │
-├── templates/
-│   ├── cv_template_compact.tex    # Base CV template
-│   └── cover_letter_universal.tex # Base cover letter template
+├── profile/                       # Organized views of the profile data
+│   ├── job_titles.md              # Job titles qualified for (fit tiers)
+│   ├── skills.md                  # Skills inventory by category
+│   ├── technologies.md            # Technologies + where each was used
+│   ├── experience.md              # Experience & internships (EN + FR)
+│   ├── projects.md                # Personal projects + selection guide
+│   ├── education_certifications.md
+│   ├── languages_soft_skills.md
+│   └── ats_keywords.md            # ATS keyword bank per target role
+│
+├── templates/                     # 9 CV templates + 4 cover letters
+│   ├── cv_template_classic.tex        # Max ATS safety (B&W serif)
+│   ├── cv_template_professional.tex   # Default: navy, summary-led
+│   ├── cv_template_minimal.tex        # Clean, whitespace
+│   ├── cv_template_elegant.tex        # Serif, small caps
+│   ├── cv_template_tech.tex           # Skills matrix first
+│   ├── cv_template_graduate.tex       # Education first
+│   ├── cv_template_compact.tex        # Dense, with photo
+│   ├── cv_template_executive.tex      # Dark header band
+│   ├── cv_template_modern.tex         # Colored sidebar
+│   └── cover_letter_{universal,formal,concise,technical}.tex
 │
 ├── applications/                  # One folder per position type
 │   ├── Frontend_React/            # EN/cv_frontend_react_en.tex + FR/cv_frontend_react_fr.tex
@@ -38,7 +57,9 @@ Latex-CV/
 ## Quick Start
 
 ### 1. Update your profile
-Edit `data_profile.json` with your latest data (skills, experience, projects).
+Edit `data_profile.json` with your latest data (skills, experience, projects),
+then sync the affected views in `profile/` (job titles, skills, technologies,
+ATS keywords, ...). `data_profile.json` stays the single source of truth.
 
 ### 2. Create a tailored CV
 Paste a job posting to Copilot — it will:
@@ -49,23 +70,27 @@ Paste a job posting to Copilot — it will:
 
 ### 3. Build PDFs
 
+Windows (PowerShell):
 ```powershell
-# Build one folder
-.\build.ps1 -Path applications\Frontend_React
+.\build.ps1 -Path applications\Frontend_React   # one folder
+.\build.ps1 -Path applications\Frontend_React\EN\cv_frontend_react_en.tex  # one file
+.\build.ps1 -All                                # all applications
+.\build.ps1 -All -Templates                     # + templates
+.\build.ps1 -Clean                              # clean artifacts
+```
 
-# Build a single file
-.\build.ps1 -Path applications\Frontend_React\EN\cv_frontend_react_en.tex
-
-# Build all applications
-.\build.ps1 -All
-
-# Clean build artifacts
-.\build.ps1 -Clean
+Linux/macOS:
+```bash
+./build.sh applications/Frontend_React          # one folder
+./build.sh applications/Frontend_React/EN/cv_frontend_react_en.tex  # one file
+./build.sh --all                                # all applications
+./build.sh --all --templates                    # + templates
+./build.sh --clean                              # clean artifacts
 ```
 
 Or manually:
-```powershell
-cd applications\Frontend_React\EN
+```bash
+cd applications/Frontend_React/EN
 pdflatex cv_frontend_react_en.tex
 ```
 
@@ -91,8 +116,11 @@ Existing folders in `applications/` are reusable role-based variants. For a new 
 ## Requirements
 
 - **LaTeX distribution**: MiKTeX (Windows), TeX Live (Linux), or MacTeX (Mac)
-- **Required packages**: fontenc, inputenc, babel, geometry, enumitem, xcolor, hyperref, titlesec, tgheros
-- **Optional**: fontawesome5 (for icons)
+- **Required packages**: fontenc, inputenc, babel (incl. french), geometry, enumitem,
+  xcolor, hyperref, titlesec, multicol, graphicx, microtype, tgheros
+- **Per-template extras**: tgpagella (elegant), tikz (executive), paracol + eso-pic (modern)
+- **Optional**: fontawesome5 (compact template icons; has a text fallback)
+- On Debian/Ubuntu: `apt install texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended tex-gyre texlive-lang-french latexmk`
 
 ## Features
 

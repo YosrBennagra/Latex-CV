@@ -29,7 +29,8 @@ description: 'Use when creating, updating, or maintaining English/French CVs in 
 
 ## Key Files
 - `data_profile.json` — canonical data (update here first)
-- `templates/cv_template_compact.tex` — base template to copy
+- `templates/` — 9 CV templates; pick per `templates/README.md` situation guide (default: `cv_template_professional.tex`)
+- `profile/` — organized profile views (job titles, skills, technologies with evidence, ATS keywords)
 - `applications/{Company}_{Position}_{Date}/cv_{company}_en.tex` + `cv_{company}_fr.tex`
 - `.github/skills/skills_tracker.md` — skill inventory
 
